@@ -33,9 +33,9 @@ from pandas import read_parquet
 '''
 
 
-train_path = "/home/ubuntu/6000N/5018/databench/train"
+train_path = "/home/ubuntu/6000N/5018/databench/test"
 dataset_path = "/home/ubuntu/6000N/5018/databench/dataset/data"
-save_path = "/home/ubuntu/6000N/llama_factory/LLaMA-Factory-main/nlp_data/train_data.json"
+save_path = "/home/ubuntu/6000N/llama_factory/LLaMA-Factory-main/nlp_data/test_data.json"
 semeval_train_qa = load_from_disk(train_path)
 
 data_json = []
@@ -47,11 +47,11 @@ for i in range(len(semeval_train_qa)):
     if semeval_train_qa[i]['columns_used']:  # 'columns_used' is not NoneType
         for col in semeval_train_qa[i]['columns_used']:
             if col in table:
-                qa_data[col] = table[col].to_list()
+                qa_data[col] = table[col].to_list()[:200]
     
     # print(qa_data)
     data_tmp = {
-        "instruction": "Combine the infomation in the table to answer the question. The table is: "+str(qa_data),
+        "instruction": "Answer short with the table. The table is: "+str(qa_data),
         "input": semeval_train_qa[i]['question'],
         "output": semeval_train_qa[i]['answer']
     }
