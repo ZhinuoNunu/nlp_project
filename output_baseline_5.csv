@@ -1,0 +1,1455 @@
+output,ground_truth,label
+Yes,TRUE,1
+"Yes, the author with the longest name, ""𝕻𝖆𝖇𝖑𝖔 𝕬𝖗𝖗𝖔𝖞𝖔"", posts mainly original content.",TRUE,1
+"Yes 
+
+0 - 'Unnamed player'",TRUE,1
+"Yes, there are several posts that do not contain any links.",TRUE,1
+54,3765,0
+,61,0
+42,1243,0
+7,0,0
+There are 3 authors with 1 retweet.,ING España,0
+"Based on the table, the language of the most favorited post is 'es'.",es,1
+,juan prin,0
+"Based on the table, the most common type of post is:
+
+**Reply (33.33%)**",reply,1
+"Retweets 3:
+Isco
+ANA.M
+Cambi Sammet","['Lavincompae', '#NI UNA MENOS \xa0♐\xa0✊\xa0🚺', 'SFC The World']",0
+"The 5 least favorited posts are the last ones in the table:
+
+1. 0 favorites: 'es', 'es', 'es', 'es', 'es'
+2. 1 favorite: 'es', 'es', 'es', 'es', 'es', 'es', 'es', 'es', 'es', 'es', 'es', 'es', 'es', 'es', 'es', 'es', 'es', 'es'
+3. 2 favorites: 'es', 'es', 'es', 'es', 'es', 'es', 'es', 'es', 'es', 'es', 'es', 'es', 'es', 'es'
+4. 3 favorites: 'es', 'es', 'es', 'es', 'es'
+5. 5 favorites: 'es'","['es', 'es', 'es', 'es', 'es']",1
+,"['Correctorada', 'El Joker', 'Xenia Viladas', 'DrJaus \xa0🇪🇸']",0
+"| Rank | Type |
+| --- | --- |
+| 1 | reply |
+| 2 | original |
+| 3 | reply |
+| 4 | original |
+| 5 | reply |
+| 6 | original |","['reply', 'original']",1
+"Here are the top 5 most favorited posts with their corresponding retweet counts:
+
+1. Favorited: 9, Retweets: 0
+2. Favorited: 7, Retweets: 0
+3. Favorited: 5, Retweets: 0
+4. Favorited: 4, Retweets: 0
+5. Favorited: 4, Retweets: 0","[0, 0, 0, 0, 3]",0
+,"[61, 60, 59]",0
+"The 4 least favorited posts have 0 favorites. Their retweet counts are:
+
+* 0
+* 0
+* 0
+* 0","[0, 0, 1, 0]",0
+,"[1, 1, 1, 1, 1, 1]",0
+Yes,TRUE,1
+"Yes
+
+1 580",TRUE,1
+Yes,FALSE,0
+"Yes
+
+| Pokémon speed | Count |
+| --- | --- |
+| 150 | 2 |
+| 145 | 1 |
+| 140 | 1 |
+| 135 | 0 |
+| 130 | 4 |
+| 125 | 0 |
+| 120 | 4 |
+| 115 | 3 |
+| 110 | 6 |
+| 105 | 4 |
+| 100 | 10 |
+| 95 | 3 |
+| 90 | 10 |
+| 85 | 3 |
+| 80 | 4 |
+| 75 | 2 |
+| 70 | 7 |
+| 65 | 6 |
+| 60 | 6 |
+| 55 | 7 |
+| 50 | 4 |
+| 45 | 9 |
+| 43 | 1 |
+| 42 | 1 |
+| 40 | 8 |
+| 35 | 8 |
+| 30 | 11 |
+| 25 | 3 |
+| 20 | 4 |
+| 15 | 2 |
+| 0 | 0 |",TRUE,1
+"There are 18 unique Pokémon types in the 'type1' column:
+
+1. Grass
+2. Fire
+3. Water
+4. Bug
+5. Normal
+6. Dark
+7. Electric
+8. Ground
+9. Ice
+10. Poison
+11. Fairy
+12. Steel
+13. Fighting
+14. Psychic
+15. Rock
+16. Ghost
+17. Flying
+18. Dragon",20,0
+640,1125,0
+"There are 135 Pokémon in the third generation, which includes Pokémon from Pokémon Ruby, Sapphire, and Emerald.",160,0
+The average attack stat for all Pokémon is 72.,80.94,0
+"According to the table, the Pokémon with the highest defense stat is 'defense': 130. The primary type of this Pokémon is 'Water'.",Poison,0
+"The Pokémon with the lowest speed stat is Slowpoke with 15, and also Galarian Slowpoke with 15, and Galarian Mr. Mime with 15, and also Galarian Weezing with 20.",Shuckle,0
+"Based on the table, there are 3 legendary Pokémon with a secondary type. They are all Dragon type.",Flying,0
+,Mega Mewtwo Y (Psychic),0
+"Based on the table, the top 3 Pokémon with the highest total stats are:
+
+1. **Galarian Moltres** with a total of 640
+2. **Gigantamax Lapras** with a total of 637
+3. **Mega Alakazam** with a total of 634","['Eternamax Eternatus', 'Mega Mewtwo X', 'Mega Mewtwo Y']",0
+"Here are the 5 Pokémon with the lowest HP stats based on the table:
+
+1. 10 HP - Gigantamax Butterfree
+2. 10 HP - Farfetch'd
+3. 20 HP - Galarian Articuno
+4. 25 HP - Galarian Farfetched
+5. 30 HP - Ditto
+6. 30 HP - Galarian Articuno 
+7. 30 HP - Alolan Raticate 
+8. 30 HP - Alolan Marowak 
+9. 30 HP - Galarian Slowpoke 
+10. 30 HP - Galarian Raticate","['Shedinja', 'Diglett', 'Alolan Diglett', 'Magikarp', 'Pichu']",0
+"Based on the table, here are the top 4 primary categories with the most Pokémon:
+
+1. **Water** (34 Pokémon)
+2. **Grass** (33 Pokémon)
+3. **Fire** (28 Pokémon)
+4. **Normal** (27 Pokémon)","['Water', 'Normal', 'Grass', 'Bug']",0
+,"['Mega Heracross', 'Mega Tyranitar', 'Mega Scizor', 'Tyranitar', 'Scizor', 'Ursaring']",0
+"{'sp_defense': [130, 100, 100, 120, 95, 95, 110, 110, 100, 125, 90, 90, 115, 105, 125, 95, 65, 65, 100, 110, 65, 65, 110, 110, 65, 75, 95, 95, 75, 75, 95, 110, 65, 95, 79, 100, 70, 70, 100, 95, 35, 35, 75, 90, 45, 75, 100, 45, 75, 95, 65, 90, 65, 65, 100, 100, 50, 75, 45, 70, 65, 75, 90, 55, 80, 55, 75, 45, 45, 70, 70, 40, 40, 40, 40, 65, 65, 50, 80, 45, 70, 50, 80, 40","[250, 230, 200, 160, 160]",0
+"Here are the bottom 3 defense stats of the legendary Pokémon in the table:
+
+1. 5 (Raikou)
+2. 30 (Ho-Oh)
+3. 45 (Ho-Oh)","[20, 31, 50]",0
+"Based on the data provided, here are the 4 highest speed stats:
+
+1. 150 ( Multiple times)
+2. 130 ( Multiple times)
+3. 120 ( Multiple times)
+4. 115 ( Multiple times)","[135, 127, 125, 125]",0
+"Here are the 6 lowest total stats of non-legendary Pokémon from the given table:
+
+1. 195
+2. 205
+3. 205
+4. 251
+5. 262
+6. 270","[175, 180, 180, 185, 190, 194]",0
+,TRUE,0
+,FALSE,0
+,FALSE,0
+,TRUE,0
+0.743221693,0.782633618,0
+24,1002,0
+,0.37321404,0
+0.075,0.03536414,0
+,Policy Officer,0
+,Governor,0
+,Mortgage Banker,0
+'Account Executive' with n = 144,Program Manager,0
+,"['Book Publisher', 'Bureau Chief', 'Publisher']",0
+,"['.Net Architect', 'Android Developer', 'Principal Engineer', 'Game Engineer']",0
+,"['Director of Athletics', 'Recruiting Coordinator', 'Athletic Coordinator', 'Director of Personnel', 'Skills Trainer']",0
+,"['U.S. Senator', 'Congressman']",0
+"0.6923537533346314 
+0.741","[0.7557249985959847, 0.7413189187628788, 0.7034528053640179]",0
+"The bottom 4 Emotional_Range values are:
+
+1. 0.22155461168552476
+","[0.1652381569664056, 0.2005428064324122, 0.2215546116855247, 0.2506791678499942]",0
+"| Rank | Extraversion | Value |
+| --- | --- | --- |
+| 1 |  |","[0.9794365922809228, 0.9723660656030668, 0.954299437125917, 0.9362989453985364, 0.9307917067583288]",0
+The lowest 6 values are,"[0.0353641396193574, 0.0355792960526332, 0.0399752446723049, 0.0573280662585624, 0.0591099063085338, 0.0592781792571762]",0
+,FALSE,0
+Yes.,FALSE,0
+,TRUE,0
+Yes.,TRUE,1
+96 unique organizations have patents listed.,3574,0
+The average number of claims is 20.25,14.7459746,0
+81,100,0
+There are 60 patents of 'utility' type.,8848,0
+,Massachusetts Institute of Technology,0
+"Based on the table, the most common type of patent is 'B2' with a total of 94 occurrences.",B2,0
+English,en,1
+"Based on the table, the most common graphext cluster among the patents is:
+
+'network, message, packet, service' 
+
+This cluster appears 34 times in the table.","member, portion, body, end",0
+"Here are the top 3 organizations with the most patents based on the table:
+
+1. **Huawei Technologies Co., Ltd.** (6 patents)
+2. **International Business Machines Corporation** (6 patents)
+3. **Brother Kogyo Kabushiki Kaisha** (5 patents)
+
+Note: The actual number of patents may be higher as there are multiple instances of the same organization in the table.","['International Business Machines Corporation', 'Samsung Electronics Co., Ltd.', 'Google Inc.']",0
+"Based on the table, the 4 most common types of patents are:
+
+1. utility (44 times)
+2. utility (44 times)
+3. utility (44 times)
+4. utility (44 times)","['utility', 'design', 'plant', 'reissue']",0
+"Based on the table, the top 5 most prevalent kinds of patents are:
+
+1. B2 (39 times)
+2. B1 (26 times)
+3. B2 (24 times)
+4. B2 (23 times)
+5. B2 (22 times)","['B2', 'S1', 'B1', 'P2', 'P3']",0
+"Based on the provided table, the two least common graphext clusters are:
+
+1. 'member, portion, body, end' (4 occurrences)
+2. 'light, optical, electrode, waveguide' (2 occurrences)","['habit, plant, foliage, flowers', 'soybean, plant, cultivar, soybean cultivar']",0
+"Based on the table, the top 4 numbers of claims in the patents are:
+
+1. 20 (appears 87 times)
+2. 14 (appears 22 times)
+3. 18 (appears 21 times)
+4. 12 (appears 19 times)","[20, 1, 18, 19]",0
+,"[9479771.0, 9325365.0, 9323284.0]",0
+,"[29, 30, 46, 51, 70]",0
+,"[9479476.0, 9479477.0, 9479478.0, 9479479.0, 9479480.0, 9479481.0]",0
+,TRUE,0
+,FALSE,0
+,FALSE,0
+,TRUE,0
+30308047,0.782633618,0
+0,1002,0
+The most retweeted tweet has 13898 retweets.,0.37321404,0
+The most mentioned user is 'KamalaHarris'. They have been mentioned 17 times.,0.03536414,0
+Joe Biden,Policy Officer,0
+Joe Biden,Governor,0
+,Mortgage Banker,0
+The author of the tweet with the most retweets is Joe Biden.,Program Manager,0
+"Based on the table, the top 3 authors with the most followers are:
+
+1. Joe Biden (followed by 30308047 people)
+2. Joe Biden (followed by 30308043 people)
+3. Joe Biden (followed by 30308042 people)","['Book Publisher', 'Bureau Chief', 'Publisher']",0
+"Based on the table, the top 4 authors with the most favourites are:
+
+1. Joe Biden (all 83 rows have the same favourite count of 20)
+2. No other author has a favourite count greater than 20","['.Net Architect', 'Android Developer', 'Principal Engineer', 'Game Engineer']",0
+,"['Director of Athletics', 'Recruiting Coordinator', 'Athletic Coordinator', 'Director of Personnel', 'Skills Trainer']",0
+"Based on the table, the top 2 authors of the tweets with the most retweets are:
+
+1. Joe Biden (retweets: 205,169)
+2. Joe Biden (retweets: 194,299)","['U.S. Senator', 'Congressman']",0
+"30308045, 
+30308044, 
+30308043","[0.7557249985959847, 0.7413189187628788, 0.7034528053640179]",0
+"| Number | Count |
+| --- | --- |
+| 20 | 66 |","[0.1652381569664056, 0.2005428064324122, 0.2215546116855247, 0.2506791678499942]",0
+"Based on the table, here are the 5 users mentioned the most:
+
+1. KamalaHarris (12 times)
+2. ossoff (2 times)
+3. ReverendWarnock (2 times)
+4. BarackObama (4 times)
+5. HillaryClinton (2 times)","[0.9794365922809228, 0.9723660656030668, 0.954299437125917, 0.9362989453985364, 0.9307917067583288]",0
+"The two highest numbers of retweets in the dataset are:
+
+1. 205169
+2. 120722","[0.0353641396193574, 0.0355792960526332]",0
+"Yes, the borrower with the highest loan amount ($12,421) has the longest loan duration (48 months).",FALSE,0
+Yes. The borrower with the maximum number of existing loans (4) also has the highest loan amount ($12421).,FALSE,0
+Yes. The borrower with the longest loan duration (60 months) also has the maximum number of existing loans (4).,FALSE,0
+"Yes
+
+ Age: 74 
+ Loan Amount: 12821",FALSE,0
+13921,18424,0
+29 borrowers have more than 1 existing loan.,367,0
+60,72,0
+There are 17 borrowers older than 50.,113,0
+"Based on the table, the most common purpose of loans is:
+
+1. Radio/TV (24 times)
+2. New Car (17 times)
+3. Business (15 times)
+4. Furniture/Equipment (13 times)
+5. Education (7 times)
+6. Used Car (7 times)
+7. Repairs (2 times)
+8. Domestic Appliance (2 times)
+9. Retraining (1 time)
+10. Other (1 time)",Radio/TV,1
+"{'Job': ['Skilled', 'Skilled', 'Unskilled - Resident', 'Skilled', 'Skilled', 'Unskilled - Resident', 'Skilled', 'Highly Skilled', 'Unskilled - Resident', 'Highly Skilled', 'Skilled', 'Skilled', 'Skilled', 'Unskilled - Resident', 'Skilled', 'Unskilled - Resident', 'Skilled', 'Skilled', 'Highly Skilled', 'Skilled', 'Skilled', 'Skilled', 'Unskilled - Resident', 'Skilled', 'Skilled', 'Unskilled - Resident', 'Unskilled - Resident', 'Skilled', 'Skilled', 'Skilled', 'Skilled', 'Skilled', 'Skilled', 'Unskilled - Resident', 'Highly Skilled', 'Unskilled - Resident', 'Skilled', 'Skilled', 'Skilled', 'Skilled', 'Highly Skilled', 'Skilled', 'Unskilled - Resident', 'Skilled', 'Unskilled - Resident', 'Highly Skilled', 'Skilled', 'Unemployed / Unskilled  - Non-Resident', 'Unsk",Skilled,1
+,Existing Credits Paid Back Duly Till Now,0
+"Based on the table, the most common savings account status for borrowers is ""Less than 100 DM"" with a frequency of 43.",Less than 100 DM,1
+"Here are the top 3 jobs of borrowers with the highest loan amount:
+
+| Job          | Count |
+|--------------|-------|
+| Highly Skilled| 14    |
+| Skilled      | 13    |
+| Unskilled - Resident| 10    |
+
+Note: This is based on the loan amount data provided, which ranges from 1169 to 14421. The top 3 jobs are determined by counting the occurrences of each job among the borrowers with the highest loan amounts.","['Highly Skilled', 'Skilled', 'Highly Skilled']",0
+"To answer this question, I will filter the data to include only the rows where the 'Loan Duration - Months' is the longest, and then count the frequency of each job type.
+
+Here is the result:
+
+| Job | Frequency |
+| --- | --- |
+| Unskilled - Resident | 7 |
+| Highly Skilled | 6 |
+| Skilled | 5 |
+| Unemployed / Unskilled  - Non-Resident | 2 |
+
+So, the top 4 jobs of borrowers with the longest loan duration are:
+
+1. Unskilled - Resident (7 borrowers)
+2. Highly Skilled (6 borrowers)
+3. Skilled (5 borrowers)
+4. Unemployed / Unskilled  - Non-Resident (2 borrowers)
+
+The loan duration of these borrowers is:
+
+ Loan Duration - Months = 60 months","['Skilled', 'Skilled', 'Skilled', 'Unskilled - Resident']",0
+"To find the 5 jobs of borrowers with the maximum number of existing loans, I will first find the maximum number of existing loans, then count the occurrences of each job among these borrowers.
+
+The maximum number of existing loans is 4.
+
+The 5 jobs of borrowers with 4 existing loans are:
+
+1. Skilled
+2. Highly Skilled
+3. Skilled
+4. Unskilled - Resident
+5. Highly Skilled","['Skilled', 'Skilled', 'Unskilled - Resident', 'Highly Skilled', 'Skilled']",0
+"The oldest 2 borrowers are 70 years old and 68 years old. Based on the data:
+
+* The 70-year-old borrower's job is: Unskilled - Resident
+* The 68-year-old borrower's job is: Unskilled - Resident","['Highly Skilled', 'Highly Skilled']",0
+"Here are the top 3 loan amounts in the dataset:
+
+1. Loan Amount: 14521
+2. Loan Amount: 12612
+3. Loan Amount: 12440","[18424, 15945, 15857]",0
+"The top 4 loan durations in the dataset are:
+
+1. 48
+2. 36
+3. 24
+4. 12","[72, 60, 60, 60]",0
+"Here are the 5 maximum numbers of existing loans among borrowers:
+
+1. 4
+2. 3
+3. 3
+4. 3
+5. 3","[4, 4, 4, 4, 4]",0
+"70, 74","[75, 75]",0
+"Yes, there are 2 foods with zero calories in the table: 0.01, 0.01",FALSE,0
+Yes,FALSE,0
+"Yes, there are several foods that contain no fat at all, or at least very minimal amounts. Here are a few examples:
+
+* Water
+* Black coffee
+* Black tea
+* Vegetable juice (without added oils or creamers)
+* Unflavored seltzer water
+* Some types of vegetables like lettuce, spinach, and cucumbers
+
+According to the table, the following entries have a Total Fat (g) of 0.0:
+
+* 14
+* 30
+* 32
+* 33
+* 34
+* 35",TRUE,1
+"Yes, there are several foods that do not contain protein or contain very little protein. Here are some examples:
+
+1. Fruits:
+	* Bananas (0.3g per 100g)
+	* Apples (0.3g per 100g)
+	* Oranges (0.4g per 100g)
+	* Grapes (0.5g per 100g)
+2. Vegetables:
+	* Leafy greens like lettuce (0.5g per 100g), spinach (0.9g per 100g)
+	* Cucumbers (0.6g per 100g)
+	* Tomatoes (0.9g per 100g)
+3. Grains:
+	* Rice (2.7g per 100g)
+	* Corn (2.9g per 100g)
+	* White bread (2.5g per 100g)
+4. Dairy-free products:
+	* Almond milk (0.3g per 100g)
+	* Coconut milk (0.5g per 100g)
+	* Fruit smoothies (0.2-0.5g per 100g)
+5. Sugary treats:
+	* Candy (0",TRUE,1
+2,0,0
+The average amount of total fat (in grams) across all foods is 0.0611.,0.08465,0
+"Based on the table, the sodium content of the following foods are more than 1 gram:
+
+1. 0.36
+2. 0.69
+3. 4.73
+4. 4.67
+5. 6.02
+6. 4.39
+7. 1.87
+8. 0.98
+9. 4.58
+10. 2.1
+11. 5.98
+12. 6.84
+13. 3.97
+14. 4.51
+15. 8.84
+16. 2.33
+17. 1.31
+18. 8.97
+19. 0.61
+20. 2.15
+21. 2.9
+22. 3.15",18,0
+The highest amount of protein (in grams) found in a food item from the given data is 0.258 g.,0.2748,0
+"According to the table, the food with the highest calorie content is:
+
+""champagne"" with 5.67kcal",bacon,0
+The food that contains the most sugar is 'champagne' with 0.4868 g of sugar,honey,0
+The food with the least amount of total fat is 'chocolate bar' with 0 g of total fat,honey,0
+"Based on the table, the food with the highest amount of protein is:
+
+**Chicken (0.2748 g)**",beef,0
+"Here are the top 5 foods with the most calories from the table:
+
+1. Beer (8.98 kcal)
+2. Hamburger (8.98 kcal)
+3. French fries (5.0 kcal)
+4. Custard flan (5.0 kcal)
+5. Champagne (5.0 kcal)
+
+Let me know if you'd like me to list more!","['bacon', 'peanuts', 'chocolate bar', 'popcorn', 'cookie']",0
+"Based on the table, the top 3 foods with the least amount of sugar are:
+
+1. Avocado (0.0066 g)
+2. Tomato (0.0066 g)
+3. Bacon (0.003 g)","['chestnut', 'pancakes', 'cheese']",0
+"Here are the 4 foods with the most total fat based on the table:
+
+1. Peanuts (0.4924 g)
+2. Hamburger (0.995 g)
+3. Beer (0.991g - rounded value, exact is 0.995 but higher than 0.99 - 0.995)
+4. Kiwifruit (0.05 + 0.0489 (0.05 rounded value, but I take all the values as if the 0.05 is the rounded value so I used the 0.0489 as if it was rounded to 0.05 so it would be 0.098 g + no)","['bacon', 'peanuts', 'cheese', 'popcorn']",0
+"Based on the table, the 6 foods with the least amount of protein are:
+
+1. Pineapple - 0.0054 g
+2. Tomato - 0.0067 g
+3. Banana - 0.0061 g
+4. Watermelon - 0.0061 g
+5. Cucumber - 0.002 g
+6. Sake - 0.0007 g","['candy', 'black tea', 'bacon', 'champagne', 'red wine', 'red apple']",0
+"Based on the table, the 5 highest calorie counts are:
+
+1. 8.98
+2. 5.67
+3. 5.0
+4. 4.97
+5. 4.16","[8.98, 5.67, 5.18, 5.0, 4.97]",0
+"The 3 lowest amounts of sugar found among the foods are:
+
+1. 0.0066
+2. 0.0062
+3. 0.003","[0.0, 0.0, 0.0]",0
+"1. 0.4924
+2. 0.995
+3. 0.3099
+4. 0.210","[0.995, 0.4924, 0.3099, 0.281]",0
+"| Protein (g) | Count |
+|-------------|-------|
+| 0.0007      | 5     |
+| 0.002       | 1     |
+| 0.003       | 2     |
+| 0.0030      | 1     |
+| 0.0065      | 1     |
+| 0.0067      | 1     |","[0.0, 0.0, 0.0007, 0.0007, 0.0007, 0.002]",0
+"Yes, there are several respondents who didn't complete primary education.",TRUE,1
+"No 
+
+* 6 respondents prefer not to say
+* 4 respondents are not interested at all 
+* 2 respondents are a little interested",FALSE,1
+"Yes, there are several respondents who indicated that they will not vote.",TRUE,1
+"Yes, 23 respondents placed themselves at the extreme right (10.0).",TRUE,1
+There are 21 respondents who placed themselves at 10 on the Progressive-Conservative economic values axis.,372,0
+78,37.42012059,0
+65 respondents think it should be more difficult for companies to lay off workers.,10344,0
+There are 2 respondents who prefer not to disclose their gender. The maximum age among them is 105.0 years.,105,1
+"| Vote Intention       | Count |
+|----------------------|-------|
+| PP                   | 17    |
+| Ciudadanos           | 7     |
+| PSOE                 | 5     |
+| Podemos              | 4     |
+| I am undeceided      | 4     |
+| I will not vote      | 2     |
+| I prefer not to say  | 2     |
+| IU                   | 2     |
+| VOX                  | 1     |
+| DemocraciaiLlibertat | 1     |
+| other                | 1     |
+| I will cast a blank ballot | 1|",[Ciudadanos],0
+"Based on the table, the most common reason for voting is ""The party ideas are close to my own"" with 13 occurrences.",The party ideas are close to my own,1
+"| PartyID | Count |
+| --- | --- |
+| Podemos | 14 |
+| PP | 13 |
+| Ciudadanos | 9 |
+| PSOE | 8 |
+| IU | 2 |
+| UPyD | 3 |
+| EajPNV | 2 |
+| Convergencia | 1 |
+| VOX | 3 |
+| Other | 1 |
+| I prefer not to say | 8 |
+
+Based on the table, the most common party identification among respondents is 'Podemos' with 14 respondents.",Ciudadanos,0
+Castellano (Spanish),Castellano,1
+"Here are the top 5 most common vote intentions among respondents based on the table:
+
+1. **PP**: 24 times (30.77%)
+2. **Ciudadanos**: 11 times (14.17%)
+3. **PSOE**: 9 times (11.54%)
+4. **Podemos**: 7 times (9.03%)
+5. **I am undeceided**: 6 times (7.69%)
+
+Note: The percentages are approximate and calculated based on the number of occurrences in the table.","['[Ciudadanos]', '[]', '[I am undeceided]', '[Podemos]', '[PP]']",0
+"| voteReason  | Count |
+|-------------|-------|
+| The party is the most competent | 17    |
+| The party ideas are close to my own | 14    |
+| I prefer not to say | 13    |
+| The party helps people like me | 8     |","['The party ideas are close to my own', 'The party is the most competent', 'I prefer not to say']",0
+"Based on the table, here are the top 4 most common party identifications among respondents:
+
+1. **PP (Partido Popular)**: 28 occurrences
+2. **Ciudadanos**: 19 occurrences
+3. **PSOE (Partido Socialista Obrero Español)**: 18 occurrences
+4. **Podemos**: 15 occurrences","['Ciudadanos', 'PP', 'I prefer not to say', 'Podemos']",0
+"Based on the table, the top 6 most common first languages are:
+
+1. Castellano (37 times)","['Castellano', 'Catal�?, 'Galego', 'Euskara']",0
+"Based on the table, here are the top 5 most common ages among respondents:
+
+1. 71 (14 times)
+2. 72 (14 times)
+3. 73 (14 times)
+4. 74 (14 times)
+5. 75 (14 times)","[38.0, 23.0, 39.0, 25.0, 35.0]",0
+"Based on the data, here are the top 3 most common positions on the Left-Right economic values axis:
+
+1. 5.0 (appears 29 times)
+2. 10.0 (appears 13 times)
+3. 0.0 (appears 7 times)","[5.0, 3.0, 6.0]",0
+"Based on the table, here are the top 4 most common positions on the Progressive-Conservative economic values axis:
+
+1. 5.0 (11 times)
+2. 7.0 (9 times)
+3. 6.0 (8 times)
+4. 8.0 (7 times)","[5.0, 3.0, 4.0, 0.0]",0
+"Based on the table, the top 6 most common positions are:
+
+1. 1.0 (12 times)
+2. 2.0 (11 times)
+3. 3.0 (9 times)
+4. 4.0 (7 times)
+5. nan (6 times)
+6. 5.0 (5 times)","[2.0, 3.0, 4.0, 1.0, 5.0]",0
+"Yes, there are survey participants who are not registered to vote.",TRUE,1
+,TRUE,0
+,TRUE,0
+,TRUE,0
+"Based on the table, out of 43 respondents:
+
+* 33 respondents are registered to vote.
+* 10 respondents are not registered to vote but plan to register.
+* 0 respondents are not registered to vote and do not plan to register.",1315,0
+18,799,0
+"| Level of Education | Count |
+| --- | --- |
+| Less than 9th grade | 2 |
+| 9th to 12th grade, no diploma | 8 |
+| High school graduate (includes equivalency) | 26 |
+| Some college, no degree | 21 |
+| Associate's degree | 7 |
+| Bachelor's degree | 9 |
+| Graduate degree, professional degree or PhD | 6 |
+
+There are 68 respondents with high school degree or less as their highest level of education.",0,0
+"Based on the table, here are the counts for each region:
+
+* South Atlantic: 21
+* East North Central: 17
+* West South Central: 15
+* Mountain: 10
+* Middle Atlantic: 12
+* Pacific: 7
+* East South Central: 7
+* New England: 6
+* West North Central: 6
+
+Since the South Atlantic region is adjacent to the South Atlantic Ocean, the count for this region is 21.",774,0
+"| Age Group | Frequency |
+|-----------|-----------|
+| 65+       | 34        |
+| 45-54     | 31        |
+| 55-64     | 29        |
+
+The most frequent age group is 65+.",65+,1
+"Based on the table, the preferred choice among the respondents for the upcoming election is:
+
+* Joe Biden (Democrat) (24 times)
+* Donald Trump (Republican) (32 times)
+* Undecided (8 times)
+* Jo Jorgensen (Libertarian) (2 times)
+
+Note: The number of times each candidate is mentioned does not necessarily reflect the proportion of respondents who prefer each candidate, but rather the number of individual respondents who chose each candidate.",Donald Trump (Republican),0
+"| Category | Count |
+| --- | --- |
+| High school graduate (includes equivalency) | 16 |
+| Some college, no degree | 14 |
+| Bachelor's degree | 9 |
+| Graduate degree, professional degree or PhD | 7 |
+| Associate's degree | 5 |","Some college, no degree",0
+The 'East North Central' division has the greatest representation among the respondents with 26 occurrences.,South Atlantic,0
+"Here is the top 5 states with the greatest number of respondents based on the data:
+
+| Rank | State | Number of Respondents |
+| --- | --- | --- |
+| 1 | CA | 14 |
+| 2 | NY | 11 |
+| 3 | TX | 10 |
+| 4 | FL | 8 |
+| 5 | GA | 6 |
+
+Note that this count includes only the rows where the state is listed, and does not include the column headers.","['CA', 'TX', 'NY', 'FL', 'GA']",0
+"Here are the top 4 most common professions among the respondents based on the provided table:
+
+1. **Office worker or other professional** (14 times)
+2. **Healthcare** (13 times)
+3. **Industrial (e.g. construction, manufacturing, maintenance and repair)** (10 times)
+4. **Education and training** (6 times)","['Other', 'Healthcare', 'Office worker or other professional', 'Industrial (e.g. construction, manufacturing, maintenance and repair)']",0
+,"['White (not Hispanic, Latino or Spanish origin)', 'Black or African American (not Hispanic, Latino or Spanish origin)', 'Hispanic, Latino or Spanish origin']",0
+"Here are the top 6 most represented age groups among the respondents:
+
+1. **65+**: 33 occurrences
+2. **55-64**: 26 occurrences
+3. **45-54**: 24 occurrences
+4. **35-44**: 20 occurrences
+5. **25-34**: 16 occurrences
+6. **18-24**: 7 occurrences","['65+', '55-64', '45-54', '35-44', '18-24', '25-34']",0
+"Here are the top 3 counties with the greatest number of respondents based on the table:
+
+| County FIPS | Count |
+| --- | --- |
+| 13121 | 9 |
+| 36029 | 8 |
+| 12011 | 8 |
+
+Let me know if you'd like me to help with anything else!","[6037, 13121, 48201]",0
+"1. 8.950394854314357
+2. 5.350700207498972
+3. 5.0245666626272
+4. 4.105226788014298","[0.8085780015111617, 0.7742084493732905, 0.3063435812288158, 0.629527660735561]",0
+"Based on the table, the top 5 urban/rural categories with the greatest number of respondents are:
+
+1. Urban: 2 (43 times)
+2. Urban: 6 (21 times)
+3. Urban: 5 (17 times)
+4. Rural: 3 (16 times)
+5. Urban: 4 (15 times)
+
+Let me know if you have any further questions.","[1, 2, 3, 4, 5]",0
+"Here are the top 6 most common likelihood values:
+
+1. 10.0 (appears 47 times)
+2. 11.0 (appears 26 times)
+3. 10.0 (appears 25 times)
+4. 10.0 (appears 24 times)
+5. 10.0 (appears 22 times)
+6. 10.0 (appears 20 times)","[10.0, 11.0, 0.0, 1.0, 9.0, 5.0]",0
+Yes.,FALSE,0
+,TRUE,0
+,TRUE,0
+"Yes 
+
+Count: 43",TRUE,1
+66,940,0
+There are 69 numbers representing the photos.,16.19912,0
+410000,549900,0
+"According to the table, 15 cars are from the year 2020.",4237,0
+,Supergarage,0
+"{'make': ['SEAT', 'CITROEN', 'FORD', 'VOLKSWAGEN', 'FORD', 'PEUGEOT', 'LAND-ROVER', 'HONDA', 'CITROEN', 'NISSAN', 'CITROEN', 'VOLKSWAGEN', 'VOLKSWAGEN', 'MERCEDES-BENZ', 'FIAT', 'SKODA', 'BMW', 'CITROEN', 'MAZDA', 'BMW', 'FIAT', 'FORD', 'CITROEN', 'VOLKSWAGEN', 'BMW', 'OPEL', 'AUDI', 'VOLVO', 'MITSUBISHI', 'FORD', 'FIAT', 'BMW', 'FORD', 'RENAULT', 'SEAT', 'KIA', 'BMW', 'PEUGEOT', 'PEUGEOT', 'KIA', 'OPEL', 'VOLKSWAGEN', 'RENAULT', 'PEUGEOT', 'PEUGEOT', 'VOLKSWAGEN', 'OPEL', 'SEAT', 'MERCEDES-BENZ',",VOLKSWAGEN,0
+"Based on the data in the table, the most common type of fuel for the cars is:
+
+**Diésel** (with 46 occurrences)",Diésel,1
+Madrid,Madrid,1
+"Here are the top 3 provinces with the most car listings based on the table:
+
+| Rank | Province | Number of Listings |
+| --- | --- | --- |
+| 1 | Madrid | 26 |
+| 2 | Barcelona | 16 |
+| 3 | Alicante | 11 |","['Madrid', 'Barcelona', 'Valencia']",0
+"Based on the table, here are the 4 most common car colors:
+
+1. Blanco (34 occurrences)
+2. Gris / Plata (30 occurrences)
+3. Azul (14 occurrences)
+4. Negro (13 occurrences)","['Blanco', 'Gris / Plata', 'Negro', 'Azul']",1
+"Here are the 5 most prevalent car makes based on the provided table:
+
+1. **VOLKSWAGEN** (14 appearances)
+2. **CITROEN** (13 appearances)
+3. **BMW** (12 appearances)
+4. **FORD** (12 appearances)
+5. **PEUGEOT** (8 appearances)","['VOLKSWAGEN', 'BMW', 'MERCEDES-BENZ', 'AUDI', 'PEUGEOT']",0
+"Based on the table, the 2 least common fuels used in the cars are:
+
+1. Eléctrico (Electric) - used 2 times
+2. Gas natural (CNG) - used 2 times","['Gas natural (CNG)', 'Gas licuado (GLP)']",0
+"Based on the data, here are the top 4 most common years:
+
+| Year | Frequency |
+| --- | --- |
+| 2016 | 13 |
+| 2017 | 13 |
+| 2014 | 11 |
+| 2018 | 10 |","[2016.0, 2017.0, 2019.0, 2020.0]",0
+"Here are the 3 highest mileages present in the table:
+
+1. 360000
+2. 325000
+3. 323000","[5000000, 4000006, 3500000]",0
+"Based on the table, the 5 cars with the most photos associated are:
+
+1. 6 - 6
+2. 4 - 5
+3. 9 - 9
+4. 0 - 8
+5. 10 - 8","[54, 54, 54, 54, 54]",0
+"Based on the table, here are the 6 cars with the most power:
+
+1. 306.0
+2. 370.0
+3. 390.0
+4. 510.0
+5. 313.0
+6. 298.0","[800.0, 800.0, 796.0, 772.0, 720.0, 720.0]",0
+"Yes, all transactions are unique.",TRUE,1
+"No, all transactions took place during either morning or afternoon, there are no night transactions.",TRUE,0
+"Yes, all items have transactions recorded on weekdays.",TRUE,1
+No,TRUE,0
+24,95,0
+,159,0
+96,9684,0
+66,2478,0
+"There are 93 transactions in the morning period and 95 transactions in the afternoon period. Therefore, the afternoon period has the highest number of transactions.",morning,0
+"| Item | Count |
+| --- | --- |
+| Bread | 25 |
+| Coffee | 24 |
+| Pastry | 21 |
+| Medialuna | 13 |
+| Muffin | 13 |
+| Jam | 9 |
+| Scandinavian | 8 |
+| Hot chocolate | 4 |
+| Tea | 4 |
+| Fudge | 3 |
+| Cookies | 2 |
+| Juice | 2 |
+| Mineral water | 2 |
+| Victorian Sponge | 2 |
+| Cake | 1 |
+| Coke | 1 |
+| Farm House | 2 |
+| Hearty & Seasonal | 4 |
+| Pick and Mix Bowls | 1 |
+| Smoothies | 1 |
+| Soup | 1 |
+| Tartine | 4 |
+| Chicken sand | 1 |
+| Ella's Kitchen Pouches | 1 |
+| Frittata | 4 |
+| Mighty Protein | 1 |",Coffee,0
+"Here are the top 5 least popular items bought during weekdays:
+
+1. Frittata (5 purchases)
+2. Juice (6 purchases)
+3. Mineral water (6 purchases)
+4. Smoothies (6 purchases)
+5. Pick and Mix Bowls (7 purchases)",Adjustment,0
+morning,morning,1
+"Based on the table, here are the top 3 items most frequently bought in the morning:
+
+1. **Coffee** (45 times)
+2. **Bread** (36 times)
+3. **Scandinavian** (11 times)","['Coffee', 'Bread', 'Pastry']",0
+"Based on the table, the bottom 4 items least purchased during the afternoon are:
+
+1. ""Basket"" - 1 purchase
+2. ""Coke"" - 1 purchase
+3. ""Frittata"" - 2 purchases
+4. ""Soup"" - 2 purchases","['Chicken sand', 'Gift voucher', 'Bare Popcorn', 'Raw bars']",0
+"Here are the top 5 items sold on weekends based on the table:
+
+1. **Pastry** (14)
+2. **Coffee** (13)
+3. **Bread** (13)
+4. **Medialuna** (7)
+5. **Muffin** (6)","['Coffee', 'Bread', 'Tea', 'Cake', 'Pastry']",0
+There is no evening period in the data. The 'period_day' column only has 'morning' and 'afternoon' periods.,"['Art Tray', 'Mighty Protein', 'Mortimer', 'Vegan Mincepie']",0
+"Transaction 12, 15, 7, 5 with 12 items.","[6474, 6716, 6279, 6412]",0
+"Here are the bottom 5 transaction numbers by frequency:
+
+1. 93 - 1 time
+2. 94 - 1 time
+3. 96 - 2 times
+4. 95 - 3 times
+5. 92 - 1 time","[9680, 9681, 9682, 9683, 9684]",0
+"Here are the top 6 transaction numbers during which ""Bread"" was purchased:
+
+1. 4
+2. 9
+3. 13
+4. 18
+5. 29
+6. 34","[6412, 6279, 6474, 6603, 6716, 6642]",0
+"55, 54","[9683, 9684]",0
+"Yes
+
+Number of reviews from Australia: 24
+Number of reviews with rating > 3: 24",FALSE,0
+Yes,FALSE,0
+"Yes, there are 2 reviews with a rating of 1.",TRUE,1
+"Yes 
+
+Location 'Austria' has only 1 review with a rating of 4",FALSE,0
+There are 43 unique reviewer locations.,162,0
+,4.204158004,0
+670772142,670801367,0
+62,786,0
+"The most common reviewer location is Australia, with 38 occurrences.",United States,0
+,Disneyland_Paris,0
+"| Year_Month | Rating |
+| --- | --- |
+| 2019-1 | 1 |
+| 2019-1 | 1 |
+| 2019-2 | 1 |
+| 2019-2 | 1 |
+| 2019-2 | 1 |
+| 2019-3 | 1 |
+| 2018-6 | 1 |
+| 2018-3 | 1 |
+| 2018-3 | 1 |
+| 2018-4 | 1 |
+| 2018-4 | 1 |
+| 2018-4 | 1 |
+| 2018-5 | 1 |
+| 2018-5 | 1 |
+| 2018-5 | 1 |
+| 2018-5 | 1 |
+| 2018-8 | 1 |
+| 2018-9 | 1 |
+| ",missing,0
+"| Location        | Average Rating |
+|-----------------|----------------|
+| Hong Kong       | 4.25          |
+| United Kingdom  | 4.17          |
+| Singapore       | 4.14          |
+| Australia       | 4.06          |
+| United States   | 4.04          |
+| Canada          | 4.03          |
+| India           | 4.01          |
+| Philippines     | 4.01          |
+| United Arab Emirates | 4.0          |
+| Malaysia        | 3.97          |",Armenia,0
+"Here are the top 3 reviewer locations with the most reviews based on the provided table:
+
+| Rank | Reviewer Location | Number of Reviews |
+| --- | --- | --- |
+| 1 | Australia | 34 |
+| 2 | United Kingdom | 23 |
+| 3 | United States | 20 |","['United States', 'United Kingdom', 'Australia']",0
+,"['Disneyland_Paris', 'Disneyland_HongKong']",0
+"Based on the table, the top 4 year-months with the most reviews are:
+
+| Year_Month | Count |
+| --- | --- |
+| 2019-4 | 53 |
+| 2019-3 | 30 |
+| 2019-2 | 23 |
+| 2019-1 | 13 |","['missing', '2015-8', '2015-7', '2015-12']",0
+"Here are the bottom 3 reviewer locations in terms of average rating:
+
+1. **Australia** (4.38/5)
+2. **United Kingdom** (4.41/5)
+3. **Philippines** (4.43/5)
+
+These are based on the average ratings of each location.","['Turks and Caicos Islands', 'South Sudan', 'Suriname']",0
+"Here are the top 5 review IDs in terms of rating:
+
+| Review_ID | Rating |
+| --- | --- |
+| 669996858 | 5 |
+| 669782 | 5 |
+| 665809 | 5 |
+| 667509 | 5 |
+| 666034 | 5 |","[670585330, 670570869, 670443403, 670435886, 670324965]",0
+"The bottom 4 review IDs in terms of rating are:
+
+1. 659093045
+2. 661807684
+3. 661743950
+4. 657601010","[662641193, 658624005, 649615606, 647822351]",0
+"Here are the top 6 ratings given by reviewers from Australia:
+
+1. 5 - 14 times
+2. 4 - 13 times
+3. 5 - 12 times
+4. 5 - 10 times
+5. 4 - 9 times
+6. 5 - 9 times","[5, 5, 5, 5, 5, 5]",0
+,"[1, 1, 1]",0
+Yes,FALSE,0
+Yes. The minimum retweet count is 6892.,TRUE,1
+"Yes
+
+* 61272
+* 39179
+* 39491
+* 36407
+* 37817",TRUE,1
+"Yes
+
+130630 
+142481 
+216569",TRUE,1
+1,1,0
+The average number of retweets is 21143.,8774.520447,0
+The maximum number of favorites received for a single tweet is 216569.,589793,0
+,2891,0
+Donald J. Trump,Donald J. Trump,1
+,Such a beautiful and important evening! The forgotten man and woman will never be forgotten again. We will all come together as never before,0
+English,und,0
+English,en,1
+"Based on the table, the top 3 author handlers with the most tweets are:
+
+1. 52 (realDonaldTrump) 
+2. 51 (realDonaldTrump) 
+3. 51 (realDonaldTrump)",['realDonaldTrump'],11
+There are no 'und' (unknown/undetermined) languages in the table.,"['pt', 'fi']",0
+"Based on the table, the top 4 mentioned names in the tweets are:
+
+1. Martha McSally
+2. Donald Trump (realDonaldTrump)
+3. Tim Cook (tim_cook)
+4. Sean Hannity (seanhannity, SeanHannity)","['realDonaldTrump', 'FoxNews', 'CNN', 'foxandfriends']",0
+"There are 40 author names in the data. The bottom 3 author names in terms of tweet count are:
+
+1. Donald J. Trump (40 times)
+2. Donald J. Trump (39 times)
+3. Donald J. Trump (38 times)",['Donald J. Trump'],1
+,"[881503147168071680, 795954831718498305, 929511061954297857, 796315640307060738, 948355557022420992]",0
+,"[591222909626114050, 591412084895838208, 586751374286721024, 575589231160127489]",0
+"Based on the provided table, here are the top 6 favorite counts:
+
+| Rank | Favorite Count |
+| --- | --- |
+| 1 | 194067 |
+| 2 | 163953 |
+| 3 | 142481 |
+| 4 | 142261 |
+| 5 | 142261 |
+| 6 | 142481 (there was an error, so I replaced with the next higher number) |  142261","[589793, 589750, 557779, 539249, 476457, 376626]",0
+"The bottom 3 retweet counts are:
+
+1. 6 (row 74) - 7754
+2. 75 (row 75) - 7786 is not available, but the 76th row is 7754 and 75 is not provided in the data 
+3. No 3rd value","[1, 1, 2]",0
+No,FALSE,1
+Yes,TRUE,1
+,TRUE,0
+"Yes, there are. 
+
+Entities with weight > 500:
+- 510.0",TRUE,1
+"There are 2 unique communities:
+
+1. 2062260
+2. 16744206",9,0
+The average page rank norm is 0.1435.,0.088480333,0
+510,770.5,0
+"Based on the table, the count of entities with a community identifier of 16744206 is 36.",651,0
+The most common name in the table is 'Nate' which appears twice as 'Nate Silver' and 'Nate Cohn'.,Christophe Viau,0
+,Mike Bostock,0
+,https://storage.googleapis.com/pics.contexto.io/photos/paperclips/000/016/457/thumb/Saw-whet_Owl_10_normal.jpg?1517502050,0
+,The Gibson Project,0
+,"['Lynn Cherny', 'Alberto Cairo', 'Sinan Aral']",0
+,"['LIFE', 'New Options Project']",0
+,"['Detective.io', 'The Thrust', 'Open Budgets', 'NewsFuturist']",0
+,"['digital PR cat', 'Ismail Onur Filiz', 'Dave Golland']",0
+"{'id': [510, 349, 341, 416, 469], 'weight': [510.0, 270.0, 338.5, 416.0, 469.0]}","[568, 423, 6392, 4548, 579]",0
+,"[177, 240, 294, 369]",0
+"Based on the provided table, the top 6 page rank norms","[1.0, 0.6029751067034804, 0.5666707687637932, 0.5202348027491394, 0.5110606617858531, 0.5081183103684572]",0
+"| weight | 
+| --- |
+| 1.0  |
+| 3.0  |
+| 3.0  |","[1.0, 1.0, 1.0]",0
+"Yes 
+
+1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 1",TRUE,1
+"Yes, there is at least 1 venomous animal in the dataset.",TRUE,1
+Yes.,FALSE,0
+Yes. There is a 1 in the list which indicates that there is a domesticated animal.,TRUE,1
+There are 27 unique types of animals in the table.,7,0
+Average number of legs: 3.3,2.841584158,0
+4,8,0
+3,27,0
+"Based on the table, the most common class type is:
+
+Class Type 1 (13 times)",1,1
+"Based on the table, the animals with 8 legs are:
+
+* Octopus
+* Crab
+* Scorpion
+* Lobster
+* Spiny lobster
+* Starfish
+* Seahorse",octopus,1
+"According to the table, the animal with the most legs (8 legs) is classified as follows:
+
+1. Class type of animal with 8 legs: 
+   - 1. Class type of animal with 8 legs: 3 (3 times)
+   - 2. Class type of animal with 8 legs: 7 (2 times)
+   - 3. Class type of animal with 8 legs: 6 (1 times)
+
+Therefore, there are 3, 7, 6 class type of animal with 8 legs",7,0
+"Here is the table with the names of venomous animals:
+
+| animal_name | venomous |
+| --- | --- |
+| giraffe | 1 |
+| flea | 0 |
+| pitviper | 0 |
+| scorpion | 1 |
+| seawasp | 1 |
+| wasp | 0 |
+| wolf spider | 0 (not present in original list, but I assume you meant to ask about the wasp or another spider)
+| snake (specifically pitviper) | 0 |
+| starfish | 0 |
+| stingray | 1 |
+| tortoise (some species) | 0 (not present in original list, but some tortoises are venomous) |
+| tuatara | 1 |
+| vampire | 0 |
+| vulture | 0 |
+| wasp | 0 |
+| worm | 0 |
+
+The animals that are venomous are:
+
+1. Giraffe
+2. Scorpion
+3. Seawasp
+4. Stingray
+5. Tuatara",frog,0
+"| animal_name      | legs |
+|------------------|------|
+| Elephant         | 4    |
+| Deer              | 4    |
+| Scorpion          | 8    |","['octopus', 'scorpion', 'crayfish']",0
+"The bottom 2 animal names in terms of the number of legs are:
+
+* Slug (0 legs)
+* Seahorse (0 legs)","['bass', 'carp']",0
+"Based on the table, the top 4 class types with the most animals are:
+
+| Class Type | Count |
+| --- | --- |
+| 1 | 22 |
+| 4 | 11 |
+| 2 | 10 |
+| 6 | 5 |","[1, 2, 4, 7]",0
+"Based on the table, here are the least common 3 class types with the least animals:
+
+| Class Type | Frequency |
+| --- | --- |
+| 6 | 6 |
+| 5 | 6 |
+| 3 | 8 |
+
+These class types have the least number of animals.","[5, 3, 6]",1
+"Here are the top 5 class types with the most combined total legs:
+
+| Class Type | Legs |
+| --- | --- |
+| 1 | 68 |
+| 4 | 53 |
+| 2 | 35 |
+| 5 | 16 |
+| 7 | 14 |","[1, 6, 2, 7, 5]",0
+"Here are the bottom 4 class types with the least combined total legs:
+
+1. Class type 6 (legs: 48)
+2. Class type 5 (legs: 20)
+3. Class type 3 (legs: 20)
+4. Class type 7 (legs: 44)","[4, 3, 5, 7]",0
+"Based on the table, the most common 6 numbers of legs that animals have are:
+
+* 4
+* 6
+* 2","[4, 2, 0, 6, 8, 5]",0
+"2, 6, 8","[5, 8, 6]",0
+"Yes 
+
+| Quantity |  > 0 |
+|----------|------|
+| All      |  Yes |",FALSE,0
+Yes,FALSE,0
+"Yes 
+
+ID 14688.0 appears 14 times but CustomerID 14688 is missing from the data 10 times.",TRUE,1
+"Yes 
+
+Yes 
+
+Yes 
+
+Yes 
+
+Yes 
+
+Yes 
+
+Yes 
+
+Yes 
+
+Yes 
+
+Yes 
+
+Yes 
+
+Yes 
+
+Yes 
+
+Yes 
+
+Yes 
+
+Yes 
+
+Yes 
+
+Yes 
+
+Yes 
+
+Yes 
+
+Yes 
+
+Yes 
+
+Yes 
+
+Yes 
+
+Yes 
+
+Yes 
+
+Yes 
+
+Yes 
+
+Yes 
+
+Yes 
+
+Yes 
+
+Yes 
+
+Yes 
+
+Yes 
+
+Yes 
+
+Yes 
+
+Yes 
+
+Yes 
+
+Yes 
+
+Yes 
+
+Yes 
+
+Yes 
+
+Yes 
+
+Yes 
+
+Yes 
+
+Yes 
+
+Yes 
+
+Yes 
+
+Yes 
+
+Yes 
+
+Yes 
+
+Yes 
+
+Yes 
+
+Yes 
+
+Yes 
+
+Yes 
+
+Yes 
+
+Yes 
+
+Yes 
+
+Yes 
+
+Yes 
+
+Yes 
+
+Yes 
+
+Yes 
+
+Yes 
+
+Yes 
+
+Yes 
+
+Yes 
+
+Yes 
+
+Yes 
+
+Yes 
+
+Yes 
+
+Yes 
+
+Yes 
+
+Yes 
+
+Yes 
+
+Yes 
+
+Yes 
+
+Yes 
+
+Yes 
+
+Yes 
+
+Yes 
+
+Yes 
+
+Yes 
+
+Yes 
+
+Yes 
+
+Yes 
+
+Yes 
+
+Yes 
+
+Yes 
+
+Yes 
+
+Yes 
+
+Yes 
+
+Yes 
+
+Yes 
+
+Yes 
+
+Yes 
+
+Yes 
+
+Yes 
+
+Yes 
+
+Yes 
+
+Yes 
+
+Yes 
+
+Yes 
+
+Yes 
+
+Yes 
+
+Yes 
+
+Yes 
+
+Yes 
+
+Yes 
+
+Yes 
+
+Yes 
+
+Yes 
+
+Yes 
+
+Yes 
+
+Yes 
+
+Yes 
+
+Yes 
+
+Yes 
+
+Yes 
+
+Yes 
+
+Yes 
+
+Yes 
+
+Yes 
+
+Yes 
+
+Yes 
+
+Yes 
+
+Yes 
+
+",TRUE,1
+There are 84 unique stock codes.,4070,0
+The average unit price is: 3.32,4.611113626,0
+192,80995,0
+29,495478,0
+"{'Country': ['United Kingdom', 'United Kingdom', 'United Kingdom', 'United Kingdom', 'United Kingdom', 'United Kingdom', 'United Kingdom', 'United Kingdom', 'United Kingdom', 'United Kingdom', 'United Kingdom', 'United Kingdom', 'United Kingdom', 'United Kingdom', 'United Kingdom', 'United Kingdom', 'United Kingdom', 'United Kingdom', 'United Kingdom', 'United Kingdom', 'United Kingdom', 'United Kingdom', 'United Kingdom', 'United Kingdom', 'United Kingdom', 'United Kingdom', 'France', 'France', 'France', 'France', 'France', 'France', 'France', 'France', 'France', 'France', 'France', 'France', 'France', 'France', 'France', 'France', 'France', 'France', 'France', 'France', 'United Kingdom', 'United Kingdom', 'United Kingdom', 'United Kingdom', 'United Kingdom', 'United Kingdom', 'United Kingdom', 'United Kingdom', 'United Kingdom', 'United Kingdom', 'United Kingdom', 'United Kingdom', 'United Kingdom', 'United Kingdom', 'United Kingdom', 'United Kingdom', 'United Kingdom', 'United Kingdom', 'United Kingdom', 'United Kingdom', 'United Kingdom', 'United Kingdom', '",United Kingdom,1
+,Manual,0
+,"PAPER CRAFT , LITTLE BIRDIE",0
+Australia,United Kingdom,0
+,"['PAPER CRAFT , LITTLE BIRDIE', 'MEDIUM CERAMIC TOP STORAGE JAR', 'ASSTD DESIGN 3D PAPER STICKERS']",0
+,"['PAPER CRAFT , LITTLE BIRDIE', 'MEDIUM CERAMIC TOP STORAGE JAR']",0
+"Here is the answer directly from the table:
+
+The 4 countries with the most transactions are:
+
+1. United Kingdom (33 transactions)
+2. France (16 transactions)
+3. Australia (2 transactions)","['United Kingdom', 'Germany', 'France', 'EIRE']",0
+"Based on the provided table, the answer is:
+
+1. Australia (2 transactions)
+2. France (2 transactions)
+3. None, as there is only one country with less than 3 transactions.","['Saudi Arabia', 'Bahrain', 'Czech Republic']",0
+"| InvoiceNo | Quantity |
+| --- | --- |
+| 536378.0 | 120 |
+| 536381.0 | 192 |
+| 536381.0 | 192 |
+| 536381.0 | 192 |
+| 536381.0 | 192 |","['581483', '541431', '578841', '542504', '573008']",0
+"Here are the stock codes of the bottom 4 transactions with the lowest quantities ordered:
+
+InvoiceNo | StockCode
+-----------|---------
+nan        | 450
+536382.0   | 240
+536384.0   | 216
+536382.0   | 219","[23843, 21366, 23005, 23005, 84347]",0
+"Here are the six most commonly ordered quantities:
+
+1. 6 (42 times)
+2. 24 (34 times)
+3. 6 (34 times)
+4. 12 (17 times)
+5. 8 (16 times)
+6. 4 (14 times)","[1, 2, 12, 6, 4, 3]",0
+"Based on the table, the three least commonly ordered quantities are:
+
+1. 1 (ordered 7 times)
+2. 2 (ordered 13 times)
+3. 3 (ordered 18 times)","[-312, -79, 404]",0

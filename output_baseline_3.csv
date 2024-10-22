@@ -1,0 +1,632 @@
+output,ground_truth,label
+,TRUE,0
+,TRUE,0
+,TRUE,0
+,TRUE,0
+,3765,0
+,61,0
+2,1243,0
+,0,0
+,ING España,0
+,es,0
+,juan prin,0
+"Based on the table, the type of post that is most common is ""reply"".",reply,1
+,"['Lavincompae', '#NI UNA MENOS \xa0♐\xa0✊\xa0🚺', 'SFC The World']",0
+,"['es', 'es', 'es', 'es', 'es']",0
+,"['Correctorada', 'El Joker', 'Xenia Viladas', 'DrJaus \xa0🇪🇸']",0
+"Based on the table, the 6 most common types of posts are:
+
+1. 'reply' (39 times)
+2. 'original' (25 times)
+3. 'reply' (23 times)
+4. 'reply' (22 times)
+5. 'original' (21 times)
+6. 'reply' (19 times)","['reply', 'original']",1
+,"[0, 0, 0, 0, 3]",0
+,"[61, 60, 59]",0
+,"[0, 0, 1, 0]",0
+,"[1, 1, 1, 1, 1, 1]",0
+,TRUE,0
+"Yes 
+
+| Total | Count |
+| --- | --- |
+| 780 | 2 |
+| 770 | 2 |
+| 700 | 3 |
+| 680 | 2 |
+| 670 | 2 |
+| 780 | 1 |",TRUE,1
+,FALSE,0
+"Yes, according to the table, the answer is:
+
+Yes (3 times)",TRUE,1
+"There are 18 unique Pokémon types in the 'type1' column:
+
+1. Bug
+2. Dark
+3. Dragon
+4. Electric
+5. Fairy
+6. Fire
+7. Fighting
+8. Flying
+9. Ghost
+10. Grass
+11. Ground
+12. Ice
+13. Normal
+14. Poison
+15. Psychic
+16. Rock
+17. Steel
+18. Water",20,0
+780,1125,0
+There are 135 Pokémon in the third generation (Generation III).,160,0
+"The average attack stat for all Pokémon in the table is:
+
+52.67",80.94,0
+,Poison,0
+,Shuckle,0
+,Flying,0
+,Mega Mewtwo Y (Psychic),0
+,"['Eternamax Eternatus', 'Mega Mewtwo X', 'Mega Mewtwo Y']",0
+,"['Shedinja', 'Diglett', 'Alolan Diglett', 'Magikarp', 'Pichu']",0
+"Based on the table, the top 4 primary categories with the most Pokémon are:
+
+1. **Normal** (35 Pokémon)
+2. **Water** (32 Pokémon)
+3. **Grass** (30 Pokémon)
+4. **Bug** (29 Pokémon)","['Water', 'Normal', 'Grass', 'Bug']",1
+,"['Mega Heracross', 'Mega Tyranitar', 'Mega Scizor', 'Tyranitar', 'Scizor', 'Ursaring']",0
+"Here are the top 5 special defense stats in the dataset:
+
+1. 230
+2. 220 (not found, replaced with 154, which is the actual top 2 value)
+2. 154
+3. 150
+4. 130
+5. 125","[250, 230, 200, 160, 160]",0
+,"[20, 31, 50]",0
+,"[135, 127, 125, 125]",0
+,"[175, 180, 180, 185, 190, 194]",0
+,TRUE,0
+,FALSE,0
+,FALSE,0
+,TRUE,0
+,0.782633618,0
+,1002,0
+,0.37321404,0
+,0.03536414,0
+,Policy Officer,0
+,Governor,0
+,Mortgage Banker,0
+,Program Manager,0
+,"['Book Publisher', 'Bureau Chief', 'Publisher']",0
+,"['.Net Architect', 'Android Developer', 'Principal Engineer', 'Game Engineer']",0
+,"['Director of Athletics', 'Recruiting Coordinator', 'Athletic Coordinator', 'Director of Personnel', 'Skills Trainer']",0
+,"['U.S. Senator', 'Congressman']",0
+,"[0.7557249985959847, 0.7413189187628788, 0.7034528053640179]",0
+,"[0.1652381569664056, 0.2005428064324122, 0.2215546116855247, 0.2506791678499942]",0
+,"[0.9794365922809228, 0.9723660656030668, 0.954299437125917, 0.9362989453985364, 0.9307917067583288]",0
+,"[0.0353641396193574, 0.0355792960526332, 0.0399752446723049, 0.0573280662585624, 0.0591099063085338, 0.0592781792571762]",0
+,FALSE,0
+,FALSE,0
+,TRUE,0
+Yes.,TRUE,0
+,3574,0
+"The average number of claims per patent is:
+
+28.32",14.7459746,0
+81,100,0
+There are 60 patents of 'utility' type.,8848,0
+,Massachusetts Institute of Technology,0
+,B2,0
+English,en,1
+,"member, portion, body, end",0
+,"['International Business Machines Corporation', 'Samsung Electronics Co., Ltd.', 'Google Inc.']",0
+There is no data to list. The table provided contains a single key-value pair with a list of 'utility' types.,"['utility', 'design', 'plant', 'reissue']",0
+,"['B2', 'S1', 'B1', 'P2', 'P3']",0
+,"['habit, plant, foliage, flowers', 'soybean, plant, cultivar, soybean cultivar']",0
+"The top 4 numbers of claims in the patents are:
+
+1. 20
+2. 14
+3. 18
+4. 16","[20, 1, 18, 19]",0
+,"[9479771.0, 9325365.0, 9323284.0]",0
+,"[29, 30, 46, 51, 70]",0
+,"[9479476.0, 9479477.0, 9479478.0, 9479479.0, 9479480.0, 9479481.0]",0
+,TRUE,0
+,FALSE,0
+,FALSE,0
+,TRUE,0
+,0.782633618,0
+0,1002,0
+13487,0.37321404,0
+,0.03536414,0
+,Policy Officer,0
+,Governor,0
+,Mortgage Banker,0
+,Program Manager,0
+,"['Book Publisher', 'Bureau Chief', 'Publisher']",0
+,"['.Net Architect', 'Android Developer', 'Principal Engineer', 'Game Engineer']",0
+,"['Director of Athletics', 'Recruiting Coordinator', 'Athletic Coordinator', 'Director of Personnel', 'Skills Trainer']",0
+,"['U.S. Senator', 'Congressman']",0
+,"[0.7557249985959847, 0.7413189187628788, 0.7034528053640179]",0
+"| favourites | count |
+| --- | --- |
+| 20 | 100 |","[0.1652381569664056, 0.2005428064324122, 0.2215546116855247, 0.2506791678499942]",0
+,"[0.9794365922809228, 0.9723660656030668, 0.954299437125917, 0.9362989453985364, 0.9307917067583288]",0
+"The two highest numbers of retweets a tweet in the dataset has are:
+
+1. 13504
+2. 101314","[0.0353641396193574, 0.0355792960526332]",0
+,FALSE,0
+,FALSE,0
+,FALSE,0
+,FALSE,0
+The highest loan amount in the dataset is 15687.,18424,0
+27 borrowers have more than 1 existing loan.,367,0
+60,72,0
+38 borrowers are older than 50.,113,0
+,Radio/TV,0
+,Skilled,0
+,Existing Credits Paid Back Duly Till Now,0
+,Less than 100 DM,0
+,"['Highly Skilled', 'Skilled', 'Highly Skilled']",0
+,"['Skilled', 'Skilled', 'Skilled', 'Unskilled - Resident']",0
+,"['Skilled', 'Skilled', 'Unskilled - Resident', 'Highly Skilled', 'Skilled']",0
+,"['Highly Skilled', 'Highly Skilled']",0
+"The top 3 loan amounts in the dataset are:
+
+1. 13938
+2","[18424, 15945, 15857]",0
+"Here are the top 4 loan durations in the dataset:
+
+| Loan Duration - Months | Count |
+| --- | --- |
+| 12 | 24 |
+| 24 | 23 |
+| 36 | 20 |
+| 48 | 15 |","[72, 60, 60, 60]",0
+"The 5 maximum numbers of existing loans among borrowers are: 
+
+4, 4, 4, 4, 4","[4, 4, 4, 4, 4]",1
+"The top 2 oldest borrowers are:
+
+1. 75
+2. 74","[75, 75]",0
+"Yes, there are foods with zero calories in the given table:
+
+* 0.01 
+* 0.01",FALSE,0
+Yes.,FALSE,0
+"Yes, according to the table, the following values are zero:
+
+0.0 (appears 7 times)",TRUE,1
+"Yes, there are many foods that do not contain protein or contain very small amounts. Here are a few examples:
+
+| Food | Protein (g) |
+| --- | --- |
+| Sugar | 0 |
+| Honey | 0 |
+| Corn Syrup | 0 |
+| Maple Syrup | 0 |
+| Olive Oil | 0 |
+| Vinegar | 0 |
+| Salt | 0 |
+| Pepper | 0 |
+| Baking Soda | 0 |
+| Vanilla Extract | 0 |
+| Coffee | 0 |
+| Tea | 0 |
+
+Note: The values are approximate and based on the table you provided.",TRUE,1
+"2 foods have more than 500 kcal.
+
+1. 5.67
+2. 8.98",0,0
+The average amount of total fat is: 0.0839,0.08465,0
+"Based on the table, 8 foods have a sodium content of more than 1 gram:
+
+1. 0.36
+2. 0.69
+3. 0.98
+4. 2.1
+5. 2.15
+6. 2.33
+7. 3.97
+8. 4.58
+9. 4.67
+10. 4.73
+11. 5.98
+12. 6.02
+13. 6.84
+14. 8.84
+15. 8.97",18,0
+0.258,0.2748,0
+"The food with the highest calorie content is 'champagne' with 8.98kcal, however that is most likely incorrect, and the food is actually 'champagne' is 0.01 kcal and the actual food is 'grapes' is 5.67kcal",bacon,0
+"Based on the table, the food with the most sugar is:
+
+* Ice cream (Total Sugar: 0.2116 g)",honey,0
+"Cake, with 0g total fat.",honey,0
+"According to the table, the food with the highest amount of protein is:
+
+**Honey (0.258 g)** and **Custard Flan (0.258 g)**",beef,0
+"Based on the table, the top 5 foods with the most calories are:
+
+1. **Hamburger** (8.98 kcal)
+2. **Pizza** (5.67 kcal)
+3. **Bacon** (5.0 kcal)
+4. **Beer** (4.97 kcal)
+5. **French fries** (4.16 kcal)","['bacon', 'peanuts', 'chocolate bar', 'popcorn', 'cookie']",0
+"Based on the table, the top 3 foods with the least amount of sugar are:
+
+1. **Avocado** (0.0066 g)
+2. **Cheese** (0.003 g)
+3. **Bacon** (0.003 g)
+
+These foods have the lowest sugar content among all the foods listed in the table.","['chestnut', 'pancakes', 'cheese']",0
+"1. cheese
+2. peanuts
+3. bread
+4. croissant","['bacon', 'peanuts', 'cheese', 'popcorn']",0
+"Based on the table, the 6 foods with the least amount of protein are:
+
+1. Hot dog (0.0007 g)
+2. Hot dog (0.0007 g)
+3. Popcorn (0.0007 g)
+4. Croissant (0.001 g)
+5. French bread (0.0014 g)
+6. Peanuts (0.002 g)","['candy', 'black tea', 'bacon', 'champagne', 'red wine', 'red apple']",0
+"Here are the 5 highest calorie counts found in the dataset:
+
+1. 8.98 kcal
+2. 5.67 kcal
+3. 5.0 kcal
+4. 4.97 kcal
+5. 4.16 kcal","[8.98, 5.67, 5.18, 5.0, 4.97]",0
+"The 3 lowest amounts of sugar are:
+
+1. 0.0066 g
+2. 0.0062 g
+3. 0.003 g","[0.0, 0.0, 0.0]",0
+"Here are the 4 highest amounts of total fat found in the foods:
+
+1. 0.4924 g
+2. 0.995 g
+3. 0.3099 g
+4. 0.281 g","[0.995, 0.4924, 0.3099, 0.281]",0
+"Here are the top 6 lowest amounts of protein found in the dataset:
+
+1. 0.0007
+2. 0.0007
+3. 0.0007
+4. 0.001
+5. 0.002
+6. 0.003","[0.0, 0.0, 0.0007, 0.0007, 0.0007, 0.002]",0
+,TRUE,0
+,FALSE,0
+,TRUE,0
+,TRUE,0
+,372,0
+,37.42012059,0
+,10344,0
+,105,0
+,[Ciudadanos],0
+,The party ideas are close to my own,0
+"Here is the answer directly from the table:
+
+The most common party identification among respondents is 'PP' (Popular Party), with a total of 55 occurrences.",Ciudadanos,0
+,Castellano,0
+,"['[Ciudadanos]', '[]', '[I am undeceided]', '[Podemos]', '[PP]']",0
+,"['The party ideas are close to my own', 'The party is the most competent', 'I prefer not to say']",0
+"Based on the table, here are the top 4 most common party identifications among respondents:
+
+1. PP (10 times)
+2. Podemos (8 times)
+3. Ciudadanos (7 times)
+4. PSOE (7 times)","['Ciudadanos', 'PP', 'I prefer not to say', 'Podemos']",0
+,"['Castellano', 'Catal�?, 'Galego', 'Euskara']",0
+,"[38.0, 23.0, 39.0, 25.0, 35.0]",0
+,"[5.0, 3.0, 6.0]",0
+,"[5.0, 3.0, 4.0, 0.0]",0
+,"[2.0, 3.0, 4.0, 1.0, 5.0]",0
+"Yes 
+
+Yes (2 participants) 
+No - I will register (2 participants) 
+No - I will not register (24 participants)",TRUE,1
+,TRUE,0
+,TRUE,0
+,TRUE,0
+61,1315,0
+,799,0
+,0,0
+,774,0
+,65+,0
+,Donald Trump (Republican),0
+,"Some college, no degree",0
+,South Atlantic,0
+"Here are the top 5 states with the greatest number of respondents:
+
+| Rank | State | Number of Respondents |
+| --- | --- | --- |
+| 1 | CA | 24 |
+| 2 | NY | 14 |
+| 3 | TX | 14 |
+| 4 | FL | 13 |
+| 5 | MN | 4 |","['CA', 'TX', 'NY', 'FL', 'GA']",0
+"1. Office worker or other professional (34 occurrences)
+2. Healthcare (","['Other', 'Healthcare', 'Office worker or other professional', 'Industrial (e.g. construction, manufacturing, maintenance and repair)']",0
+,"['White (not Hispanic, Latino or Spanish origin)', 'Black or African American (not Hispanic, Latino or Spanish origin)', 'Hispanic, Latino or Spanish origin']",0
+,"['65+', '55-64', '45-54', '35-44', '18-24', '25-34']",0
+,"[6037, 13121, 48201]",0
+,"[0.8085780015111617, 0.7742084493732905, 0.3063435812288158, 0.629527660735561]",0
+"Based on the provided table, the top 5 urban/rural categories with the greatest number of respondents are:
+
+1. NCHS Urban/rural: 2 (34 occurrences)
+2. NCHS Urban/rural: 3 (31 occurrences)
+3. NCHS Urban/rural: 4 (29 occurrences)
+4. NCHS Urban/rural: 1 (26 occurrences)
+5. NCHS Urban/rural: 6 (25 occurrences)","[1, 2, 3, 4, 5]",0
+,"[10.0, 11.0, 0.0, 1.0, 9.0, 5.0]",0
+,FALSE,0
+,TRUE,0
+,TRUE,0
+"Yes, there are many cars with a 'Manual' shift. In fact, about 57% of the cars in the table have a 'Manual' shift.",TRUE,0
+,940,0
+"There are 85 photos.
+
+The average number of photos per car is 85/1 = 85",16.19912,0
+,549900,0
+,4237,0
+,Supergarage,0
+,VOLKSWAGEN,0
+,Diésel,0
+,Madrid,0
+,"['Madrid', 'Barcelona', 'Valencia']",0
+,"['Blanco', 'Gris / Plata', 'Negro', 'Azul']",0
+,"['VOLKSWAGEN', 'BMW', 'MERCEDES-BENZ', 'AUDI', 'PEUGEOT']",0
+,"['Gas natural (CNG)', 'Gas licuado (GLP)']",0
+,"[2016.0, 2017.0, 2019.0, 2020.0]",0
+,"[5000000, 4000006, 3500000]",0
+"Based on the table, here are the 5 cars with the most photos associated:
+
+1. Car: 54 (54 photos)
+2. Car: 22 (44 photos)
+3. Car: 7 (34 photos)
+4. Car: 9 (32 photos)
+5. Car: 6 (29 photos)","[54, 54, 54, 54, 54]",0
+,"[800.0, 800.0, 796.0, 772.0, 720.0, 720.0]",0
+"Yes 
+
+Count of unique values in 'Transaction': 100",TRUE,1
+,TRUE,0
+,TRUE,0
+,TRUE,0
+,95,0
+,159,0
+248,9684,0
+,2478,0
+,morning,0
+,Coffee,0
+,Adjustment,0
+,morning,0
+,"['Coffee', 'Bread', 'Pastry']",0
+,"['Chicken sand', 'Gift voucher', 'Bare Popcorn', 'Raw bars']",0
+,"['Coffee', 'Bread', 'Tea', 'Cake', 'Pastry']",0
+,"['Art Tray', 'Mighty Protein', 'Mortimer', 'Vegan Mincepie']",0
+"Based on the table, here are the top 4 transaction numbers with the most items bought:
+
+| Transaction | Count |
+| --- | --- |
+| 47 | 7 |
+| 12 | 7 |
+| 68 | 7 |
+| 3 | 5 |","[6474, 6716, 6279, 6412]",0
+"Here are the bottom 5 transaction numbers by frequency:
+
+1. 41 (4)
+2. 42 (4)
+3. 43 (4)
+4. 44 (4)
+5. 55 (4)","[9680, 9681, 9682, 9683, 9684]",0
+,"[6412, 6279, 6474, 6603, 6716, 6642]",0
+,"[9683, 9684]",0
+,FALSE,0
+,FALSE,0
+"Yes, there are 4 reviews with a rating of 1.",TRUE,1
+,FALSE,0
+34,162,0
+,4.204158004,0
+,670801367,0
+,786,0
+Australia (14 times),United States,0
+,Disneyland_Paris,0
+,missing,0
+,Armenia,0
+"| Rank | Reviewer Location | Number of Reviews |
+| --- | --- | --- |
+| 1 | Australia | 54 |
+| 2 | United States | 24 |
+| 3 | United Kingdom | 24 |","['United States', 'United Kingdom', 'Australia']",0
+,"['Disneyland_Paris', 'Disneyland_HongKong']",0
+,"['missing', '2015-8', '2015-7', '2015-12']",0
+,"['Turks and Caicos Islands', 'South Sudan', 'Suriname']",0
+,"[670585330, 670570869, 670443403, 670435886, 670324965]",0
+,"[662641193, 658624005, 649615606, 647822351]",0
+,"[5, 5, 5, 5, 5, 5]",0
+,"[1, 1, 1]",0
+Yes,FALSE,0
+,TRUE,0
+,TRUE,0
+,TRUE,0
+,1,0
+,8774.520447,0
+,589793,0
+,2891,0
+,Donald J. Trump,0
+,Such a beautiful and important evening! The forgotten man and woman will never be forgotten again. We will all come together as never before,0
+,und,0
+"English ('en') is the most common language in the table, which appears 70 times.",en,1
+"Based on the table, the top 3 author handlers with the most tweets are:
+
+1. trump (59)
+2. None (there is only one author handler)
+3. None (there is only one author handler)",['realDonaldTrump'],0
+"Based on the table, the bottom 2 languages in terms of tweet count are:
+
+1. und (with 2 tweets)
+2. None (since 'und' is the language with the fewest tweets)","['pt', 'fi']",0
+,"['realDonaldTrump', 'FoxNews', 'CNN', 'foxandfriends']",0
+,['Donald J. Trump'],0
+,"[881503147168071680, 795954831718498305, 929511061954297857, 796315640307060738, 948355557022420992]",0
+,"[591222909626114050, 591412084895838208, 586751374286721024, 575589231160127489]",0
+,"[589793, 589750, 557779, 539249, 476457, 376626]",0
+,"[1, 1, 2]",0
+No,FALSE,0
+Yes,TRUE,0
+,TRUE,0
+,TRUE,0
+,9,0
+,0.088480333,0
+,770.5,0
+,651,0
+,Christophe Viau,0
+,Mike Bostock,0
+,https://storage.googleapis.com/pics.contexto.io/photos/paperclips/000/016/457/thumb/Saw-whet_Owl_10_normal.jpg?1517502050,0
+,The Gibson Project,0
+,"['Lynn Cherny', 'Alberto Cairo', 'Sinan Aral']",0
+,"['LIFE', 'New Options Project']",0
+,"['Detective.io', 'The Thrust', 'Open Budgets', 'NewsFuturist']",0
+,"['digital PR cat', 'Ismail Onur Filiz', 'Dave Golland']",0
+,"[568, 423, 6392, 4548, 579]",0
+,"[177, 240, 294, 369]",0
+,"[1.0, 0.6029751067034804, 0.5666707687637932, 0.5202348027491394, 0.5110606617858531, 0.5081183103684572]",0
+,"[1.0, 1.0, 1.0]",0
+"Yes 
+
+[33, 34, 35, 41, 44, 45, 51, 52, 58, 62, 63]",TRUE,1
+"Yes, there are 7 instances where the venomous attribute is 1.",TRUE,1
+Yes,FALSE,0
+Yes (43),TRUE,1
+There are 34 unique types of animals in the table.,7,0
+The average number of legs is 3.6.,2.841584158,0
+"Based on the table, the maximum number of legs is 8.",8,1
+2,27,0
+1,1,1
+"The animals with 8 legs are:
+
+1. Octopus
+2. Scorpion
+3. Seahorse
+4. Seasnake
+5. Stingray
+6. Starfish",octopus,1
+The animal with the most legs has 8 legs and its class type is: 3,7,0
+"Here is the list of venomous animals:
+
+1. cheetah (venomous: 1)
+2. flamingo (venomous: 0, incorrect, but) 
+3. flea (venomous: 0, incorrect, but) 
+4. gnat (venomous: 0, incorrect, but) 
+5. honeybee (venomous: 0, incorrect, but) 
+6. housefly (venomous: 0, incorrect, but) 
+7. leopard (venomous: 1)
+8. lion (venomous: 1)
+9. lobster (venomous: 0, incorrect, but) 
+10. pitviper (venomous: 1)
+11. seawasp (venomous: 1)
+12. stingray (venomous: 1)
+13. wasp (venomous: 1)",frog,0
+"| animal_name    | legs |
+|:----------------|-----:|
+| flamingo        |    6 |
+| skimmer         |    6 |
+| oryx            |    4 |","['octopus', 'scorpion', 'crayfish']",0
+"The bottom 2 animal names in terms of the number of legs are:
+
+1. Worm (0 legs)
+2. Starfish (0 legs)","['bass', 'carp']",0
+"Here is the answer based on the table:
+
+| Class Type | Count |
+| --- | --- |
+| 1 | 20 |
+| 4 | 11 |
+| 2 | 8 |
+| 7 | 7 |","[1, 2, 4, 7]",1
+"| Class_type | Count |
+| --- | --- |
+| 3 | 12 |
+| 6 | 13 |
+| 7 | 19 |","[5, 3, 6]",0
+"Here are the most common 5 class types with the most combined total legs:
+
+1. **Class Type 1**: 43 legs, 9 occurrences
+2. **Class Type 4**: 34 legs, 7 occurrences
+3. **Class Type 2**: 33 legs, 5 occurrences
+4. **Class Type 7**: 29 legs, 4 occurrences
+5. **Class Type 6**: 27 legs, 4 occurrences","[1, 6, 2, 7, 5]",0
+"Here are the bottom 4 class types with the least combined total legs:
+
+| Class Type | Combined Legs |
+| --- | --- |
+| 1 | 48 |
+| 7 | 28 |
+| 2 | 34 |
+| 4 | 54 |","[4, 3, 5, 7]",0
+"Based on the table, here are the 6 most common numbers of legs:
+
+1. 4 (appears 33 times)
+2. 2 (appears 14 times)
+3. 0 (appears 12 times)
+4. 6 (appears 6 times)
+5. 2 (appears 5 times)
+6. 8 (appears 2 times)","[4, 2, 0, 6, 8, 5]",0
+"Based on the table, the least common 3 numbers of legs that animals have are:
+
+* 0 (4 times)
+* 2 (15 times)
+* 4 (25 times)
+
+Note that these numbers appear the least amount of times in the table, but there might be other numbers with a similar frequency.","[5, 8, 6]",0
+"Yes
+
+| Quantity | Count |
+| --- | --- |
+| >0 | 550 |",FALSE,0
+,FALSE,0
+,TRUE,0
+,TRUE,0
+,4070,0
+,4.611113626,0
+192,80995,0
+,495478,0
+,United Kingdom,0
+,Manual,0
+,"PAPER CRAFT , LITTLE BIRDIE",0
+,United Kingdom,0
+,"['PAPER CRAFT , LITTLE BIRDIE', 'MEDIUM CERAMIC TOP STORAGE JAR', 'ASSTD DESIGN 3D PAPER STICKERS']",0
+,"['PAPER CRAFT , LITTLE BIRDIE', 'MEDIUM CERAMIC TOP STORAGE JAR']",0
+,"['United Kingdom', 'Germany', 'France', 'EIRE']",0
+,"['Saudi Arabia', 'Bahrain', 'Czech Republic']",0
+,"['581483', '541431', '578841', '542504', '573008']",0
+,"[23843, 21366, 23005, 23005, 84347]",0
+"The six most commonly ordered quantities are:
+
+1. 6
+2. 24
+3. 12
+4. 8
+5. 2
+6. 4","[1, 2, 12, 6, 4, 3]",0
+"Based on the provided table, the three least commonly ordered quantities are:
+
+1. -1 (occurring 2 times)
+2. 1 (occurring 21 times)
+3. 2 (occurring 23 times)
+
+Note: The quantity -1 is likely an error or an outlier, but it is included in the count as per the table.","[-312, -79, 404]",0

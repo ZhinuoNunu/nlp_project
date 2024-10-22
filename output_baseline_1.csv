@@ -1,0 +1,472 @@
+output,ground_truth,label
+,TRUE,0
+,TRUE,0
+,TRUE,0
+,TRUE,0
+,3765,0
+,61,0
+,1243,0
+,0,0
+,ING España,0
+,es,0
+,juan prin,0
+,reply,0
+,"['Lavincompae', '#NI UNA MENOS \xa0♐\xa0✊\xa0🚺', 'SFC The World']",0
+,"['es', 'es', 'es', 'es', 'es']",0
+,"['Correctorada', 'El Joker', 'Xenia Viladas', 'DrJaus \xa0🇪🇸']",0
+,"['reply', 'original']",0
+,"[0, 0, 0, 0, 3]",0
+,"[61, 60, 59]",0
+,"[0, 0, 1, 0]",0
+,"[1, 1, 1, 1, 1, 1]",0
+,TRUE,0
+,TRUE,0
+,FALSE,0
+,TRUE,0
+,20,0
+,1125,0
+,160,0
+,80.94,0
+,Poison,0
+,Shuckle,0
+,Flying,0
+,Mega Mewtwo Y (Psychic),0
+,"['Eternamax Eternatus', 'Mega Mewtwo X', 'Mega Mewtwo Y']",0
+,"['Shedinja', 'Diglett', 'Alolan Diglett', 'Magikarp', 'Pichu']",0
+,"['Water', 'Normal', 'Grass', 'Bug']",0
+,"['Mega Heracross', 'Mega Tyranitar', 'Mega Scizor', 'Tyranitar', 'Scizor', 'Ursaring']",0
+,"[250, 230, 200, 160, 160]",0
+,"[20, 31, 50]",0
+,"[135, 127, 125, 125]",0
+,"[175, 180, 180, 185, 190, 194]",0
+,TRUE,0
+,FALSE,0
+,FALSE,0
+,TRUE,0
+,0.782633618,0
+,1002,0
+,0.37321404,0
+,0.03536414,0
+,Policy Officer,0
+,Governor,0
+,Mortgage Banker,0
+,Program Manager,0
+,"['Book Publisher', 'Bureau Chief', 'Publisher']",0
+,"['.Net Architect', 'Android Developer', 'Principal Engineer', 'Game Engineer']",0
+,"['Director of Athletics', 'Recruiting Coordinator', 'Athletic Coordinator', 'Director of Personnel', 'Skills Trainer']",0
+,"['U.S. Senator', 'Congressman']",0
+,"[0.7557249985959847, 0.7413189187628788, 0.7034528053640179]",0
+,"[0.1652381569664056, 0.2005428064324122, 0.2215546116855247, 0.2506791678499942]",0
+,"[0.9794365922809228, 0.9723660656030668, 0.954299437125917, 0.9362989453985364, 0.9307917067583288]",0
+,"[0.0353641396193574, 0.0355792960526332, 0.0399752446723049, 0.0573280662585624, 0.0591099063085338, 0.0592781792571762]",0
+,FALSE,0
+,FALSE,0
+,TRUE,0
+,TRUE,0
+,3574,0
+,14.7459746,0
+,100,0
+,8848,0
+,Massachusetts Institute of Technology,0
+,B2,0
+,en,0
+,"member, portion, body, end",0
+,"['International Business Machines Corporation', 'Samsung Electronics Co., Ltd.', 'Google Inc.']",0
+,"['utility', 'design', 'plant', 'reissue']",0
+,"['B2', 'S1', 'B1', 'P2', 'P3']",0
+,"['habit, plant, foliage, flowers', 'soybean, plant, cultivar, soybean cultivar']",0
+,"[20, 1, 18, 19]",0
+,"[9479771.0, 9325365.0, 9323284.0]",0
+,"[29, 30, 46, 51, 70]",0
+,"[9479476.0, 9479477.0, 9479478.0, 9479479.0, 9479480.0, 9479481.0]",0
+,TRUE,0
+,FALSE,0
+,FALSE,0
+,TRUE,0
+,0.782633618,0
+0,1002,0
+134883,0.37321404,0
+,0.03536414,0
+,Policy Officer,0
+,Governor,0
+,Mortgage Banker,0
+,Program Manager,0
+,"['Book Publisher', 'Bureau Chief', 'Publisher']",0
+,"['.Net Architect', 'Android Developer', 'Principal Engineer', 'Game Engineer']",0
+,"['Director of Athletics', 'Recruiting Coordinator', 'Athletic Coordinator', 'Director of Personnel', 'Skills Trainer']",0
+,"['U.S. Senator', 'Congressman']",0
+,"[0.7557249985959847, 0.7413189187628788, 0.7034528053640179]",0
+"| user_favourites_count | 
+| --- | 
+| 20 | 
+| 20 | 
+| 20 | 
+| 20 |","[0.1652381569664056, 0.2005428064324122, 0.2215546116855247, 0.2506791678499942]",0
+,"[0.9794365922809228, 0.9723660656030668, 0.954299437125917, 0.9362989453985364, 0.9307917067583288]",0
+"64712 (68810) 
+59915","[0.0353641396193574, 0.0355792960526332]",0
+,FALSE,0
+,FALSE,0
+,FALSE,0
+,FALSE,0
+,18424,0
+,367,0
+,72,0
+,113,0
+,Radio/TV,0
+,Skilled,0
+,Existing Credits Paid Back Duly Till Now,0
+,Less than 100 DM,0
+,"['Highly Skilled', 'Skilled', 'Highly Skilled']",0
+,"['Skilled', 'Skilled', 'Skilled', 'Unskilled - Resident']",0
+,"['Skilled', 'Skilled', 'Unskilled - Resident', 'Highly Skilled', 'Skilled']",0
+,"['Highly Skilled', 'Highly Skilled']",0
+,"[18424, 15945, 15857]",0
+,"[72, 60, 60, 60]",0
+,"[4, 4, 4, 4, 4]",0
+,"[75, 75]",0
+"Yes, there are a few entries with zero calories in the table: 
+
+0.01, 0.64, 0.01, 0.43",FALSE,0
+"Yes, all foods contain some amount of sugar, even if they are not typically considered sweet. The table shows that even foods with very low amounts of sugar have values greater than zero.",FALSE,0
+"Yes, according to the table, the following foods contain no fat at all:
+
+* 0.0 (value appears 3 times in the list)",TRUE,1
+"Yes, here are some examples of foods that are very low in or contain no protein:
+
+| Food | Protein (g) |
+| --- | --- |
+| Sugar | 0 |
+| Salt | 0 |
+| Honey | 0 |
+| Maple syrup | 0 |
+| Corn syrup | 0 |
+| Fruits (e.g. apples, bananas) | 0.5-1.5 g |
+| Vegetables (e.g. lettuce, tomatoes) | 0.5-1.5 g |
+| Legumes (e.g. beans, lentils) | 1-3 g (note: some legumes are high in protein, but not all) |
+| Oils (e.g. olive oil, coconut oil) | 0 |
+| Wine | 0 |
+| Beer | 0 |
+| Bread (e.g. white bread, whole wheat bread) | 0.5-1.5 g |
+| Pasta (e.g. spaghetti, linguine) | 0.5-1.5 g |
+| Rice (e.g. white rice, brown rice) | 0.5-1.5 g |
+
+Note: The protein content of these foods may vary depending on the specific type, brand",TRUE,1
+"According to the table, 4 foods have more than 500 kcal:
+
+1. 5.67 (Index 24)
+2. 4.97 (Index 45)
+3. 5.18 (Index 46)
+4. 8.98 (Index 39)",0,0
+The average amount of total fat is: 0.056,0.08465,0
+3,18,0
+0.258,0.2748,0
+"Based on the table, the food with the highest calorie content is:
+
+* Hamburger: 8.98 kcal",bacon,0
+"Based on the table, the food that contains the most sugar is 'custard flan' with 0.4868g of sugar.",honey,0
+"Based on the table, the food with the least amount of total fat is:
+
+Cake, with 0.0g of Total Fat",honey,0
+"The food with the highest amount of protein is:
+
+Hamburger (0.2748 g)",beef,0
+"Based on the table, the top 5 foods with the most calories are:
+
+1. Peanuts (5.67 kcal)
+2. Hamburger (8.98 kcal)
+3. Pizza (4.97 kcal)
+4. Burrito (4.97 kcal)
+5. Beer (4.16 kcal)","['bacon', 'peanuts', 'chocolate bar', 'popcorn', 'cookie']",0
+"Based on the data, here are the top 3 foods with the least amount of sugar:
+
+| Rank | Food | Sugar (g) |
+| --- | --- | --- |
+| 1 | Bacon | 0.0 |
+| 2 | Beef | 0.0 |
+| 3 | Chicken | 0.0 |
+
+These three foods have the least amount of sugar according to the data.","['chestnut', 'pancakes', 'cheese']",0
+"Here are the 4 foods with the most total fat:
+
+1. Chestnut (0.4924g)
+2. Fried Shrimp (0.995g)
+3. Popcorn (0.281g)
+4. Bacon (0.3099g)","['bacon', 'peanuts', 'cheese', 'popcorn']",0
+"Here are the 6 foods with the least amount of protein based on the data:
+
+1. Honey (0.0007 g)
+2. Red wine (0.0007 g)
+3. Sake (0.0007 g)
+4. Beer (0.0 g)
+5. Chocolate bar (0.0 g)
+6. Cucumber (0.002 g)","['candy', 'black tea', 'bacon', 'champagne', 'red wine', 'red apple']",0
+"Here are the 5 highest calorie counts found in the dataset:
+
+1. 8.98
+2. 5.67
+3. 5.0
+4. 4.97
+5. 4.16","[8.98, 5.67, 5.18, 5.0, 4.97]",0
+"The 3 lowest amounts of sugar found among the foods are:
+
+1. 0.0066
+2. 0.001
+3. 0.003","[0.0, 0.0, 0.0]",0
+"Here are the 4 highest amounts of total fat found in the foods:
+
+1. 0.995 g
+2. 0.4924 g
+3. 0.3099 g
+4. 0.252 g","[0.995, 0.4924, 0.3099, 0.281]",0
+"Here are the top 6 lowest amounts of protein found in the dataset:
+
+1. 0.0007
+2. 0.0007
+3. 0.002
+4. 0.003
+5. 0.0036
+6. 0.0044","[0.0, 0.0, 0.0007, 0.0007, 0.0007, 0.002]",0
+,TRUE,0
+,FALSE,0
+,TRUE,0
+,TRUE,0
+,372,0
+,37.42012059,0
+,10344,0
+,105,0
+,[Ciudadanos],0
+,The party ideas are close to my own,0
+,Ciudadanos,0
+,Castellano,0
+,"['[Ciudadanos]', '[]', '[I am undeceided]', '[Podemos]', '[PP]']",0
+,"['The party ideas are close to my own', 'The party is the most competent', 'I prefer not to say']",0
+,"['Ciudadanos', 'PP', 'I prefer not to say', 'Podemos']",0
+,"['Castellano', 'Catal�?, 'Galego', 'Euskara']",0
+,"[38.0, 23.0, 39.0, 25.0, 35.0]",0
+,"[5.0, 3.0, 6.0]",0
+,"[5.0, 3.0, 4.0, 0.0]",0
+,"[2.0, 3.0, 4.0, 1.0, 5.0]",0
+,TRUE,0
+,TRUE,0
+,TRUE,0
+,TRUE,0
+,1315,0
+,799,0
+,0,0
+,774,0
+,65+,0
+,Donald Trump (Republican),0
+,"Some college, no degree",0
+,South Atlantic,0
+,"['CA', 'TX', 'NY', 'FL', 'GA']",0
+,"['Other', 'Healthcare', 'Office worker or other professional', 'Industrial (e.g. construction, manufacturing, maintenance and repair)']",0
+,"['White (not Hispanic, Latino or Spanish origin)', 'Black or African American (not Hispanic, Latino or Spanish origin)', 'Hispanic, Latino or Spanish origin']",0
+,"['65+', '55-64', '45-54', '35-44', '18-24', '25-34']",0
+,"[6037, 13121, 48201]",0
+,"[0.8085780015111617, 0.7742084493732905, 0.3063435812288158, 0.629527660735561]",0
+,"[1, 2, 3, 4, 5]",0
+,"[10.0, 11.0, 0.0, 1.0, 9.0, 5.0]",0
+,FALSE,0
+,TRUE,0
+,TRUE,0
+,TRUE,0
+,940,0
+,16.19912,0
+,549900,0
+,4237,0
+,Supergarage,0
+,VOLKSWAGEN,0
+,Diésel,0
+,Madrid,0
+,"['Madrid', 'Barcelona', 'Valencia']",0
+,"['Blanco', 'Gris / Plata', 'Negro', 'Azul']",0
+,"['VOLKSWAGEN', 'BMW', 'MERCEDES-BENZ', 'AUDI', 'PEUGEOT']",0
+,"['Gas natural (CNG)', 'Gas licuado (GLP)']",0
+,"[2016.0, 2017.0, 2019.0, 2020.0]",0
+,"[5000000, 4000006, 3500000]",0
+,"[54, 54, 54, 54, 54]",0
+,"[800.0, 800.0, 796.0, 772.0, 720.0, 720.0]",0
+,TRUE,0
+,TRUE,0
+,TRUE,0
+,TRUE,0
+,95,0
+,159,0
+,9684,0
+,2478,0
+,morning,0
+,Coffee,0
+,Adjustment,0
+,morning,0
+,"['Coffee', 'Bread', 'Pastry']",0
+,"['Chicken sand', 'Gift voucher', 'Bare Popcorn', 'Raw bars']",0
+,"['Coffee', 'Bread', 'Tea', 'Cake', 'Pastry']",0
+,"['Art Tray', 'Mighty Protein', 'Mortimer', 'Vegan Mincepie']",0
+,"[6474, 6716, 6279, 6412]",0
+,"[9680, 9681, 9682, 9683, 9684]",0
+,"[6412, 6279, 6474, 6603, 6716, 6642]",0
+,"[9683, 9684]",0
+,FALSE,0
+,FALSE,0
+,TRUE,0
+,FALSE,0
+,162,0
+,4.204158004,0
+,670801367,0
+,786,0
+,United States,0
+,Disneyland_Paris,0
+,missing,0
+,Armenia,0
+,"['United States', 'United Kingdom', 'Australia']",0
+,"['Disneyland_Paris', 'Disneyland_HongKong']",0
+,"['missing', '2015-8', '2015-7', '2015-12']",0
+,"['Turks and Caicos Islands', 'South Sudan', 'Suriname']",0
+,"[670585330, 670570869, 670443403, 670435886, 670324965]",0
+,"[662641193, 658624005, 649615606, 647822351]",0
+,"[5, 5, 5, 5, 5, 5]",0
+,"[1, 1, 1]",0
+,FALSE,0
+,TRUE,0
+,TRUE,0
+,TRUE,0
+,1,0
+,8774.520447,0
+,589793,0
+,2891,0
+,Donald J. Trump,0
+,Such a beautiful and important evening! The forgotten man and woman will never be forgotten again. We will all come together as never before,0
+,und,0
+,en,0
+,['realDonaldTrump'],0
+,"['pt', 'fi']",0
+,"['realDonaldTrump', 'FoxNews', 'CNN', 'foxandfriends']",0
+,['Donald J. Trump'],0
+,"[881503147168071680, 795954831718498305, 929511061954297857, 796315640307060738, 948355557022420992]",0
+,"[591222909626114050, 591412084895838208, 586751374286721024, 575589231160127489]",0
+,"[589793, 589750, 557779, 539249, 476457, 376626]",0
+,"[1, 1, 2]",0
+,FALSE,0
+,TRUE,0
+,TRUE,0
+,TRUE,0
+,9,0
+,0.088480333,0
+,770.5,0
+,651,0
+,Christophe Viau,0
+,Mike Bostock,0
+,https://storage.googleapis.com/pics.contexto.io/photos/paperclips/000/016/457/thumb/Saw-whet_Owl_10_normal.jpg?1517502050,0
+,The Gibson Project,0
+,"['Lynn Cherny', 'Alberto Cairo', 'Sinan Aral']",0
+,"['LIFE', 'New Options Project']",0
+,"['Detective.io', 'The Thrust', 'Open Budgets', 'NewsFuturist']",0
+,"['digital PR cat', 'Ismail Onur Filiz', 'Dave Golland']",0
+,"[568, 423, 6392, 4548, 579]",0
+,"[177, 240, 294, 369]",0
+,"[1.0, 0.6029751067034804, 0.5666707687637932, 0.5202348027491394, 0.5110606617858531, 0.5081183103684572]",0
+,"[1.0, 1.0, 1.0]",0
+"Yes. 
+Value: 1, appears 17 times",TRUE,1
+Yes,TRUE,1
+Yes,FALSE,0
+Yes.,TRUE,1
+There are 30 unique types of animals.,7,0
+The average number of legs is 3.,2.841584158,0
+4,8,0
+There are 26 animals with 2 legs.,27,0
+"Based on the table, the most common class type is:
+
+1 (frequency: 21)
+
+Note: There are 42 data points, and 1 occurs 21 times.",1,1
+"The names of the animals with 8 legs are:
+
+1. Kiwi
+2. Spider ( none in the table )
+3. Rhea 
+4. Seahorse 
+5. Tuatara 
+6. Turtle ( none in the table )
+7. Vole",octopus,0
+"Based on the table, the animal with the most legs is a class type of 3 with 8 legs.",7,0
+"The following animals are venomous:
+
+1. Pitviper
+2. Snake (seasnake)
+3. Wasps (was, seawasp, wallaby)
+4. Scorpion
+5. Centipede is not in the table, but termite is.",frog,0
+"Here are the top 3 animal names with the most legs based on the table:
+
+1. **Seasnake** (8 legs)
+2. **Seal** (8 legs)
+3. **Skimmer** (6 legs)","['octopus', 'scorpion', 'crayfish']",0
+"{'animal_name': ['slug', 'worm'], 'legs': [0, 0]}","['bass', 'carp']",0
+"Based on the table, the most common 4 class types with the most animals are:
+
+1. Class 1: 18 animals
+2. Class 4: 10 animals
+3. Class 2: 9 animals
+4. Class 7: 8 animals","[1, 2, 4, 7]",1
+"Here are the 3 least common class types with the least animals:
+
+| Class Type | Count |
+| --- | --- |
+| 3 | 3 |
+| 6 | 6 |
+| 5 | 6 |","[5, 3, 6]",1
+"Based on the data, the top 5 most common class types with the most combined total legs are:
+
+| Class Type | Total Legs |
+| --- | --- |
+| 1 | 44 |
+| 4 | 34 |
+| 2 | 24 |
+| 7 | 18 |
+| 5 | 14 |","[1, 6, 2, 7, 5]",0
+"Here are the bottom 4 class types with the least combined total legs:
+
+| Class Type | Combined Total Legs |
+| --- | --- |
+| 6 | 26 |
+| 5 | 16 |
+| 3 | 20 |
+| 2 | 50 |
+
+Note: The combined total legs are the sum of legs for each class type.","[4, 3, 5, 7]",0
+"Based on the table, here are the top 6 most common numbers of legs:
+
+1. 4
+2. 2
+3. 6
+4. 0
+5. 2
+6. 4","[4, 2, 0, 6, 8, 5]",0
+"Based on the table, the least common 3 numbers of legs that animals have are:
+
+* 0 legs (4 times)
+* 2 legs (9 times)
+* 4 legs (16 times)
+* 6 legs (6 times)","[5, 8, 6]",0
+,FALSE,0
+,FALSE,0
+,TRUE,0
+,TRUE,0
+,4070,0
+,4.611113626,0
+,80995,0
+,495478,0
+,United Kingdom,0
+,Manual,0
+,"PAPER CRAFT , LITTLE BIRDIE",0
+,United Kingdom,0
+,"['PAPER CRAFT , LITTLE BIRDIE', 'MEDIUM CERAMIC TOP STORAGE JAR', 'ASSTD DESIGN 3D PAPER STICKERS']",0
+,"['PAPER CRAFT , LITTLE BIRDIE', 'MEDIUM CERAMIC TOP STORAGE JAR']",0
+,"['United Kingdom', 'Germany', 'France', 'EIRE']",0
+,"['Saudi Arabia', 'Bahrain', 'Czech Republic']",0
+,"['581483', '541431', '578841', '542504', '573008']",0
+,"[23843, 21366, 23005, 23005, 84347]",0
+,"[1, 2, 12, 6, 4, 3]",0
+,"[-312, -79, 404]",0

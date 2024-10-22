@@ -2,7 +2,7 @@ import pandas as pd
 from sklearn.metrics import accuracy_score, recall_score, precision_score, f1_score
 
 
-df = pd.read_csv('./output_baseline.csv', encoding='latin-1')
+df = pd.read_csv('./output_baseline_6.csv', encoding='latin-1')
 label = df['label'].to_list()
 gt = [1 for i in range(len(label))]
 
