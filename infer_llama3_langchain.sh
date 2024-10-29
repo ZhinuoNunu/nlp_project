@@ -1,1 +1,0 @@
-CUDA_VISIBLE_DEVICES=4 API_PORT=8001 llamafactory-cli api /home/ubuntu/6000N/llama_factory/LLaMA-Factory-main/examples/inference/llama3.yaml

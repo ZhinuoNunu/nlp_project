@@ -1,4 +1,36 @@
 {
+  "nlp_train": {
+    "file_name": "/home/ubuntu/6000N/llama_factory/LLaMA-Factory-main/nlp_data/train_data.json"
+  },
+  "llava_kto_0": {
+    "file_name": "/home/ubuntu/6000N/llama_factory/LLaMA-Factory-main/prj_data/llava_kto_0.json",
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "messages",
+      "kto_tag": "label",
+      "images": "images"
+    },
+    "tags": {
+      "role_tag": "role",
+      "content_tag": "content",
+      "user_tag": "user",
+      "assistant_tag": "assistant"
+    }
+  },
+  "llm_textrank": {
+    "file_name": "/home/ubuntu/6000N/llama_factory/LLaMA-Factory-main/prj_data/train_data_textrank.json",
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "messages",
+      "images": "images"
+    },
+    "tags": {
+      "role_tag": "role",
+      "content_tag": "content",
+      "user_tag": "user",
+      "assistant_tag": "assistant"
+    }
+  },
   "identity": {
     "file_name": "identity.json"
   },

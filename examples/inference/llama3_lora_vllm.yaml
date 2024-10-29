@@ -1,6 +1,7 @@
 model_name_or_path: /home/ubuntu/.cache/modelscope/hub/LLM-Research/Meta-Llama-3___1-8B-Instruct
+adapter_name_or_path: /home/ubuntu/6000N/llama_factory/LLaMA-Factory-main/output/llama3_lora_1
+finetuning_type: lora
 template: llama3
 infer_backend: vllm
 vllm_enforce_eager: true
 cutoff_len: 4096
-# infer_dtype: half
