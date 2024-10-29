@@ -42,7 +42,9 @@ def evaluate_predictions(data):
     
     return accuracy, f1, bleu_scores
 
-# 假设数据已经读取
-data = read_jsonl('/root/nlp_project/RAG/output_lora_rag.jsonl')
+
+data = read_jsonl('/root/nlp_project/RAG/output_baseline_rag.jsonl')
 accuracy, f1, bleu_scores = evaluate_predictions(data)
 print(f"accuracy, f1, bleu: {accuracy}, {f1}, {bleu_scores}")
+
+# accuracy : 0.222(baseline),  0.397(LoRA)
