@@ -2,14 +2,15 @@
 
 ## environment
 ```shell
+conda create -n llama python=3.12.0
+conda activate llama
 pip install -r requirements.txt
-conda activate llava
 ```
 
 ## baseline inference
 We utilize vllm to implement LLaMA3.1-8B
 ```shell
-conda activate llava
+conda activate llama
 bash infer_llama3_vllm.sh
 python infer_llama3_vllm.py
 ```
@@ -28,7 +29,7 @@ CUDA_VISIBLE_DEVICES=4 API_PORT=8001 llamafactory-cli api /home/ubuntu/6000N/lla
 ## LoRA
 We utilize LLaMA-Factory to conduct LoRA experiments.
 ```shell
-conda activate llava
+conda activate llama
 bash lora_llama3_ds.sh
 ```
 
