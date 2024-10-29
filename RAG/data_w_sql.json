@@ -1,0 +1,3015 @@
+[
+    {
+        "question": "Is the most favorited author mainly communicating in Spanish?",
+        "dataset": "050_ING",
+        "answer": "True",
+        "columns_used": [
+            "favorites",
+            "lang"
+        ],
+        "sql": " SELECT lang, COUNT(*) AS num_favorites FROM \"050_ING\" GROUP BY lang ORDER BY num_favorites DESC LIMIT 1;"
+    },
+    {
+        "question": "Does the author with the longest name post mainly original content?",
+        "dataset": "050_ING",
+        "answer": "True",
+        "columns_used": [
+            "author_name",
+            "type"
+        ],
+        "sql": " SELECT \"author_name\", \"type\"\n     FROM \"050_ING\"\n     WHERE \"type\" = 'original'\n     ORDER BY LENGTH(\"author_name\") DESC LIMIT 1;"
+    },
+    {
+        "question": "Is there an author who received no retweets for any of their posts?",
+        "dataset": "050_ING",
+        "answer": "True",
+        "columns_used": [
+            "author_name",
+            "retweets"
+        ],
+        "sql": " SELECT DISTINCT \"author_name\" FROM \"050_ING\" WHERE \"retweets\" = 0;"
+    },
+    {
+        "question": "Are there any posts that do not contain any links?",
+        "dataset": "050_ING",
+        "answer": "True",
+        "columns_used": [
+            "links"
+        ],
+        "sql": " SELECT * FROM \"050_ING\" WHERE links IS NULL;"
+    },
+    {
+        "question": "How many unique authors are in the dataset?",
+        "dataset": "050_ING",
+        "answer": "3765",
+        "columns_used": [
+            "author_name"
+        ],
+        "sql": " SELECT COUNT(DISTINCT author_name) FROM \"050_ING\";"
+    },
+    {
+        "question": "What is the length of the longest post (based on the number of words)?",
+        "dataset": "050_ING",
+        "answer": "61",
+        "columns_used": [
+            "text"
+        ],
+        "sql": " SELECT MAX(length(text)) AS longest_post FROM \"050_ING\";"
+    },
+    {
+        "question": "What is the total number of retweets received by all authors in the dataset?",
+        "dataset": "050_ING",
+        "answer": "1243",
+        "columns_used": [
+            "retweets"
+        ],
+        "sql": " SELECT SUM(retweets) AS total_retweets FROM \"050_ING\";"
+    },
+    {
+        "question": "How many posts do not contain any mentions of other users?",
+        "dataset": "050_ING",
+        "answer": "0",
+        "columns_used": [
+            "mention_ids"
+        ],
+        "sql": " SELECT COUNT(*) FROM \"050_ING\" WHERE mention_ids IS NULL;"
+    },
+    {
+        "question": "What is the name of the most retweeted author?",
+        "dataset": "050_ING",
+        "answer": "ING Espa\u00f1a",
+        "columns_used": [
+            "author_name",
+            "retweets"
+        ],
+        "sql": " SELECT author_name, SUM(retweets) AS total_retweets FROM \"050_ING\" GROUP BY author_name ORDER BY total_retweets DESC LIMIT 1;"
+    },
+    {
+        "question": "What is the language of the most favorited post?",
+        "dataset": "050_ING",
+        "answer": "es",
+        "columns_used": [
+            "lang",
+            "favorites"
+        ],
+        "sql": " SELECT lang, SUM(favorites) AS total_favorites FROM \"050_ING\" GROUP BY lang ORDER BY total_favorites DESC LIMIT 1;"
+    },
+    {
+        "question": "Who is the author of the post with the most words?",
+        "dataset": "050_ING",
+        "answer": "juan prin",
+        "columns_used": [
+            "author_name",
+            "text"
+        ],
+        "sql": " SELECT \"author_name\", COUNT(*) AS word_count FROM \"050_ING\" GROUP BY \"author_name\" ORDER BY word_count DESC LIMIT 1;"
+    },
+    {
+        "question": "What type of post (original, reply, or other) is the most common in the dataset?",
+        "dataset": "050_ING",
+        "answer": "reply",
+        "columns_used": [
+            "type"
+        ],
+        "sql": " SELECT type, COUNT(*) AS frequency FROM \"050_ING\" GROUP BY type ORDER BY frequency DESC LIMIT 1;"
+    },
+    {
+        "question": "Who are the authors of the top 3 most retweeted posts?",
+        "dataset": "050_ING",
+        "answer": "['Lavincompae', '#NI UNA MENOS \\xa0\u2650\\xa0\u270a\\xa0\ud83d\udeba', 'SFC The World']",
+        "columns_used": [
+            "author_name",
+            "retweets"
+        ],
+        "sql": " SELECT \"author_name\", SUM(\"retweets\") AS total_retweets FROM \"050_ING\" GROUP BY \"author_name\" ORDER BY total_retweets DESC LIMIT 3;"
+    },
+    {
+        "question": "What are the languages of the 5 least favorited posts?",
+        "dataset": "050_ING",
+        "answer": "['es', 'es', 'es', 'es', 'es']",
+        "columns_used": [
+            "lang",
+            "favorites"
+        ],
+        "sql": " SELECT lang, SUM(favorites) AS total_favorites FROM \"050_ING\" GROUP BY lang ORDER BY total_favorites ASC LIMIT 5;"
+    },
+    {
+        "question": "Who are the authors of the 4 shortest posts (based on the number of words)?",
+        "dataset": "050_ING",
+        "answer": "['Correctorada', 'El Joker', 'Xenia Viladas', 'DrJaus \\xa0\ud83c\uddea\ud83c\uddf8']",
+        "columns_used": [
+            "author_name",
+            "text"
+        ],
+        "sql": " SELECT a.author_name, COUNT(*) AS num_posts FROM \"050_ING\" a JOIN (SELECT MIN(length(text)) AS min_length FROM \"050_ING\") b ON 1=1 GROUP BY a.author_name HAVING COUNT(*) > 4;"
+    },
+    {
+        "question": "What types of posts are the 6 most common in the dataset?",
+        "dataset": "050_ING",
+        "answer": "['reply', 'original']",
+        "columns_used": [
+            "type"
+        ],
+        "sql": " SELECT type, COUNT(*) AS frequency FROM \"050_ING\" GROUP BY type ORDER BY frequency DESC LIMIT 6;"
+    },
+    {
+        "question": "What are the retweet counts for the top 5 most favorited posts?",
+        "dataset": "050_ING",
+        "answer": "[0, 0, 0, 0, 3]",
+        "columns_used": [
+            "retweets",
+            "favorites"
+        ],
+        "sql": " SELECT retweets, favorites FROM \"050_ING\" ORDER BY favorites DESC, retweets DESC LIMIT 5;"
+    },
+    {
+        "question": "What are the word counts of the 3 longest posts?",
+        "dataset": "050_ING",
+        "answer": "[61, 60, 59]",
+        "columns_used": [
+            "text"
+        ],
+        "sql": " SELECT LENGTH(text) AS word_count, text FROM \"050_ING\" ORDER BY word_count DESC LIMIT 3;"
+    },
+    {
+        "question": "What are the retweet counts of the 4 least favorited posts?",
+        "dataset": "050_ING",
+        "answer": "[0, 0, 1, 0]",
+        "columns_used": [
+            "retweets",
+            "favorites"
+        ],
+        "sql": " SELECT retweets, favorites FROM \"050_ING\" ORDER BY favorites ASC LIMIT 4;"
+    },
+    {
+        "question": "What are the word counts for the 6 shortest posts?",
+        "dataset": "050_ING",
+        "answer": "[1, 1, 1, 1, 1, 1]",
+        "columns_used": [
+            "text"
+        ],
+        "sql": " SELECT LENGTH(text) AS word_count, text FROM \"050_ING\" ORDER BY word_count ASC LIMIT 6;"
+    },
+    {
+        "question": "Is there a Pok\u00e9mon named 'Pikachu' in the dataset?",
+        "dataset": "051_Pokemon",
+        "answer": "True",
+        "columns_used": [
+            "name"
+        ],
+        "sql": " SELECT name FROM \"051_Pokemon\" WHERE name = 'Pikachu';"
+    },
+    {
+        "question": "Are there any Pok\u00e9mon with a total stat greater than 700?",
+        "dataset": "051_Pokemon",
+        "answer": "True",
+        "columns_used": [
+            "total"
+        ],
+        "sql": " SELECT total FROM \"051_Pokemon\" WHERE total > 700;"
+    },
+    {
+        "question": "Are all Pok\u00e9mon in the first generation legendary?",
+        "dataset": "051_Pokemon",
+        "answer": "False",
+        "columns_used": [
+            "generation",
+            "legendary"
+        ],
+        "sql": " SELECT legendary FROM \"051_Pokemon\" WHERE generation = 1;"
+    },
+    {
+        "question": "Is there any Pok\u00e9mon with a speed greater than 150?",
+        "dataset": "051_Pokemon",
+        "answer": "True",
+        "columns_used": [
+            "speed"
+        ],
+        "sql": " SELECT EXISTS (SELECT 1 FROM \"051_Pokemon\" WHERE speed > 150);"
+    },
+    {
+        "question": "How many unique Pok\u00e9mon types are there in the 'type1' column?",
+        "dataset": "051_Pokemon",
+        "answer": "20",
+        "columns_used": [
+            "type1"
+        ],
+        "sql": " SELECT COUNT(DISTINCT type1) FROM \"051_Pokemon\";"
+    },
+    {
+        "question": "What's the highest total stat value found in the dataset?",
+        "dataset": "051_Pokemon",
+        "answer": "1125",
+        "columns_used": [
+            "total"
+        ],
+        "sql": " SELECT MAX(total) AS max_total FROM \"051_Pokemon\";"
+    },
+    {
+        "question": "How many Pok\u00e9mon are there in the third generation?",
+        "dataset": "051_Pokemon",
+        "answer": "160",
+        "columns_used": [
+            "generation"
+        ],
+        "sql": " SELECT COUNT(*) FROM \"051_Pokemon\" WHERE generation = 3;"
+    },
+    {
+        "question": "What is the average attack stat for all Pok\u00e9mon?",
+        "dataset": "051_Pokemon",
+        "answer": "80.94",
+        "columns_used": [
+            "attack"
+        ],
+        "sql": " SELECT AVG(attack) AS average_attack FROM \"051_Pokemon\";"
+    },
+    {
+        "question": "What is the primary type of the Pok\u00e9mon with the highest defense stat?",
+        "dataset": "051_Pokemon",
+        "answer": "Poison",
+        "columns_used": [
+            "defense",
+            "type1"
+        ],
+        "sql": " SELECT t.type1, MAX(t.defense) AS max_defense FROM \"051_Pokemon\" t GROUP BY t.type1 ORDER BY max_defense DESC LIMIT 1;"
+    },
+    {
+        "question": "Which Pok\u00e9mon has the lowest speed stat?",
+        "dataset": "051_Pokemon",
+        "answer": "Shuckle",
+        "columns_used": [
+            "speed",
+            "name"
+        ],
+        "sql": " SELECT name, speed FROM \"051_Pokemon\" ORDER BY speed ASC LIMIT 1;"
+    },
+    {
+        "question": "What secondary type is the most common among legendary Pok\u00e9mon?",
+        "dataset": "051_Pokemon",
+        "answer": "Flying",
+        "columns_used": [
+            "legendary",
+            "type2"
+        ],
+        "sql": " SELECT t2.name AS secondary_type, COUNT(*) AS frequency FROM \"051_Pokemon\" p JOIN type2 t2 ON p.type2 = t2.id WHERE p.legendary = 'Yes' GROUP BY t2.name ORDER BY frequency DESC LIMIT 1;"
+    },
+    {
+        "question": "Which Pok\u00e9mon has the highest special attack and what is its primary type?",
+        "dataset": "051_Pokemon",
+        "answer": "Mega Mewtwo Y (Psychic)",
+        "columns_used": [
+            "sp_attack",
+            "name",
+            "type1"
+        ],
+        "sql": " SELECT p.name, p.type1, p.sp_attack\n     FROM \"051_Pokemon\" p\n     ORDER BY p.sp_attack DESC NULLS LAST LIMIT 1;"
+    },
+    {
+        "question": "Name the top 3 Pok\u00e9mon with the highest total stats.",
+        "dataset": "051_Pokemon",
+        "answer": "['Eternamax Eternatus', 'Mega Mewtwo X', 'Mega Mewtwo Y']",
+        "columns_used": [
+            "total",
+            "name"
+        ],
+        "sql": " SELECT p.name, p.total\n     FROM \"051_Pokemon\" p\n     ORDER BY p.total DESC NULLS LAST\n     LIMIT 3;"
+    },
+    {
+        "question": "Which 5 Pok\u00e9mon have the lowest hp stats?",
+        "dataset": "051_Pokemon",
+        "answer": "['Shedinja', 'Diglett', 'Alolan Diglett', 'Magikarp', 'Pichu']",
+        "columns_used": [
+            "hp",
+            "name"
+        ],
+        "sql": " SELECT name, hp FROM \"051_Pokemon\" ORDER BY hp ASC NULLS LAST LIMIT 5;"
+    },
+    {
+        "question": "Name the top 4 primary categories that have the most Pok\u00e9mon.",
+        "dataset": "051_Pokemon",
+        "answer": "['Water', 'Normal', 'Grass', 'Bug']",
+        "columns_used": [
+            "type1"
+        ],
+        "sql": " SELECT t1.name, COUNT(*) AS num_pokemon FROM \"051_Pokemon\" p JOIN \"052_Type\" t1 ON p.type1 = t1.id GROUP BY t1.name ORDER BY num_pokemon DESC LIMIT 4;"
+    },
+    {
+        "question": "Which 6 Pok\u00e9mon from the second generation have the highest attack stats?",
+        "dataset": "051_Pokemon",
+        "answer": "['Mega Heracross', 'Mega Tyranitar', 'Mega Scizor', 'Tyranitar', 'Scizor', 'Ursaring']",
+        "columns_used": [
+            "generation",
+            "attack",
+            "name"
+        ],
+        "sql": " SELECT name, attack FROM \"051_Pokemon\" WHERE generation = 2 ORDER BY attack DESC NULLS LAST LIMIT 6;"
+    },
+    {
+        "question": "What are the top 5 special defense stats in the dataset?",
+        "dataset": "051_Pokemon",
+        "answer": "[250, 230, 200, 160, 160]",
+        "columns_used": [
+            "sp_defense"
+        ],
+        "sql": " SELECT sp_defense FROM \"051_Pokemon\" ORDER BY sp_defense DESC NULLS LAST LIMIT 5;"
+    },
+    {
+        "question": "list the bottom 3 defense stats of legendary Pok\u00e9mon.",
+        "dataset": "051_Pokemon",
+        "answer": "[20, 31, 50]",
+        "columns_used": [
+            "legendary",
+            "defense"
+        ],
+        "sql": " SELECT p.name, p.defense FROM \"051_Pokemon\" p WHERE p.legendary = 'Yes' ORDER BY p.defense ASC LIMIT 3;"
+    },
+    {
+        "question": "What are the 4 highest speed stats of Pok\u00e9mon in the fourth generation?",
+        "dataset": "051_Pokemon",
+        "answer": "[135, 127, 125, 125]",
+        "columns_used": [
+            "generation",
+            "speed"
+        ],
+        "sql": " SELECT generation, MAX(speed) AS max_speed FROM \"051_Pokemon\" WHERE generation = 4 GROUP BY generation ORDER BY max_speed DESC LIMIT 4;"
+    },
+    {
+        "question": "list the 6 lowest total stats of non-legendary Pok\u00e9mon.",
+        "dataset": "051_Pokemon",
+        "answer": "[175, 180, 180, 185, 190, 194]",
+        "columns_used": [
+            "legendary",
+            "total"
+        ],
+        "sql": " SELECT * FROM (SELECT * FROM \"051_Pokemon\" WHERE legendary = 'No' ORDER BY total ASC LIMIT 6) AS subquery;"
+    },
+    {
+        "question": "Is the maximum level of Extraversion greater than the maximum level of Agreeableness?",
+        "dataset": "052_Professional",
+        "answer": "True",
+        "columns_used": [
+            "Extraversion",
+            "Agreeableness"
+        ],
+        "sql": " SELECT MAX(Extraversion) > MAX(Agreeableness) AS comparison_result FROM \"052_Professional\";"
+    },
+    {
+        "question": "Is the profession with the highest Openness the same as the profession with the highest Conscientousness?",
+        "dataset": "052_Professional",
+        "answer": "False",
+        "columns_used": [
+            "Profession",
+            "Openness",
+            "Conscientousness"
+        ],
+        "sql": " SELECT (SELECT Profession FROM \"052_Professional\" ORDER BY Openness DESC LIMIT 1) = (SELECT Profession FROM \"052_Professional\" ORDER BY Conscientousness DESC LIMIT 1) AS same_profession;"
+    },
+    {
+        "question": "Does the profession with the lowest Emotional_Range also have the lowest level of Conversation?",
+        "dataset": "052_Professional",
+        "answer": "False",
+        "columns_used": [
+            "Profession",
+            "Emotional_Range",
+            "Conversation"
+        ],
+        "sql": " SELECT p.Profession, p.Emotional_Range, p.Conversation FROM \"052_Professional\" p ORDER BY p.Emotional_Range ASC, p.Conversation ASC LIMIT 1;"
+    },
+    {
+        "question": "Is the average level of Openness to Change higher than the average level of Hedonism?",
+        "dataset": "052_Professional",
+        "answer": "True",
+        "columns_used": [
+            "Openness to Change",
+            "Hedonism"
+        ],
+        "sql": " SELECT (AVG(\"Openness to Change\") > AVG(Hedonism)) AS is_higher FROM \"052_Professional\";"
+    },
+    {
+        "question": "What is the maximum value of Self-enhancement across all professions?",
+        "dataset": "052_Professional",
+        "answer": "0.7826336180787501",
+        "columns_used": [
+            "Self-enhancement"
+        ],
+        "sql": " SELECT MAX(\"Self-enhancement\") AS max_self_enhancement FROM \"052_Professional\";"
+    },
+    {
+        "question": "How many professions have an Emotional_Range above 0.5?",
+        "dataset": "052_Professional",
+        "answer": "1002",
+        "columns_used": [
+            "Emotional_Range"
+        ],
+        "sql": " SELECT COUNT(*) FROM \"052_Professional\" WHERE Emotional_Range > 0.5;"
+    },
+    {
+        "question": "What is the average Extraversion level for the profession with the highest number of records (n)?",
+        "dataset": "052_Professional",
+        "answer": "0.373214039767641",
+        "columns_used": [
+            "Profession",
+            "Extraversion",
+            "n"
+        ],
+        "sql": " SELECT p.Profession, AVG(p.Extraversion) AS average_extraversion FROM \"052_Professional\" p GROUP BY p.Profession ORDER BY n DESC LIMIT 1;"
+    },
+    {
+        "question": "What is the minimum level of Self-transcendence?",
+        "dataset": "052_Professional",
+        "answer": "0.0353641396193574",
+        "columns_used": [
+            "Self-transcendence"
+        ],
+        "sql": " SELECT MIN(\"elf-transcendence\") AS min_self_transcendence FROM \"052_Professional\";"
+    },
+    {
+        "question": "What profession has the highest level of Conscientiousness?",
+        "dataset": "052_Professional",
+        "answer": "Policy Officer",
+        "columns_used": [
+            "Profession",
+            "Conscientousness"
+        ],
+        "sql": " SELECT Profession, MAX(Conscientousness) AS max_conscientiousness FROM \"052_Professional\" GROUP BY Profession ORDER BY max_conscientiousness DESC LIMIT 1;"
+    },
+    {
+        "question": "What is the profession with the lowest level of Hedonism?",
+        "dataset": "052_Professional",
+        "answer": "Governor",
+        "columns_used": [
+            "Profession",
+            "Hedonism"
+        ],
+        "sql": " SELECT Profession, MIN(Hedonism) AS min_hedonism FROM \"052_Professional\" GROUP BY Profession ORDER BY min_hedonism ASC LIMIT 1;"
+    },
+    {
+        "question": "Which profession has the highest Emotional_Range?",
+        "dataset": "052_Professional",
+        "answer": "Mortgage Banker",
+        "columns_used": [
+            "Profession",
+            "Emotional_Range"
+        ],
+        "sql": " SELECT Profession, MAX(Emotional_Range) AS max_emotional_range FROM \"052_Professional\" GROUP BY Profession ORDER BY max_emotional_range DESC NULLS LAST LIMIT 1;"
+    },
+    {
+        "question": "What is the profession with the highest number of records (n)?",
+        "dataset": "052_Professional",
+        "answer": "Program Manager",
+        "columns_used": [
+            "Profession",
+            "n"
+        ],
+        "sql": " SELECT Profession, n FROM \"052_Professional\" ORDER BY n DESC LIMIT 1;"
+    },
+    {
+        "question": "What are the top 3 professions with the highest Openness?",
+        "dataset": "052_Professional",
+        "answer": "['Book Publisher', 'Bureau Chief', 'Publisher']",
+        "columns_used": [
+            "Profession",
+            "Openness"
+        ],
+        "sql": " SELECT p.Profession, p.Openness FROM \"052_Professional\" p ORDER BY p.Openness DESC NULLS LAST LIMIT 3;"
+    },
+    {
+        "question": "Which are the bottom 4 professions in terms of Agreeableness?",
+        "dataset": "052_Professional",
+        "answer": "['.Net Architect', 'Android Developer', 'Principal Engineer', 'Game Engineer']",
+        "columns_used": [
+            "Profession",
+            "Agreeableness"
+        ],
+        "sql": " SELECT Profession, Agreeableness\n     FROM \"052_Professional\"\n     ORDER BY Agreeableness ASC\n     LIMIT 4;"
+    },
+    {
+        "question": "List the top 5 professions with the highest Conversation levels.",
+        "dataset": "052_Professional",
+        "answer": "['Director of Athletics', 'Recruiting Coordinator', 'Athletic Coordinator', 'Director of Personnel', 'Skills Trainer']",
+        "columns_used": [
+            "Profession",
+            "Conversation"
+        ],
+        "sql": " SELECT p.Profession, p.Conversation FROM \"052_Professional\" p ORDER BY p.Conversation DESC NULLS LAST LIMIT 5;"
+    },
+    {
+        "question": "Name the bottom 2 professions in terms of Self-enhancement.",
+        "dataset": "052_Professional",
+        "answer": "['U.S. Senator', 'Congressman']",
+        "columns_used": [
+            "Profession",
+            "Self-enhancement"
+        ],
+        "sql": " SELECT p.Profession, p.\"Self-enhancement\" FROM \"052_Professional\" p ORDER BY p.\"Self-enhancement\" ASC LIMIT 2;"
+    },
+    {
+        "question": "What are the top 3 values of Openness to Change across all professions?",
+        "dataset": "052_Professional",
+        "answer": "[0.7557249985959847, 0.7413189187628788, 0.7034528053640179]",
+        "columns_used": [
+            "Openness to Change"
+        ],
+        "sql": " SELECT Profession, \"Openness to Change\" FROM \"052_Professional\" ORDER BY \"Openness to Change\" DESC NULLS LAST LIMIT 3;"
+    },
+    {
+        "question": "List the bottom 4 Emotional_Range values.",
+        "dataset": "052_Professional",
+        "answer": "[0.1652381569664056, 0.2005428064324122, 0.2215546116855247, 0.2506791678499942]",
+        "columns_used": [
+            "Emotional_Range"
+        ],
+        "sql": " SELECT Emotional_Range FROM \"052_Professional\" ORDER BY Emotional_Range ASC LIMIT 4;"
+    },
+    {
+        "question": "What are the highest 5 levels of Extraversion?",
+        "dataset": "052_Professional",
+        "answer": "[0.9794365922809228, 0.9723660656030668, 0.954299437125917, 0.9362989453985364, 0.9307917067583288]",
+        "columns_used": [
+            "Extraversion"
+        ],
+        "sql": " SELECT \"Extraversion\" FROM \"052_Professional\" ORDER BY \"Extraversion\" DESC NULLS LAST LIMIT 5;"
+    },
+    {
+        "question": "Name the lowest 6 levels of Self-transcendence.",
+        "dataset": "052_Professional",
+        "answer": "[0.0353641396193574, 0.0355792960526332, 0.0399752446723049, 0.0573280662585624, 0.0591099063085338, 0.0592781792571762]",
+        "columns_used": [
+            "Self-transcendence"
+        ],
+        "sql": " SELECT \"Self-transcendence\" FROM \"052_Professional\" ORDER BY \"Self-transcendence\" ASC NULLS LAST LIMIT 6;"
+    },
+    {
+        "question": "Is there a patent related to 'communication' in the title?",
+        "dataset": "053_Patents",
+        "answer": "False",
+        "columns_used": [
+            "title"
+        ],
+        "sql": " SELECT title FROM \"053_Patents\" WHERE title ilike '%communication%';"
+    },
+    {
+        "question": "Are there patents associated with the organization 'IBM'?",
+        "dataset": "053_Patents",
+        "answer": "False",
+        "columns_used": [
+            "organization"
+        ],
+        "sql": " SELECT COUNT(*) FROM \"053_Patents\" WHERE organization = 'IBM';"
+    },
+    {
+        "question": "Is there a patent abstract that mentions 'software'?",
+        "dataset": "053_Patents",
+        "answer": "True",
+        "columns_used": [
+            "abstract"
+        ],
+        "sql": " SELECT abstract FROM \"053_Patents\" WHERE abstract ilike '%software%';"
+    },
+    {
+        "question": "Are there patents of the 'design' type?",
+        "dataset": "053_Patents",
+        "answer": "True",
+        "columns_used": [
+            "type"
+        ],
+        "sql": " SELECT COUNT(*) FROM \"053_Patents\" WHERE type = 'design';"
+    },
+    {
+        "question": "How many unique organizations have patents listed?",
+        "dataset": "053_Patents",
+        "answer": "3574",
+        "columns_used": [
+            "organization"
+        ],
+        "sql": " SELECT COUNT(DISTINCT organization) FROM \"053_Patents\";"
+    },
+    {
+        "question": "On average, how many claims do the patents have?",
+        "dataset": "053_Patents",
+        "answer": "14.745974597459746",
+        "columns_used": [
+            "num_claims"
+        ],
+        "sql": " SELECT AVG(num_claims) AS average_claims FROM \"053_Patents\";"
+    },
+    {
+        "question": "What's the highest number of claims a patent has?",
+        "dataset": "053_Patents",
+        "answer": "100",
+        "columns_used": [
+            "num_claims"
+        ],
+        "sql": " SELECT MAX(num_claims) AS max_num_claims FROM \"053_Patents\";"
+    },
+    {
+        "question": "How many patents are of 'utility' type?",
+        "dataset": "053_Patents",
+        "answer": "8848",
+        "columns_used": [
+            "type"
+        ],
+        "sql": " SELECT COUNT(*) FROM \"053_Patents\" WHERE type = 'utility';"
+    },
+    {
+        "question": "Which organization has the patent with the highest number of claims?",
+        "dataset": "053_Patents",
+        "answer": "Massachusetts Institute of Technology",
+        "columns_used": [
+            "organization",
+            "num_claims"
+        ],
+        "sql": " SELECT organization, num_claims FROM \"053_Patents\" ORDER BY num_claims DESC LIMIT 1;"
+    },
+    {
+        "question": "Which kind of patent is the most common?",
+        "dataset": "053_Patents",
+        "answer": "B2",
+        "columns_used": [
+            "kind"
+        ],
+        "sql": " SELECT kind, COUNT(*) AS frequency FROM \"053_Patents\" GROUP BY kind ORDER BY frequency DESC LIMIT 1;"
+    },
+    {
+        "question": "In which language are the patents written?",
+        "dataset": "053_Patents",
+        "answer": "en",
+        "columns_used": [
+            "lang"
+        ],
+        "sql": " SELECT lang FROM \"053_Patents\";"
+    },
+    {
+        "question": "Which graphext cluster is the most common among the patents?",
+        "dataset": "053_Patents",
+        "answer": "member, portion, body, end",
+        "columns_used": [
+            "graphext_cluster"
+        ],
+        "sql": " SELECT graphext_cluster, COUNT(*) AS frequency FROM \"053_Patents\" GROUP BY graphext_cluster ORDER BY frequency DESC LIMIT 1;"
+    },
+    {
+        "question": "Which are the top 3 organizations with the most patents?",
+        "dataset": "053_Patents",
+        "answer": "['International Business Machines Corporation', 'Samsung Electronics Co., Ltd.', 'Google Inc.']",
+        "columns_used": [
+            "organization"
+        ],
+        "sql": " SELECT organization, COUNT(*) AS num_patents FROM \"053_Patents\" GROUP BY organization ORDER BY num_patents DESC LIMIT 3;"
+    },
+    {
+        "question": "List the 4 most common types of patents in the dataset.",
+        "dataset": "053_Patents",
+        "answer": "['utility', 'design', 'plant', 'reissue']",
+        "columns_used": [
+            "type"
+        ],
+        "sql": " SELECT type, COUNT(*) AS frequency FROM \"053_Patents\" GROUP BY type ORDER BY frequency DESC LIMIT 4;"
+    },
+    {
+        "question": "Which 5 kinds of patents are the most prevalent?",
+        "dataset": "053_Patents",
+        "answer": "['B2', 'S1', 'B1', 'P2', 'P3']",
+        "columns_used": [
+            "kind"
+        ],
+        "sql": " SELECT kind, COUNT(*) AS frequency FROM \"053_Patents\" GROUP BY kind ORDER BY frequency DESC LIMIT 5;"
+    },
+    {
+        "question": "List 2 least common graphext clusters among the patents.",
+        "dataset": "053_Patents",
+        "answer": "['habit, plant, foliage, flowers', 'soybean, plant, cultivar, soybean cultivar']",
+        "columns_used": [
+            "graphext_cluster"
+        ],
+        "sql": " SELECT graphext_cluster, COUNT(*) AS frequency FROM \"053_Patents\" GROUP BY graphext_cluster ORDER BY frequency ASC LIMIT 2;"
+    },
+    {
+        "question": "What are the top 4 numbers of claims in the patents?",
+        "dataset": "053_Patents",
+        "answer": "[20, 1, 18, 19]",
+        "columns_used": [
+            "num_claims"
+        ],
+        "sql": " SELECT num_claims FROM \"053_Patents\" ORDER BY num_claims DESC NULLS LAST LIMIT 4;"
+    },
+    {
+        "question": "List the 3 patents (by ID) with the most number of claims.",
+        "dataset": "053_Patents",
+        "answer": "[9479771.0, 9325365.0, 9323284.0]",
+        "columns_used": [
+            "id",
+            "num_claims"
+        ],
+        "sql": " SELECT p.id, p.num_claims FROM \"053_Patents\" p ORDER BY p.num_claims DESC NULLS LAST LIMIT 3;"
+    },
+    {
+        "question": "Which 5 patents (by ID) have the most targets associated?",
+        "dataset": "053_Patents",
+        "answer": "[29, 30, 46, 51, 70]",
+        "columns_used": [
+            "id",
+            "target"
+        ],
+        "sql": " SELECT p.id, COUNT(p.target) AS target_count FROM \"053_Patents\" p GROUP BY p.id ORDER BY target_count DESC LIMIT 5;"
+    },
+    {
+        "question": "List the 6 most recent patents by their ID.",
+        "dataset": "053_Patents",
+        "answer": "[9479476.0, 9479477.0, 9479478.0, 9479479.0, 9479480.0, 9479481.0]",
+        "columns_used": [
+            "id",
+            "date"
+        ],
+        "sql": " SELECT id, date FROM \"053_Patents\" ORDER BY date DESC LIMIT 6;"
+    },
+    {
+        "question": "Has the author with the highest number of followers ever been verified?",
+        "dataset": "054_Joe",
+        "answer": "True",
+        "columns_used": [
+            "author_id<gx:category>",
+            "user_followers_count<gx:number>",
+            "user_verified<gx:boolean>"
+        ],
+        "sql": " SELECT \"author_id<gx:category>\", MAX(\"user_followers_count<gx:number>\") AS max_followers, MIN(\"user_verified<gx:boolean>\") AS min_verified FROM \"054_Joe\" GROUP BY \"author_id<gx:category>\" HAVING MAX(\"user_followers_count<gx:number>\") > 1000 AND MIN(\"user_verified<gx:boolean>\") = TRUE;"
+    },
+    {
+        "question": "Is the author who has the most favourites also the one with the most retweets?",
+        "dataset": "054_Joe",
+        "answer": "False",
+        "columns_used": [
+            "author_id<gx:category>",
+            "user_favourites_count<gx:number>",
+            "retweets<gx:number>"
+        ],
+        "sql": " SELECT \"author_id<gx:category>\", MAX(\"user_favourites_count<gx:number>\") AS max_favourites, MAX(\"retweets<gx:number>\") AS max_retweets FROM \"054_Joe\" GROUP BY \"author_id<gx:category>\" ORDER BY max_favourites DESC, max_retweets DESC LIMIT 1;"
+    },
+    {
+        "question": "Is the most mentioned user also the most retweeted user?",
+        "dataset": "054_Joe",
+        "answer": "False",
+        "columns_used": [
+            "author_id<gx:category>",
+            "mention_names<gx:list[category]>",
+            "retweets<gx:number>"
+        ],
+        "sql": " SELECT \"author_id<gx:category>\", COUNT(\"mention_names<gx:list[category]>\") AS num_mentions, SUM(\"retweets<gx:number>\") AS total_retweets\n     FROM \"054_Joe\"\n     GROUP BY \"author_id<gx:category>\"\n     ORDER BY num_mentions DESC, total_retweets DESC\n     LIMIT 1;"
+    },
+    {
+        "question": "Does the author with the most retweets also have the most replies?",
+        "dataset": "054_Joe",
+        "answer": "True",
+        "columns_used": [
+            "author_id<gx:category>",
+            "retweets<gx:number>",
+            "replies<gx:number>"
+        ],
+        "sql": " SELECT \"author_id<gx:category>\", MAX(\"retweets<gx:number>\") AS max_retweets, MAX(\"replies<gx:number>\") AS max_replies FROM \"054_Joe\" GROUP BY \"author_id<gx:category>\" ORDER BY max_retweets DESC, max_replies DESC LIMIT 1;"
+    },
+    {
+        "question": "What is the maximum number of followers an author in the dataset has?",
+        "dataset": "054_Joe",
+        "answer": "0.7826336180787501",
+        "columns_used": [
+            "user_followers_count<gx:number>"
+        ],
+        "sql": " SELECT MAX(\"user_followers_count\") AS max_followers FROM \"054_Joe\";"
+    },
+    {
+        "question": "How many authors have more than 10,000 favourites?",
+        "dataset": "054_Joe",
+        "answer": "1002",
+        "columns_used": [
+            "user_favourites_count<gx:number>"
+        ],
+        "sql": " SELECT COUNT(*) FROM \"054_Joe\" WHERE \"user_favourites_count\" > 10000;"
+    },
+    {
+        "question": "How many retweets does the most retweeted tweet have?",
+        "dataset": "054_Joe",
+        "answer": "0.373214039767641",
+        "columns_used": [
+            "retweets<gx:number>"
+        ],
+        "sql": " SELECT MAX(\"retweets<gx:number>\") AS \"max_retweets\" FROM \"054_Joe\";"
+    },
+    {
+        "question": "How many times has the most mentioned user been mentioned?",
+        "dataset": "054_Joe",
+        "answer": "0.0353641396193574",
+        "columns_used": [
+            "mention_names<gx:list[category]>"
+        ],
+        "sql": " SELECT COUNT(*) AS num_mentions FROM \"054_Joe\" WHERE mention_names IS NOT NULL;"
+    },
+    {
+        "question": "Who is the author with the most followers?",
+        "dataset": "054_Joe",
+        "answer": "Policy Officer",
+        "columns_used": [
+            "author_name<gx:category>",
+            "user_followers_count<gx:number>"
+        ],
+        "sql": " SELECT \"author_name<gx:category>\", MAX(\"user_followers_count<gx:number>\") AS max_followers FROM \"054_Joe\" GROUP BY \"author_name<gx:category>\" ORDER BY max_followers DESC LIMIT 1;"
+    },
+    {
+        "question": "Who is the author with the highest number of favourites?",
+        "dataset": "054_Joe",
+        "answer": "Governor",
+        "columns_used": [
+            "author_name<gx:category>",
+            "user_favourites_count<gx:number>"
+        ],
+        "sql": " SELECT \"author_name<gx:category>\", MAX(\"user_favourites_count<gx:number>\") AS max_favourites FROM \"054_Joe\" GROUP BY \"author_name<gx:category>\" ORDER BY max_favourites DESC LIMIT 1;"
+    },
+    {
+        "question": "What is the name of the user who is most often mentioned?",
+        "dataset": "054_Joe",
+        "answer": "Mortgage Banker",
+        "columns_used": [
+            "author_name<gx:category>",
+            "mention_names<gx:list[category]>"
+        ],
+        "sql": " SELECT \"author_name<gx:category>\" FROM \"054_Joe\" GROUP BY \"author_name<gx:category>\" ORDER BY COUNT(\"mention_names<gx:list[category]>\") DESC LIMIT 1;"
+    },
+    {
+        "question": "Who is the author of the tweet with the most retweets?",
+        "dataset": "054_Joe",
+        "answer": "Program Manager",
+        "columns_used": [
+            "author_name<gx:category>",
+            "retweets<gx:number>"
+        ],
+        "sql": " SELECT \"author_name<gx:category>\", MAX(\"retweets<gx:number>\") AS max_retweets FROM \"054_Joe\" GROUP BY \"author_name<gx:category>\" ORDER BY max_retweets DESC LIMIT 1;"
+    },
+    {
+        "question": "Who are the top 3 authors with the most followers?",
+        "dataset": "054_Joe",
+        "answer": "['Book Publisher', 'Bureau Chief', 'Publisher']",
+        "columns_used": [
+            "author_name<gx:category>",
+            "user_followers_count<gx:number>"
+        ],
+        "sql": " SELECT \"author_name<gx:category>\", SUM(\"user_followers_count<gx:number>\") AS total_followers FROM \"054_Joe\" GROUP BY \"author_name<gx:category>\" ORDER BY total_followers DESC LIMIT 3;"
+    },
+    {
+        "question": "Who are the top 4 authors with the most favourites?",
+        "dataset": "054_Joe",
+        "answer": "['.Net Architect', 'Android Developer', 'Principal Engineer', 'Game Engineer']",
+        "columns_used": [
+            "author_name<gx:category>",
+            "user_favourites_count<gx:number>"
+        ],
+        "sql": " SELECT \"author_name<gx:category>\", SUM(\"user_favourites_count<gx:number>\") AS total_favourites FROM \"054_Joe\" GROUP BY \"author_name<gx:category>\" ORDER BY total_favourites DESC LIMIT 4;"
+    },
+    {
+        "question": "Who are the 5 users who are mentioned the most often?",
+        "dataset": "054_Joe",
+        "answer": "['Director of Athletics', 'Recruiting Coordinator', 'Athletic Coordinator', 'Director of Personnel', 'Skills Trainer']",
+        "columns_used": [
+            "author_name<gx:category>",
+            "mention_names<gx:list[category]>"
+        ],
+        "sql": " SELECT \"author_name<gx:category>\", COUNT(*) AS num_mentions FROM \"054_Joe\" GROUP BY \"author_name<gx:category>\" ORDER BY num_mentions DESC LIMIT 5;"
+    },
+    {
+        "question": "Who are the top 2 authors of the tweets with the most retweets?",
+        "dataset": "054_Joe",
+        "answer": "['U.S. Senator', 'Congressman']",
+        "columns_used": [
+            "author_name<gx:category>",
+            "retweets<gx:number>"
+        ],
+        "sql": " SELECT \"author_name<gx:category>\", SUM(\"retweets<gx:number>\") AS total_retweets FROM \"054_Joe\" GROUP BY \"author_name<gx:category>\" ORDER BY total_retweets DESC LIMIT 2;"
+    },
+    {
+        "question": "What are the top 3 numbers of followers in the dataset?",
+        "dataset": "054_Joe",
+        "answer": "[0.7557249985959847, 0.7413189187628788, 0.7034528053640179]",
+        "columns_used": [
+            "user_followers_count<gx:number>"
+        ],
+        "sql": " SELECT \"user_followers_count<gx:number>\" AS followers_count, rank() OVER (ORDER BY \"user_followers_count<gx:number>\" DESC) AS rank FROM \"054_Joe\" ORDER BY rank ASC LIMIT 3;"
+    },
+    {
+        "question": "What are the top 4 numbers of favourites an author in the dataset has?",
+        "dataset": "054_Joe",
+        "answer": "[0.1652381569664056, 0.2005428064324122, 0.2215546116855247, 0.2506791678499942]",
+        "columns_used": [
+            "user_favourites_count<gx:number>"
+        ],
+        "sql": " SELECT user_favourites_count FROM \"054_Joe\" ORDER BY user_favourites_count DESC NULLS LAST LIMIT 4;"
+    },
+    {
+        "question": "What are the 5 highest numbers of times a user is mentioned?",
+        "dataset": "054_Joe",
+        "answer": "[0.9794365922809228, 0.9723660656030668, 0.954299437125917, 0.9362989453985364, 0.9307917067583288]",
+        "columns_used": [
+            "mention_names<gx:list[category]>"
+        ],
+        "sql": " SELECT mention_names, COUNT(*) AS num_mentions FROM \"054_Joe\" GROUP BY mention_names ORDER BY num_mentions DESC LIMIT 5;"
+    },
+    {
+        "question": "What are the 2 highest numbers of retweets a tweet in the dataset has?",
+        "dataset": "054_Joe",
+        "answer": "[0.0353641396193574, 0.0355792960526332]",
+        "columns_used": [
+            "retweets<gx:number>"
+        ],
+        "sql": " SELECT MAX(\"retweets<gx:number>\") AS \"max_retweets\", COUNT(*) AS \"num_tweets\" FROM \"054_Joe\" GROUP BY \"max_retweets\" ORDER BY \"max_retweets\" DESC LIMIT 2;"
+    },
+    {
+        "question": "Is the borrower with the highest loan amount also the one with the longest loan duration?",
+        "dataset": "055_German",
+        "answer": "False",
+        "columns_used": [
+            "Loan Amount",
+            "Loan Duration - Months"
+        ],
+        "sql": " SELECT \"Loan Amount\", \"Loan Duration - Months\"\n     FROM \"055_German\"\n     ORDER BY \"Loan Amount\" DESC, \"Loan Duration - Months\" ASC LIMIT 1;"
+    },
+    {
+        "question": "Does the borrower with the maximum number of existing loans also have the highest loan amount?",
+        "dataset": "055_German",
+        "answer": "False",
+        "columns_used": [
+            "Number of Existing Loans",
+            "Loan Amount"
+        ],
+        "sql": " SELECT MAX(Number of Existing Loans) AS max_loans, MAX(Loan Amount) AS max_loan_amount FROM \"055_German\";"
+    },
+    {
+        "question": "Does the borrower with the longest loan duration also have the maximum number of existing loans?",
+        "dataset": "055_German",
+        "answer": "False",
+        "columns_used": [
+            "Loan Duration - Months",
+            "Number of Existing Loans"
+        ],
+        "sql": " SELECT \"Loan Duration - Months\", \"Number of Existing Loans\"\n     FROM \"055_German\"\n     ORDER BY \"Loan Duration - Months\" DESC, \"Number of Existing Loans\" DESC LIMIT 1;"
+    },
+    {
+        "question": "Does the oldest borrower also have the highest loan amount?",
+        "dataset": "055_German",
+        "answer": "False",
+        "columns_used": [
+            "Age",
+            "Loan Amount"
+        ],
+        "sql": " SELECT Age, Loan Amount\n     FROM \"055_German\"\n     ORDER BY Age ASC, Loan Amount DESC\n     LIMIT 1;"
+    },
+    {
+        "question": "What is the highest loan amount in the dataset?",
+        "dataset": "055_German",
+        "answer": "18424",
+        "columns_used": [
+            "Loan Amount"
+        ],
+        "sql": " SELECT MAX(Loan Amount) AS max_loan_amount FROM \"055_German\";"
+    },
+    {
+        "question": "How many borrowers have more than 1 existing loan?",
+        "dataset": "055_German",
+        "answer": "367",
+        "columns_used": [
+            "Number of Existing Loans"
+        ],
+        "sql": " SELECT COUNT(*) FROM \"055_German\" WHERE \"Number of Existing Loans\" > 1;"
+    },
+    {
+        "question": "What is the longest loan duration in the dataset?",
+        "dataset": "055_German",
+        "answer": "72",
+        "columns_used": [
+            "Loan Duration - Months"
+        ],
+        "sql": " SELECT MAX('Loan Duration - Months') AS longest_loan_duration FROM \"055_German\";"
+    },
+    {
+        "question": "How many borrowers are older than 50?",
+        "dataset": "055_German",
+        "answer": "113",
+        "columns_used": [
+            "Age"
+        ],
+        "sql": " SELECT COUNT(*) FROM \"055_German\" WHERE age > 50;"
+    },
+    {
+        "question": "What is the most common purpose of loans?",
+        "dataset": "055_German",
+        "answer": "Radio/TV",
+        "columns_used": [
+            "Purpose of Loan"
+        ],
+        "sql": " SELECT \"Purpose of Loan\", COUNT(*) AS frequency FROM \"055_German\" GROUP BY \"Purpose of Loan\" ORDER BY frequency DESC LIMIT 1;"
+    },
+    {
+        "question": "What is the most common job category for borrowers?",
+        "dataset": "055_German",
+        "answer": "Skilled",
+        "columns_used": [
+            "Job"
+        ],
+        "sql": " SELECT Job, COUNT(*) AS frequency FROM \"055_German\" GROUP BY Job ORDER BY frequency DESC LIMIT 1;"
+    },
+    {
+        "question": "What is the most common credit history category for borrowers?",
+        "dataset": "055_German",
+        "answer": "Existing Credits Paid Back Duly Till Now",
+        "columns_used": [
+            "Credit History"
+        ],
+        "sql": " SELECT Credit History, COUNT(*) AS frequency FROM \"055_German\" GROUP BY Credit History ORDER BY frequency DESC LIMIT 1;"
+    },
+    {
+        "question": "What is the most common savings account status for borrowers?",
+        "dataset": "055_German",
+        "answer": "Less than 100 DM",
+        "columns_used": [
+            "Savings Account"
+        ],
+        "sql": " SELECT Savings Account, COUNT(*) AS frequency FROM \"055_German\" GROUP BY Savings Account ORDER BY frequency DESC LIMIT 1;"
+    },
+    {
+        "question": "What are the top 3 jobs of borrowers with the highest loan amount?",
+        "dataset": "055_German",
+        "answer": "['Highly Skilled', 'Skilled', 'Highly Skilled']",
+        "columns_used": [
+            "Loan Amount",
+            "Job"
+        ],
+        "sql": " SELECT Job, SUM(Loan Amount) AS total_loan_amount FROM \"055_German\" GROUP BY Job ORDER BY total_loan_amount DESC LIMIT 3;"
+    },
+    {
+        "question": "What are the top 4 jobs of borrowers with the longest loan duration?",
+        "dataset": "055_German",
+        "answer": "['Skilled', 'Skilled', 'Skilled', 'Unskilled - Resident']",
+        "columns_used": [
+            "Loan Duration - Months",
+            "Job"
+        ],
+        "sql": " SELECT Job, MAX(Loan Duration - Months) AS max_duration FROM \"055_German\" GROUP BY Job ORDER BY max_duration DESC LIMIT 4;"
+    },
+    {
+        "question": "What are the 5 jobs of borrowers with the maximum number of existing loans?",
+        "dataset": "055_German",
+        "answer": "['Skilled', 'Skilled', 'Unskilled - Resident', 'Highly Skilled', 'Skilled']",
+        "columns_used": [
+            "Number of Existing Loans",
+            "Job"
+        ],
+        "sql": " SELECT j.job, COUNT(*) AS num_loans FROM \"055_German\" g JOIN \"055_German\" j ON g.borrower = j.borrower GROUP BY j.job ORDER BY num_loans DESC LIMIT 5;"
+    },
+    {
+        "question": "What are the jobs of the oldest 2 borrowers?",
+        "dataset": "055_German",
+        "answer": "['Highly Skilled', 'Highly Skilled']",
+        "columns_used": [
+            "Age",
+            "Job"
+        ],
+        "sql": " SELECT \"Job\" FROM \"055_German\" ORDER BY \"Age\" ASC LIMIT 2;"
+    },
+    {
+        "question": "What are the top 3 loan amounts in the dataset?",
+        "dataset": "055_German",
+        "answer": "[18424, 15945, 15857]",
+        "columns_used": [
+            "Loan Amount"
+        ],
+        "sql": " SELECT Loan Amount FROM \"055_German\" ORDER BY Loan Amount DESC NULLS LAST LIMIT 3;"
+    },
+    {
+        "question": "What are the top 4 loan durations in the dataset?",
+        "dataset": "055_German",
+        "answer": "[72, 60, 60, 60]",
+        "columns_used": [
+            "Loan Duration - Months"
+        ],
+        "sql": " SELECT Loan Duration - Months FROM 055_German ORDER BY Loan Duration - Months DESC NULLS LAST LIMIT 4;"
+    },
+    {
+        "question": "What are the 5 maximum numbers of existing loans among borrowers?",
+        "dataset": "055_German",
+        "answer": "[4, 4, 4, 4, 4]",
+        "columns_used": [
+            "Number of Existing Loans"
+        ],
+        "sql": " SELECT MAX(Number of Existing Loans) AS max_loans FROM \"055_German\";"
+    },
+    {
+        "question": "What are the ages of the top 2 oldest borrowers?",
+        "dataset": "055_German",
+        "answer": "[75, 75]",
+        "columns_used": [
+            "Age"
+        ],
+        "sql": " SELECT TOP 2 age FROM \"055_German\" ORDER BY age DESC NULLS LAST;"
+    },
+    {
+        "question": "Are there any foods with zero calories?",
+        "dataset": "056_Emoji",
+        "answer": "False",
+        "columns_used": [
+            "Calories (kcal)"
+        ],
+        "sql": " SELECT \"Calories (kcal)\" FROM \"056_Emoji\" WHERE \"Calories (kcal)\" = 0;"
+    },
+    {
+        "question": "Do all foods contain sugar?",
+        "dataset": "056_Emoji",
+        "answer": "False",
+        "columns_used": [
+            "Total Sugar (g)"
+        ],
+        "sql": " SELECT 'Total Sugar (g)' FROM '056_Emoji';"
+    },
+    {
+        "question": "Are there any foods that contain no fat at all?",
+        "dataset": "056_Emoji",
+        "answer": "True",
+        "columns_used": [
+            "Total Fat (g)"
+        ],
+        "sql": " SELECT \"Food\" FROM \"056_Emoji\" WHERE \"Total Fat (g)\" = 0;"
+    },
+    {
+        "question": "Are there foods that do not contain protein?",
+        "dataset": "056_Emoji",
+        "answer": "True",
+        "columns_used": [
+            "Protein (g)"
+        ],
+        "sql": " SELECT \"Food\" FROM \"056_Emoji\" WHERE \"Protein (g)\" IS NULL;"
+    },
+    {
+        "question": "How many foods have more than 500 kcal?",
+        "dataset": "056_Emoji",
+        "answer": "0",
+        "columns_used": [
+            "Calories (kcal)"
+        ],
+        "sql": " SELECT COUNT(*) FROM \"056_Emoji\" WHERE \"Calories (kcal)\" > 500;"
+    },
+    {
+        "question": "What is the average amount of total fat (in grams) across all foods?",
+        "dataset": "056_Emoji",
+        "answer": "0.08465",
+        "columns_used": [
+            "Total Fat (g)"
+        ],
+        "sql": " SELECT AVG(Total Fat (g)) AS average_total_fat FROM \"056_Emoji\";"
+    },
+    {
+        "question": "How many foods have a sodium content of more than 1 gram?",
+        "dataset": "056_Emoji",
+        "answer": "18",
+        "columns_used": [
+            "Sodium (g)"
+        ],
+        "sql": " SELECT COUNT(*) FROM \"056_Emoji\" WHERE \"Sodium (g)\" > 1;"
+    },
+    {
+        "question": "What's the highest amount of protein (in grams) found in a food item?",
+        "dataset": "056_Emoji",
+        "answer": "0.2748",
+        "columns_used": [
+            "Protein (g)"
+        ],
+        "sql": " SELECT MAX(\"Protein (g)\") FROM \"056_Emoji\";"
+    },
+    {
+        "question": "What food has the highest calorie content?",
+        "dataset": "056_Emoji",
+        "answer": "bacon",
+        "columns_used": [
+            "Calories (kcal)",
+            "name"
+        ],
+        "sql": " SELECT name, calories_kcal FROM \"056_Emoji\" ORDER BY calories_kcal DESC LIMIT 1;"
+    },
+    {
+        "question": "Which food contains the most sugar?",
+        "dataset": "056_Emoji",
+        "answer": "honey",
+        "columns_used": [
+            "Total Sugar (g)",
+            "name"
+        ],
+        "sql": " SELECT name, SUM(Total Sugar (g)) AS total_sugar FROM \"056_Emoji\" GROUP BY name ORDER BY total_sugar DESC LIMIT 1;"
+    },
+    {
+        "question": "What is the food with the least amount of total fat?",
+        "dataset": "056_Emoji",
+        "answer": "honey",
+        "columns_used": [
+            "Total Fat (g)",
+            "name"
+        ],
+        "sql": " SELECT name, SUM(Total Fat (g)) AS total_fat FROM \"056_Emoji\" GROUP BY name ORDER BY total_fat ASC LIMIT 1;"
+    },
+    {
+        "question": "Which food has the highest amount of protein?",
+        "dataset": "056_Emoji",
+        "answer": "beef",
+        "columns_used": [
+            "Protein (g)",
+            "name"
+        ],
+        "sql": " SELECT name, protein_g FROM \"056_Emoji\" ORDER BY protein_g DESC NULLS LAST LIMIT 1;"
+    },
+    {
+        "question": "List the top 5 foods with the most calories.",
+        "dataset": "056_Emoji",
+        "answer": "['bacon', 'peanuts', 'chocolate bar', 'popcorn', 'cookie']",
+        "columns_used": [
+            "Calories (kcal)",
+            "name"
+        ],
+        "sql": " SELECT name, calories_kcal FROM 056_emoji ORDER BY calories_kcal DESC NULLS LAST LIMIT 5;"
+    },
+    {
+        "question": "Identify the top 3 foods with the least amount of sugar.",
+        "dataset": "056_Emoji",
+        "answer": "['chestnut', 'pancakes', 'cheese']",
+        "columns_used": [
+            "Total Sugar (g)",
+            "name"
+        ],
+        "sql": " SELECT name, SUM(Total Sugar (g)) AS total_sugar FROM \"056_Emoji\" GROUP BY name ORDER BY total_sugar ASC LIMIT 3;"
+    },
+    {
+        "question": "Enumerate the 4 foods with the most total fat.",
+        "dataset": "056_Emoji",
+        "answer": "['bacon', 'peanuts', 'cheese', 'popcorn']",
+        "columns_used": [
+            "Total Fat (g)",
+            "name"
+        ],
+        "sql": " SELECT name, SUM(Total Fat (g)) AS total_fat FROM \"056_Emoji\" GROUP BY name ORDER BY total_fat DESC LIMIT 4;"
+    },
+    {
+        "question": "Name the 6 foods with the least amount of protein.",
+        "dataset": "056_Emoji",
+        "answer": "['candy', 'black tea', 'bacon', 'champagne', 'red wine', 'red apple']",
+        "columns_used": [
+            "Protein (g)",
+            "name"
+        ],
+        "sql": " SELECT name, protein_g FROM \"056_Emoji\" ORDER BY protein_g ASC LIMIT 6;"
+    },
+    {
+        "question": "List the 5 highest calorie counts found in the dataset.",
+        "dataset": "056_Emoji",
+        "answer": "[8.98, 5.67, 5.18, 5.0, 4.97]",
+        "columns_used": [
+            "Calories (kcal)"
+        ],
+        "sql": " SELECT MAX(Calories (kcal)) AS max_calories FROM \"056_Emoji\";"
+    },
+    {
+        "question": "What are the 3 lowest amounts of sugar found among the foods?",
+        "dataset": "056_Emoji",
+        "answer": "[0.0, 0.0, 0.0]",
+        "columns_used": [
+            "Total Sugar (g)"
+        ],
+        "sql": " SELECT MIN(Total Sugar (g)) AS min_sugar FROM \"056_Emoji\";"
+    },
+    {
+        "question": "Enumerate the 4 highest amounts of total fat found in the foods.",
+        "dataset": "056_Emoji",
+        "answer": "[0.995, 0.4924, 0.3099, 0.281]",
+        "columns_used": [
+            "Total Fat (g)"
+        ],
+        "sql": " SELECT Total Fat (g) FROM \"056_Emoji\" ORDER BY Total Fat (g) DESC NULLS LAST LIMIT 4;"
+    },
+    {
+        "question": "What are the top 6 lowest amounts of protein found in the dataset?",
+        "dataset": "056_Emoji",
+        "answer": "[0.0, 0.0, 0.0007, 0.0007, 0.0007, 0.002]",
+        "columns_used": [
+            "Protein (g)"
+        ],
+        "sql": " SELECT Protein (g) FROM \"056_Emoji\" ORDER BY Protein (g) ASC LIMIT 6;"
+    },
+    {
+        "question": "Are there any respondents who didn't complete primary education?",
+        "dataset": "057_Spain",
+        "answer": "True",
+        "columns_used": [
+            "edu"
+        ],
+        "sql": " SELECT 'edu' FROM '057_Spain' WHERE 'edu' = 'No';"
+    },
+    {
+        "question": "Are all respondents interested in politics?",
+        "dataset": "057_Spain",
+        "answer": "False",
+        "columns_used": [
+            "polInterest"
+        ],
+        "sql": " SELECT polInterest FROM \"057_Spain\""
+    },
+    {
+        "question": "Did any respondent indicate that they will not vote?",
+        "dataset": "057_Spain",
+        "answer": "True",
+        "columns_used": [
+            "Vote Intention"
+        ],
+        "sql": " SELECT \"Vote Intention\" FROM \"057_Spain\" WHERE \"Vote Intention\" = 'No';"
+    },
+    {
+        "question": "Did any respondent place themselves at the extreme right of the Left-Right economic values axis?",
+        "dataset": "057_Spain",
+        "answer": "True",
+        "columns_used": [
+            "User self-placement on Left-Right economic values axis"
+        ],
+        "sql": " SELECT COUNT(*) FROM \"057_Spain\" WHERE \"User self-placement on Left-Right economic values axis\" = 'Right';"
+    },
+    {
+        "question": "How many respondents placed themselves at 10 on the Progressive-Conservative economic values axis?",
+        "dataset": "057_Spain",
+        "answer": "372",
+        "columns_used": [
+            "User self- placement on Progressive-Conservative economic values axis"
+        ],
+        "sql": " SELECT COUNT(*) FROM \"057_Spain\" WHERE \"User self- placement on Progressive-Conservative economic values axis\" = 10;"
+    },
+    {
+        "question": "What is the average age of the respondents?",
+        "dataset": "057_Spain",
+        "answer": "37.420120593188116",
+        "columns_used": [
+            "Age"
+        ],
+        "sql": " SELECT AVG(Age) AS average_age FROM \"057_Spain\";"
+    },
+    {
+        "question": "How many respondents think it should be more difficult for companies to lay off workers?",
+        "dataset": "057_Spain",
+        "answer": "10344",
+        "columns_used": [
+            "It should be more difficult for companies to lay off workers"
+        ],
+        "sql": " SELECT COUNT(*) FROM \"057_Spain\" WHERE \"It should be more difficult for companies to lay off workers\" = 'Yes';"
+    },
+    {
+        "question": "What's the maximum age among the respondents who prefer not to disclose their gender?",
+        "dataset": "057_Spain",
+        "answer": "105.0",
+        "columns_used": [
+            "Age",
+            "gender"
+        ],
+        "sql": " SELECT MAX(age) FROM \"057_Spain\" WHERE gender IS NULL;"
+    },
+    {
+        "question": "Which is the most common vote intention among respondents?",
+        "dataset": "057_Spain",
+        "answer": "[Ciudadanos]",
+        "columns_used": [
+            "Vote Intention"
+        ],
+        "sql": " SELECT Vote Intention, COUNT(*) AS frequency FROM \"057_Spain\" GROUP BY Vote Intention ORDER BY frequency DESC LIMIT 1;"
+    },
+    {
+        "question": "What is the most common reason for voting given by respondents?",
+        "dataset": "057_Spain",
+        "answer": "The party ideas are close to my own",
+        "columns_used": [
+            "voteReason"
+        ],
+        "sql": " SELECT \"voteReason\", COUNT(*) AS frequency FROM \"057_Spain\" GROUP BY \"voteReason\" ORDER BY frequency DESC LIMIT 1;"
+    },
+    {
+        "question": "Which is the most common party identification among respondents?",
+        "dataset": "057_Spain",
+        "answer": "Ciudadanos",
+        "columns_used": [
+            "partyId"
+        ],
+        "sql": " SELECT partyId, COUNT(*) AS frequency FROM \"057_Spain\" GROUP BY partyId ORDER BY frequency DESC LIMIT 1;"
+    },
+    {
+        "question": "What is the most common first language among respondents?",
+        "dataset": "057_Spain",
+        "answer": "Castellano",
+        "columns_used": [
+            "lang"
+        ],
+        "sql": " SELECT lang FROM \"057_Spain\" GROUP BY lang ORDER BY COUNT(lang) DESC LIMIT 1;"
+    },
+    {
+        "question": "List the top 5 most common vote intentions among respondents.",
+        "dataset": "057_Spain",
+        "answer": "['[Ciudadanos]', '[]', '[I am undeceided]', '[Podemos]', '[PP]']",
+        "columns_used": [
+            "Vote Intention"
+        ],
+        "sql": " SELECT Vote Intention, COUNT(*) AS frequency FROM \"057_Spain\" GROUP BY Vote Intention ORDER BY frequency DESC LIMIT 5;"
+    },
+    {
+        "question": "Identify the top 3 most common reasons for voting among respondents.",
+        "dataset": "057_Spain",
+        "answer": "['The party ideas are close to my own', 'The party is the most competent', 'I prefer not to say']",
+        "columns_used": [
+            "voteReason"
+        ],
+        "sql": " SELECT voteReason, COUNT(*) AS frequency FROM \"057_Spain\" GROUP BY voteReason ORDER BY frequency DESC LIMIT 3;"
+    },
+    {
+        "question": "Enumerate the top 4 most common party identifications among respondents.",
+        "dataset": "057_Spain",
+        "answer": "['Ciudadanos', 'PP', 'I prefer not to say', 'Podemos']",
+        "columns_used": [
+            "partyId"
+        ],
+        "sql": " SELECT partyId, COUNT(*) AS frequency FROM \"057_Spain\" GROUP BY partyId ORDER BY frequency DESC LIMIT 4;"
+    },
+    {
+        "question": "Name the top 6 most common first languages among respondents.",
+        "dataset": "057_Spain",
+        "answer": "['Castellano', 'Catal\ufffd', 'Galego', 'Euskara']",
+        "columns_used": [
+            "lang"
+        ],
+        "sql": " SELECT lang, COUNT(*) AS frequency FROM \"057_Spain\" GROUP BY lang ORDER BY frequency DESC LIMIT 6;"
+    },
+    {
+        "question": "List the top 5 most common ages among respondents.",
+        "dataset": "057_Spain",
+        "answer": "[38.0, 23.0, 39.0, 25.0, 35.0]",
+        "columns_used": [
+            "Age"
+        ],
+        "sql": " SELECT age, COUNT(*) AS frequency FROM \"057_Spain\" GROUP BY age ORDER BY frequency DESC LIMIT 5;"
+    },
+    {
+        "question": "What are the top 3 most common positions on the Left-Right economic values axis?",
+        "dataset": "057_Spain",
+        "answer": "[5.0, 3.0, 6.0]",
+        "columns_used": [
+            "User self-placement on Left-Right economic values axis"
+        ],
+        "sql": " SELECT \"User self-placement on Left-Right economic values axis\", COUNT(*) AS frequency FROM \"057_Spain\" GROUP BY \"User self-placement on Left-Right economic values axis\" ORDER BY frequency DESC LIMIT 3;"
+    },
+    {
+        "question": "Enumerate the top 4 most common positions on the Progressive-Conservative economic values axis.",
+        "dataset": "057_Spain",
+        "answer": "[5.0, 3.0, 4.0, 0.0]",
+        "columns_used": [
+            "User self- placement on Progressive-Conservative economic values axis"
+        ],
+        "sql": " SELECT \"User self- placement on Progressive-Conservative economic values axis\", COUNT(*) AS frequency FROM \"057_Spain\" GROUP BY \"User self- placement on Progressive-Conservative economic values axis\" ORDER BY frequency DESC LIMIT 4;"
+    },
+    {
+        "question": "What are the top 6 most common positions on the 'Constitutional organisation of the country (More Descentralization)' scale?",
+        "dataset": "057_Spain",
+        "answer": "[2.0, 3.0, 4.0, 1.0, 5.0]",
+        "columns_used": [
+            "Constitutional organisation of the country (More Descentralization)"
+        ],
+        "sql": " SELECT \"Constitutional organisation of the country (More Descentralization)\", COUNT(*) AS frequency FROM \"057_Spain\" GROUP BY \"Constitutional organisation of the country (More Descentralization)\" ORDER BY frequency DESC LIMIT 6;"
+    },
+    {
+        "question": "Are there survey participants who are not registered to vote?",
+        "dataset": "058_US",
+        "answer": "True",
+        "columns_used": [
+            "Are you registered to vote?"
+        ],
+        "sql": " SELECT \"Are you registered to vote?\" FROM \"058_US\" WHERE \"Are you registered to vote?\" = 'No';"
+    },
+    {
+        "question": "Are there any respondents who participated in the 2016 Presidential election (four years ago) but are not planning to do so in the upcoming election?",
+        "dataset": "058_US",
+        "answer": "True",
+        "columns_used": [
+            "Did you vote in the 2016 Presidential election? (Four years ago)",
+            "How likely are you to vote in the forthcoming US Presidential election? Early Voting Open"
+        ],
+        "sql": " SELECT \"Did you vote in the 2016 Presidential election? (Four years ago)\", \"How likely are you to vote in the forthcoming US Presidential election? Early Voting Open\"\n     FROM \"058_US\"\n     WHERE \"Did you vote in the 2016 Presidential election? (Four years ago)\" = 'Yes' AND \"How likely are you to vote in the forthcoming US Presidential election? Early Voting Open\" NOT ILIKE '%Yes%';"
+    },
+    {
+        "question": "Do we have any respondents in the dataset who didn't participate in the 2016 Presidential election (four years ago) but intend to do so in the upcoming election?",
+        "dataset": "058_US",
+        "answer": "True",
+        "columns_used": [
+            "Did you vote in the 2016 Presidential election? (Four years ago)",
+            "How likely are you to vote in the forthcoming US Presidential election? Early Voting Open"
+        ],
+        "sql": " SELECT \"Did you vote in the 2016 Presidential election? (Four years ago)\", \"How likely are you to vote in the forthcoming US Presidential election? Early Voting Open\"\n     FROM \"058_US\"\n     WHERE \"Did you vote in the 2016 Presidential election? (Four years ago)\" = 'No' AND \"How likely are you to vote in the forthcoming US Presidential election? Early Voting Open\" BETWEEN 1 AND 3;"
+    },
+    {
+        "question": "Do we have respondents who have shifted their voting preference from the 2016 election (four years ago) to the upcoming one?",
+        "dataset": "058_US",
+        "answer": "True",
+        "columns_used": [
+            "Who did you vote for in the 2016 Presidential election? (Four years ago)",
+            "Who are you most likely to vote for on election day?"
+        ],
+        "sql": " SELECT COUNT(*) FROM \"058_US\" WHERE \"Who did you vote for in the 2016 Presidential election? (Four years ago)\"!= \"Who are you most likely to vote for on election day?\""
+    },
+    {
+        "question": "How many respondents in the survey are eligible to vote?",
+        "dataset": "058_US",
+        "answer": "1315",
+        "columns_used": [
+            "Are you registered to vote?"
+        ],
+        "sql": " SELECT COUNT(*) FROM \"058_US\" WHERE \"Are you registered to vote?\" = 'Yes';"
+    },
+    {
+        "question": "What is the count of respondents who are leaning towards voting for Joe Biden in the upcoming election?",
+        "dataset": "058_US",
+        "answer": "799",
+        "columns_used": [
+            "Who are you most likely to vote for on election day?"
+        ],
+        "sql": " SELECT COUNT(*) FROM \"058_US\" WHERE \"Who are you most likely to vote for on election day?\" = 'Joe Biden';"
+    },
+    {
+        "question": "How many respondents have a high school degree or less as their highest level of education?",
+        "dataset": "058_US",
+        "answer": "0",
+        "columns_used": [
+            "What is the highest degree or level of school you have *completed* ?"
+        ],
+        "sql": " SELECT COUNT(*) FROM \"058_US\" WHERE 'What is the highest degree or level of school you have *completed*?' IN ('High school', 'High school or equivalent', 'Some college or equivalent', 'Less than high school');"
+    },
+    {
+        "question": "How many respondents are from the region adjacent to the South Atlantic Ocean?",
+        "dataset": "058_US",
+        "answer": "774",
+        "columns_used": [
+            "Division"
+        ],
+        "sql": " SELECT COUNT(*) FROM \"058_US\" WHERE Division = 'South Atlantic';"
+    },
+    {
+        "question": "What is the most frequent age group among the respondents?",
+        "dataset": "058_US",
+        "answer": "65+",
+        "columns_used": [
+            "How old are you?"
+        ],
+        "sql": " SELECT CAST(HOW_OLD_ARE_YOU AS INTEGER) AS age_group, COUNT(*) AS frequency FROM \"058_US\" GROUP BY age_group ORDER BY frequency DESC LIMIT 1;"
+    },
+    {
+        "question": "Who is the preferred choice among the respondents for the upcoming election?",
+        "dataset": "058_US",
+        "answer": "Donald Trump (Republican)",
+        "columns_used": [
+            "Who are you most likely to vote for on election day?"
+        ],
+        "sql": " SELECT \"Who are you most likely to vote for on election day?\" AS preferred_candidate FROM \"058_US\";"
+    },
+    {
+        "question": "What is the most commonly achieved educational level among the respondents?",
+        "dataset": "058_US",
+        "answer": "Some college, no degree",
+        "columns_used": [
+            "What is the highest degree or level of school you have *completed* ?"
+        ],
+        "sql": " SELECT \"What is the highest degree or level of school you have *completed*?\", COUNT(*) AS frequency FROM \"058_US\" GROUP BY \"What is the highest degree or level of school you have *completed*?\" ORDER BY frequency DESC LIMIT 1;"
+    },
+    {
+        "question": "Which geographical division has the greatest representation among the respondents?",
+        "dataset": "058_US",
+        "answer": "South Atlantic",
+        "columns_used": [
+            "Division"
+        ],
+        "sql": " SELECT Division, COUNT(*) AS representation FROM \"058_US\" GROUP BY Division ORDER BY representation DESC LIMIT 1;"
+    },
+    {
+        "question": "Identify the top 5 states with the greatest number of respondents.",
+        "dataset": "058_US",
+        "answer": "['CA', 'TX', 'NY', 'FL', 'GA']",
+        "columns_used": [
+            "State"
+        ],
+        "sql": " SELECT State, COUNT(*) AS num_respondents FROM \"058_US\" GROUP BY State ORDER BY num_respondents DESC LIMIT 5;"
+    },
+    {
+        "question": "Enumerate the top 4 most common professions among the respondents.",
+        "dataset": "058_US",
+        "answer": "['Other', 'Healthcare', 'Office worker or other professional', 'Industrial (e.g. construction, manufacturing, maintenance and repair)']",
+        "columns_used": [
+            "Which of these best describes the kind of work you do?"
+        ],
+        "sql": " SELECT \"Which of these best describes the kind of work you do?\", COUNT(*) AS frequency FROM \"058_US\" GROUP BY \"Which of these best describes the kind of work you do?\" ORDER BY frequency DESC LIMIT 4;"
+    },
+    {
+        "question": "Identify the top 3 ethnic groups with the most representation among the respondents.",
+        "dataset": "058_US",
+        "answer": "['White (not Hispanic, Latino or Spanish origin)', 'Black or African American (not Hispanic, Latino or Spanish origin)', 'Hispanic, Latino or Spanish origin']",
+        "columns_used": [
+            "Which of the following best describes your ethnic heritage?"
+        ],
+        "sql": " SELECT \"Which of the following best describes your ethnic heritage?\", COUNT(*) AS frequency FROM \"058_US\" GROUP BY \"Which of the following best describes your ethnic heritage?\" ORDER BY frequency DESC LIMIT 3;"
+    },
+    {
+        "question": "Enumerate the top 6 most represented age groups among the respondents.",
+        "dataset": "058_US",
+        "answer": "['65+', '55-64', '45-54', '35-44', '18-24', '25-34']",
+        "columns_used": [
+            "How old are you?"
+        ],
+        "sql": " SELECT CAST(HOW_OLD_ARE_YOU AS INTEGER) AS age_group, COUNT(*) AS num_respondents FROM \"058_US\" GROUP BY age_group ORDER BY num_respondents DESC LIMIT 6;"
+    },
+    {
+        "question": "Identify the top 3 counties (using FIPS codes) with the greatest number of respondents.",
+        "dataset": "058_US",
+        "answer": "[6037, 13121, 48201]",
+        "columns_used": [
+            "County FIPS"
+        ],
+        "sql": " SELECT \"County FIPS\", COUNT(*) AS num_respondents FROM \"058_US\" GROUP BY \"County FIPS\" ORDER BY num_respondents DESC LIMIT 3;"
+    },
+    {
+        "question": "Enumerate the highest 4 unique weight values in the dataset.",
+        "dataset": "058_US",
+        "answer": "[0.8085780015111617, 0.7742084493732905, 0.3063435812288158, 0.629527660735561]",
+        "columns_used": [
+            "Weight"
+        ],
+        "sql": " SELECT MAX(Weight) AS max_weight FROM \"058_US\" GROUP BY Weight ORDER BY max_weight DESC NULLS LAST LIMIT 4;"
+    },
+    {
+        "question": "List the top 5 urban/rural categories (using NCHS codes) with the greatest number of respondents.",
+        "dataset": "058_US",
+        "answer": "[1, 2, 3, 4, 5]",
+        "columns_used": [
+            "NCHS Urban/rural"
+        ],
+        "sql": " SELECT \"NCHS Urban/rural\", COUNT(*) AS num_respondents FROM \"058_US\" GROUP BY \"NCHS Urban/rural\" ORDER BY num_respondents DESC LIMIT 5;"
+    },
+    {
+        "question": "Enumerate the top 6 most common likelihood values among the respondents.",
+        "dataset": "058_US",
+        "answer": "[10.0, 11.0, 0.0, 1.0, 9.0, 5.0]",
+        "columns_used": [
+            "likelihood"
+        ],
+        "sql": " SELECT likelihood, COUNT(*) AS frequency FROM \"058_US\" GROUP BY likelihood ORDER BY frequency DESC LIMIT 6;"
+    },
+    {
+        "question": "Is there a car model named 'Golf' listed?",
+        "dataset": "059_Second",
+        "answer": "False",
+        "columns_used": [
+            "model"
+        ],
+        "sql": " SELECT model FROM \"059_Second\" WHERE model ilike '%Golf%';"
+    },
+    {
+        "question": "Are there cars associated with the dealer 'Autos Raymara'?",
+        "dataset": "059_Second",
+        "answer": "True",
+        "columns_used": [
+            "dealer"
+        ],
+        "sql": " SELECT COUNT(*) FROM \"059_Second\" s WHERE s.dealer = 'Autos Raymara';"
+    },
+    {
+        "question": "Is there a car version that mentions 'BMW'?",
+        "dataset": "059_Second",
+        "answer": "True",
+        "columns_used": [
+            "version"
+        ],
+        "sql": " SELECT version FROM \"059_Second\" WHERE version ilike '%BMW%';"
+    },
+    {
+        "question": "Are there cars with a 'Manual' shift?",
+        "dataset": "059_Second",
+        "answer": "True",
+        "columns_used": [
+            "shift"
+        ],
+        "sql": " SELECT 'shift' FROM \"059_Second\" WHERE 'shift' = 'Manual';"
+    },
+    {
+        "question": "How many unique car models are listed?",
+        "dataset": "059_Second",
+        "answer": "940",
+        "columns_used": [
+            "model"
+        ],
+        "sql": " SELECT COUNT(DISTINCT model) FROM \"059_Second\";"
+    },
+    {
+        "question": "On average, how many photos are provided for the cars?",
+        "dataset": "059_Second",
+        "answer": "16.19912",
+        "columns_used": [
+            "photos"
+        ],
+        "sql": " SELECT AVG(photos) AS average_photos FROM \"059_Second\";"
+    },
+    {
+        "question": "What's the highest price a car is listed for?",
+        "dataset": "059_Second",
+        "answer": "549900",
+        "columns_used": [
+            "price"
+        ],
+        "sql": " SELECT MAX(price) AS max_price FROM \"059_Second\";"
+    },
+    {
+        "question": "How many cars are from the year 2020?",
+        "dataset": "059_Second",
+        "answer": "4237",
+        "columns_used": [
+            "year"
+        ],
+        "sql": " SELECT COUNT(*) FROM \"059_Second\" WHERE year = 2020;"
+    },
+    {
+        "question": "Which dealer has the car with the highest price listed?",
+        "dataset": "059_Second",
+        "answer": "Supergarage",
+        "columns_used": [
+            "dealer",
+            "price"
+        ],
+        "sql": " SELECT dealer, MAX(price) AS max_price FROM \"059_Second\" GROUP BY dealer;"
+    },
+    {
+        "question": "Which car make is the most common?",
+        "dataset": "059_Second",
+        "answer": "VOLKSWAGEN",
+        "columns_used": [
+            "make"
+        ],
+        "sql": " SELECT make, COUNT(*) AS COUNT FROM \"059_Second\" GROUP BY make ORDER BY COUNT DESC LIMIT 1;"
+    },
+    {
+        "question": "What type of fuel is the most common for the cars?",
+        "dataset": "059_Second",
+        "answer": "Di\u00e9sel",
+        "columns_used": [
+            "fuel"
+        ],
+        "sql": " SELECT fuel, COUNT(*) AS COUNT FROM \"059_Second\" GROUP BY fuel ORDER BY COUNT DESC LIMIT 1;"
+    },
+    {
+        "question": "In which province are the most cars located?",
+        "dataset": "059_Second",
+        "answer": "Madrid",
+        "columns_used": [
+            "province"
+        ],
+        "sql": " SELECT province, COUNT(*) AS num_cars FROM \"059_Second\" GROUP BY province ORDER BY num_cars DESC LIMIT 1;"
+    },
+    {
+        "question": "Which are the top 3 provinces with the most car listings?",
+        "dataset": "059_Second",
+        "answer": "['Madrid', 'Barcelona', 'Valencia']",
+        "columns_used": [
+            "province"
+        ],
+        "sql": " SELECT province, COUNT(*) AS num_listings FROM \"059_Second\" GROUP BY province ORDER BY num_listings DESC LIMIT 3;"
+    },
+    {
+        "question": "List the 4 most common car colors in the dataset.",
+        "dataset": "059_Second",
+        "answer": "['Blanco', 'Gris / Plata', 'Negro', 'Azul']",
+        "columns_used": [
+            "color"
+        ],
+        "sql": " SELECT color, COUNT(*) AS frequency FROM \"059_Second\" GROUP BY color ORDER BY frequency DESC LIMIT 4;"
+    },
+    {
+        "question": "Which 5 car makes are the most prevalent?",
+        "dataset": "059_Second",
+        "answer": "['VOLKSWAGEN', 'BMW', 'MERCEDES-BENZ', 'AUDI', 'PEUGEOT']",
+        "columns_used": [
+            "make"
+        ],
+        "sql": " SELECT make, COUNT(*) AS frequency FROM \"059_Second\" GROUP BY make ORDER BY frequency DESC LIMIT 5;"
+    },
+    {
+        "question": "List the 2 least common fuels used in the cars.",
+        "dataset": "059_Second",
+        "answer": "['Gas natural (CNG)', 'Gas licuado (GLP)']",
+        "columns_used": [
+            "fuel"
+        ],
+        "sql": " SELECT fuel, COUNT(*) AS frequency FROM \"059_Second\" GROUP BY fuel ORDER BY frequency ASC LIMIT 2;"
+    },
+    {
+        "question": "What are the top 4 most common years of the cars?",
+        "dataset": "059_Second",
+        "answer": "[2016.0, 2017.0, 2019.0, 2020.0]",
+        "columns_used": [
+            "year"
+        ],
+        "sql": " SELECT year, COUNT(*) AS frequency FROM \"059_Second\" GROUP BY year ORDER BY frequency DESC LIMIT 4;"
+    },
+    {
+        "question": "List the 3 highest mileages present.",
+        "dataset": "059_Second",
+        "answer": "[5000000, 4000006, 3500000]",
+        "columns_used": [
+            "kms"
+        ],
+        "sql": " SELECT kms FROM \"059_Second\" ORDER BY kms DESC NULLS LAST LIMIT 3;"
+    },
+    {
+        "question": "Which 5 cars have the most photos associated?",
+        "dataset": "059_Second",
+        "answer": "[54, 54, 54, 54, 54]",
+        "columns_used": [
+            "photos"
+        ],
+        "sql": " SELECT c.name, COUNT(p.id) AS photo_count FROM \"059_Second\" c JOIN \"059_Photos\" p ON c.id = p.car_id GROUP BY c.name ORDER BY photo_count DESC LIMIT 5;"
+    },
+    {
+        "question": "List the 6 cars with the most power.",
+        "dataset": "059_Second",
+        "answer": "[800.0, 800.0, 796.0, 772.0, 720.0, 720.0]",
+        "columns_used": [
+            "power"
+        ],
+        "sql": " SELECT * FROM \"059_Second\" ORDER BY power DESC LIMIT 6;"
+    },
+    {
+        "question": "Are all transactions unique?",
+        "dataset": "060_Bakery",
+        "answer": "True",
+        "columns_used": [
+            "Transaction"
+        ],
+        "sql": " SELECT COUNT(DISTINCT Transaction) AS num_unique_transactions FROM \"060_Bakery\";"
+    },
+    {
+        "question": "Is there any transaction that took place during the night?",
+        "dataset": "060_Bakery",
+        "answer": "True",
+        "columns_used": [
+            "period_day"
+        ],
+        "sql": " SELECT COUNT(*) FROM \"060_Bakery\" WHERE period_day = 'Night';"
+    },
+    {
+        "question": "Do all items have transactions recorded on weekdays?",
+        "dataset": "060_Bakery",
+        "answer": "True",
+        "columns_used": [
+            "Item",
+            "weekday_weekend"
+        ],
+        "sql": " SELECT \"Item\", COUNT(*) AS num_transactions FROM \"060_Bakery\" WHERE \"weekday_weekend\" = 'Weekday' GROUP BY \"Item\" HAVING COUNT(*) > 0;"
+    },
+    {
+        "question": "Are there any transactions recorded in the evening on weekends?",
+        "dataset": "060_Bakery",
+        "answer": "True",
+        "columns_used": [
+            "period_day",
+            "weekday_weekend"
+        ],
+        "sql": " SELECT period_day, weekday_weekend FROM \"060_Bakery\" WHERE period_day = 'Evening' AND weekday_weekend = 'Yes';"
+    },
+    {
+        "question": "How many unique items are there in the dataset?",
+        "dataset": "060_Bakery",
+        "answer": "95",
+        "columns_used": [
+            "Item"
+        ],
+        "sql": " SELECT COUNT(DISTINCT Item) FROM \"060_Bakery\";"
+    },
+    {
+        "question": "On how many different days were transactions recorded?",
+        "dataset": "060_Bakery",
+        "answer": "159",
+        "columns_used": [
+            "date_time"
+        ],
+        "sql": " SELECT COUNT(DISTINCT date_time) AS num_days FROM \"060_Bakery\";"
+    },
+    {
+        "question": "What's the highest transaction number?",
+        "dataset": "060_Bakery",
+        "answer": "9684",
+        "columns_used": [
+            "Transaction"
+        ],
+        "sql": " SELECT MAX(Transaction) AS max_transaction FROM \"060_Bakery\";"
+    },
+    {
+        "question": "How many transactions were made during the afternoon?",
+        "dataset": "060_Bakery",
+        "answer": "2478",
+        "columns_used": [
+            "Transaction",
+            "period_day"
+        ],
+        "sql": " SELECT COUNT(*) FROM \"060_Bakery\" WHERE period_day = 'Afternoon';"
+    },
+    {
+        "question": "Which day period has the highest number of transactions?",
+        "dataset": "060_Bakery",
+        "answer": "morning",
+        "columns_used": [
+            "period_day",
+            "Transaction"
+        ],
+        "sql": " SELECT \"period_day\", SUM(\"Transaction\") AS total_transactions FROM \"060_Bakery\" GROUP BY \"period_day\" ORDER BY total_transactions DESC LIMIT 1;"
+    },
+    {
+        "question": "On weekends, what's the most commonly bought item?",
+        "dataset": "060_Bakery",
+        "answer": "Coffee",
+        "columns_used": [
+            "Item",
+            "weekday_weekend"
+        ],
+        "sql": " SELECT \"Item\", COUNT(*) AS num_sales FROM \"060_Bakery\" WHERE \"weekday_weekend\" = 'Weekend' GROUP BY \"Item\" ORDER BY num_sales DESC LIMIT 1;"
+    },
+    {
+        "question": "What's the least popular item bought during weekdays?",
+        "dataset": "060_Bakery",
+        "answer": "Adjustment",
+        "columns_used": [
+            "Item",
+            "weekday_weekend"
+        ],
+        "sql": " SELECT i.item, COUNT(*) AS num_purchases FROM \"060_Bakery\" i WHERE i.weekday_weekend = 'Weekday' GROUP BY i.item ORDER BY num_purchases ASC LIMIT 1;"
+    },
+    {
+        "question": "During which period of the day is \"Hot chocolate\" most frequently bought?",
+        "dataset": "060_Bakery",
+        "answer": "morning",
+        "columns_used": [
+            "Item",
+            "period_day"
+        ],
+        "sql": " SELECT period_day, COUNT(*) AS frequency FROM \"060_Bakery\" WHERE item = 'Hot chocolate' GROUP BY period_day ORDER BY frequency DESC LIMIT 1;"
+    },
+    {
+        "question": "List the top 3 items most frequently bought in the morning.",
+        "dataset": "060_Bakery",
+        "answer": "['Coffee', 'Bread', 'Pastry']",
+        "columns_used": [
+            "Item",
+            "period_day"
+        ],
+        "sql": " SELECT \"Item\", COUNT(*) AS num_purchases FROM \"060_Bakery\" WHERE \"period_day\" = 'Morning' GROUP BY \"Item\" ORDER BY num_purchases DESC LIMIT 3;"
+    },
+    {
+        "question": "Name the bottom 4 items least purchased during the afternoon.",
+        "dataset": "060_Bakery",
+        "answer": "['Chicken sand', 'Gift voucher', 'Bare Popcorn', 'Raw bars']",
+        "columns_used": [
+            "Item",
+            "period_day"
+        ],
+        "sql": " SELECT Item, COUNT(*) AS num_purchases FROM \"060_Bakery\" WHERE period_day = 'Afternoon' GROUP BY Item ORDER BY num_purchases ASC LIMIT 4;"
+    },
+    {
+        "question": "Identify the top 5 items sold on weekends.",
+        "dataset": "060_Bakery",
+        "answer": "['Coffee', 'Bread', 'Tea', 'Cake', 'Pastry']",
+        "columns_used": [
+            "Item",
+            "weekday_weekend"
+        ],
+        "sql": " SELECT i.Item, SUM(i.Sales) AS total_sales FROM \"060_Bakery\" i WHERE i.weekday_weekend = 'Weekend' GROUP BY i.Item ORDER BY total_sales DESC LIMIT 5;"
+    },
+    {
+        "question": "What are the 4 items tthat were bought two times in the evening?",
+        "dataset": "060_Bakery",
+        "answer": "['Art Tray', 'Mighty Protein', 'Mortimer', 'Vegan Mincepie']",
+        "columns_used": [
+            "Item",
+            "period_day"
+        ],
+        "sql": " SELECT Item FROM \"060_Bakery\" WHERE period_day = 'Evening' GROUP BY Item HAVING COUNT(*) >= 2 LIMIT 4;"
+    },
+    {
+        "question": "Which are the top 4 transaction numbers with the most items bought?",
+        "dataset": "060_Bakery",
+        "answer": "[6474, 6716, 6279, 6412]",
+        "columns_used": [
+            "Transaction"
+        ],
+        "sql": " SELECT \"Transaction\", COUNT(*) AS num_items_bought FROM \"060_Bakery\" GROUP BY \"Transaction\" ORDER BY num_items_bought DESC LIMIT 4;"
+    },
+    {
+        "question": "Identify the bottom 5 transaction numbers by frequency.",
+        "dataset": "060_Bakery",
+        "answer": "[9680, 9681, 9682, 9683, 9684]",
+        "columns_used": [
+            "Transaction"
+        ],
+        "sql": " SELECT t.Transaction, COUNT(*) AS frequency FROM \"060_Bakery\" t GROUP BY t.Transaction ORDER BY frequency ASC LIMIT 5;"
+    },
+    {
+        "question": "List the top 6 transaction numbers during which \"Bread\" was purchased.",
+        "dataset": "060_Bakery",
+        "answer": "[6412, 6279, 6474, 6603, 6716, 6642]",
+        "columns_used": [
+            "Transaction",
+            "Item"
+        ],
+        "sql": " SELECT \"Transaction\", COUNT(*) AS num_transactions FROM \"060_Bakery\" WHERE \"Item\" = 'Bread' GROUP BY \"Transaction\" ORDER BY num_transactions DESC LIMIT 6;"
+    },
+    {
+        "question": "Name the bottom 2 transaction numbers where purchases were made in the morning.",
+        "dataset": "060_Bakery",
+        "answer": "[9683, 9684]",
+        "columns_used": [
+            "Transaction",
+            "period_day"
+        ],
+        "sql": " SELECT t.transaction, t.period_day FROM \"060_Bakery\" t WHERE t.period_day = 'Morning' ORDER BY t.transaction ASC LIMIT 2;"
+    },
+    {
+        "question": "Are all the reviews from Australia positive (rating > 3)?",
+        "dataset": "061_Disneyland",
+        "answer": "False",
+        "columns_used": [
+            "Reviewer_Location",
+            "Rating"
+        ],
+        "sql": " SELECT 'Reviewer_Location', 'Rating' FROM '061_Disneyland' WHERE 'Reviewer_Location' = 'Australia' AND 'Rating' > 3;"
+    },
+    {
+        "question": "Is Disneyland_HongKong the most reviewed branch?",
+        "dataset": "061_Disneyland",
+        "answer": "False",
+        "columns_used": [
+            "Branch"
+        ],
+        "sql": " SELECT Branch FROM \"061_Disneyland\" WHERE Branch = 'Disneyland_HongKong'"
+    },
+    {
+        "question": "Are there any reviews with a rating of 1?",
+        "dataset": "061_Disneyland",
+        "answer": "True",
+        "columns_used": [
+            "Rating"
+        ],
+        "sql": " SELECT Rating FROM \"061_Disneyland\" WHERE Rating = 1;"
+    },
+    {
+        "question": "Does every reviewer location have at least one review with a rating of 5?",
+        "dataset": "061_Disneyland",
+        "answer": "False",
+        "columns_used": [
+            "Reviewer_Location",
+            "Rating"
+        ],
+        "sql": " SELECT rl.Reviewer_Location, COUNT(DISTINCT r.Review_ID) AS num_reviews FROM \"061_Disneyland\" r JOIN rl.Reviewer_Location rl ON r.Reviewer_Location = rl.Reviewer_Location WHERE r.Rating = 5 GROUP BY rl.Reviewer_Location HAVING COUNT(DISTINCT r.Review_ID) > 0;"
+    },
+    {
+        "question": "How many unique reviewer locations are there?",
+        "dataset": "061_Disneyland",
+        "answer": "162",
+        "columns_used": [
+            "Reviewer_Location"
+        ],
+        "sql": " SELECT COUNT(DISTINCT Reviewer_Location) FROM \"061_Disneyland\";"
+    },
+    {
+        "question": "What is the average rating for Disneyland_HongKong?",
+        "dataset": "061_Disneyland",
+        "answer": "4.204158004158004",
+        "columns_used": [
+            "Branch",
+            "Rating"
+        ],
+        "sql": " SELECT AVG(Rating) AS average_rating FROM \"061_Disneyland\" WHERE Branch = 'Disneyland_HongKong';"
+    },
+    {
+        "question": "What is the maximum review ID?",
+        "dataset": "061_Disneyland",
+        "answer": "670801367",
+        "columns_used": [
+            "Review_ID"
+        ],
+        "sql": " SELECT MAX(Review_ID) FROM \"061_Disneyland\";"
+    },
+    {
+        "question": "How many reviews were made in 2019?",
+        "dataset": "061_Disneyland",
+        "answer": "786",
+        "columns_used": [
+            "Year_Month"
+        ],
+        "sql": " SELECT COUNT(*) FROM \"061_Disneyland\" WHERE \"Year_Month\" LIKE '2019%';"
+    },
+    {
+        "question": "What is the most common reviewer location?",
+        "dataset": "061_Disneyland",
+        "answer": "United States",
+        "columns_used": [
+            "Reviewer_Location"
+        ],
+        "sql": " SELECT Reviewer_Location, COUNT(*) AS review_count FROM \"061_Disneyland\" GROUP BY Reviewer_Location ORDER BY review_count DESC LIMIT 1;"
+    },
+    {
+        "question": "What is the branch with the lowest average rating?",
+        "dataset": "061_Disneyland",
+        "answer": "Disneyland_Paris",
+        "columns_used": [
+            "Branch",
+            "Rating"
+        ],
+        "sql": " SELECT Branch, AVG(Rating) AS avg_rating FROM \"061_Disneyland\" GROUP BY Branch ORDER BY avg_rating ASC LIMIT 1;"
+    },
+    {
+        "question": "In which year-month was the most negative review (rating=1) made?",
+        "dataset": "061_Disneyland",
+        "answer": "missing",
+        "columns_used": [
+            "Year_Month",
+            "Rating"
+        ],
+        "sql": " SELECT \"Year_Month\", MIN(Rating) AS min_rating FROM \"061_Disneyland\" WHERE Rating = 1 GROUP BY \"Year_Month\" ORDER BY \"Year_Month\" NULLS LAST;"
+    },
+    {
+        "question": "What is the reviewer location with the highest average rating?",
+        "dataset": "061_Disneyland",
+        "answer": "Armenia",
+        "columns_used": [
+            "Reviewer_Location",
+            "Rating"
+        ],
+        "sql": " SELECT Reviewer_Location, AVG(Rating) AS average_rating FROM \"061_Disneyland\" GROUP BY Reviewer_Location ORDER BY average_rating DESC LIMIT 1;"
+    },
+    {
+        "question": "What are the top 3 reviewer locations with the most reviews?",
+        "dataset": "061_Disneyland",
+        "answer": "['United States', 'United Kingdom', 'Australia']",
+        "columns_used": [
+            "Reviewer_Location"
+        ],
+        "sql": " SELECT \"Reviewer_Location\", COUNT(*) AS review_count FROM \"061_Disneyland\" GROUP BY \"Reviewer_Location\" ORDER BY review_count DESC LIMIT 3;"
+    },
+    {
+        "question": "What are the bottom 2 branches in terms of average rating?",
+        "dataset": "061_Disneyland",
+        "answer": "['Disneyland_Paris', 'Disneyland_HongKong']",
+        "columns_used": [
+            "Branch",
+            "Rating"
+        ],
+        "sql": " SELECT Branch, AVG(Rating) AS avg_rating FROM \"061_Disneyland\" GROUP BY Branch ORDER BY avg_rating ASC LIMIT 2;"
+    },
+    {
+        "question": "What are the top 4 year-months with the most reviews?",
+        "dataset": "061_Disneyland",
+        "answer": "['missing', '2015-8', '2015-7', '2015-12']",
+        "columns_used": [
+            "Year_Month"
+        ],
+        "sql": " SELECT \"Year_Month\", COUNT(*) AS review_count FROM \"061_Disneyland\" GROUP BY \"Year_Month\" ORDER BY review_count DESC LIMIT 4;"
+    },
+    {
+        "question": "What are the bottom 3 reviewer locations in terms of average rating?",
+        "dataset": "061_Disneyland",
+        "answer": "['Turks and Caicos Islands', 'South Sudan', 'Suriname']",
+        "columns_used": [
+            "Reviewer_Location",
+            "Rating"
+        ],
+        "sql": " SELECT rl.Reviewer_Location, AVG(rl.Rating) AS avg_rating FROM \"061_Disneyland\" rl GROUP BY rl.Reviewer_Location ORDER BY avg_rating ASC LIMIT 3;"
+    },
+    {
+        "question": "What are the top 5 review IDs in terms of rating?",
+        "dataset": "061_Disneyland",
+        "answer": "[670585330, 670570869, 670443403, 670435886, 670324965]",
+        "columns_used": [
+            "Review_ID",
+            "Rating"
+        ],
+        "sql": " SELECT Review_ID, Rating FROM \"061_Disneyland\" ORDER BY Rating DESC NULLS LAST LIMIT 5;"
+    },
+    {
+        "question": "What are the bottom 4 review IDs in terms of rating?",
+        "dataset": "061_Disneyland",
+        "answer": "[662641193, 658624005, 649615606, 647822351]",
+        "columns_used": [
+            "Review_ID",
+            "Rating"
+        ],
+        "sql": " SELECT Review_ID, Rating\n     FROM \"061_Disneyland\"\n     ORDER BY Rating ASC\n     LIMIT 4;"
+    },
+    {
+        "question": "What are the top 6 ratings given by reviewers from Australia?",
+        "dataset": "061_Disneyland",
+        "answer": "[5, 5, 5, 5, 5, 5]",
+        "columns_used": [
+            "Reviewer_Location",
+            "Rating"
+        ],
+        "sql": " SELECT \"Reviewer_Location\", \"Rating\" FROM \"061_Disneyland\" WHERE \"Reviewer_Location\" = 'Australia' ORDER BY \"Rating\" DESC NULLS LAST LIMIT 6;"
+    },
+    {
+        "question": "What are the bottom 3 ratings given for Disneyland_HongKong?",
+        "dataset": "061_Disneyland",
+        "answer": "[1, 1, 1]",
+        "columns_used": [
+            "Branch",
+            "Rating"
+        ],
+        "sql": " SELECT Branch, Rating\n     FROM \"061_Disneyland\"\n     WHERE Branch = 'Disneyland_HongKong'\n     ORDER BY Rating ASC\n     LIMIT 3;"
+    },
+    {
+        "question": "Are all the tweets in English?",
+        "dataset": "062_Trump",
+        "answer": "False",
+        "columns_used": [
+            "lang"
+        ],
+        "sql": " SELECT lang FROM \"062_Trump\" WHERE lang = 'en';"
+    },
+    {
+        "question": "Has the author ever been retweeted?",
+        "dataset": "062_Trump",
+        "answer": "True",
+        "columns_used": [
+            "retweets"
+        ],
+        "sql": " SELECT COUNT(*) > 0 AS has_been_retweeted FROM \"062_Trump\" WHERE \"retweets\" IS NOT NULL;"
+    },
+    {
+        "question": "Are there any tweets with more than 10000 retweets?",
+        "dataset": "062_Trump",
+        "answer": "True",
+        "columns_used": [
+            "retweets"
+        ],
+        "sql": " SELECT COUNT(*) FROM \"062_Trump\" WHERE retweets > 10000;"
+    },
+    {
+        "question": "Have any of the tweets been favorited more than 50000 times?",
+        "dataset": "062_Trump",
+        "answer": "True",
+        "columns_used": [
+            "favorites"
+        ],
+        "sql": " SELECT favorites FROM \"062_Trump\" WHERE favorites > 50000;"
+    },
+    {
+        "question": "How many unique authors are there?",
+        "dataset": "062_Trump",
+        "answer": "1",
+        "columns_used": [
+            "author_name"
+        ],
+        "sql": " SELECT COUNT(DISTINCT author_name) FROM \"062_Trump\";"
+    },
+    {
+        "question": "What is the average number of retweets?",
+        "dataset": "062_Trump",
+        "answer": "8774.52044683822",
+        "columns_used": [
+            "retweets"
+        ],
+        "sql": " SELECT AVG(retweets) AS average_retweets FROM \"062_Trump\";"
+    },
+    {
+        "question": "What is the maximum number of favorites received for a single tweet?",
+        "dataset": "062_Trump",
+        "answer": "589793",
+        "columns_used": [
+            "favorites"
+        ],
+        "sql": " SELECT MAX(favorites) AS max_favorites FROM \"062_Trump\";"
+    },
+    {
+        "question": "How many tweets were posted in 2018?",
+        "dataset": "062_Trump",
+        "answer": "2891",
+        "columns_used": [
+            "date"
+        ],
+        "sql": " SELECT COUNT(*) FROM \"062_Trump\" WHERE date BETWEEN '2018-01-01' AND '2018-12-31';"
+    },
+    {
+        "question": "What is the most common author name?",
+        "dataset": "062_Trump",
+        "answer": "Donald J. Trump",
+        "columns_used": [
+            "author_name"
+        ],
+        "sql": " SELECT author_name FROM \"062_Trump\" GROUP BY author_name ORDER BY COUNT(*) DESC LIMIT 1;"
+    },
+    {
+        "question": "What is the tweet with the most favorites?",
+        "dataset": "062_Trump",
+        "answer": "Such a beautiful and important evening! The forgotten man and woman will never be forgotten again. We will all come together as never before",
+        "columns_used": [
+            "text",
+            "favorites"
+        ],
+        "sql": " SELECT text, favorites FROM \"062_Trump\" ORDER BY favorites DESC LIMIT 1;"
+    },
+    {
+        "question": "In which language is the tweet with the most retweets written?",
+        "dataset": "062_Trump",
+        "answer": "und",
+        "columns_used": [
+            "lang",
+            "retweets"
+        ],
+        "sql": " SELECT lang, SUM(retweets) AS total_retweets FROM \"062_Trump\" GROUP BY lang ORDER BY total_retweets DESC LIMIT 1;"
+    },
+    {
+        "question": "What is the most common language of the tweets?",
+        "dataset": "062_Trump",
+        "answer": "en",
+        "columns_used": [
+            "lang"
+        ],
+        "sql": " SELECT lang, COUNT(*) AS frequency FROM \"062_Trump\" GROUP BY lang ORDER BY frequency DESC LIMIT 1;"
+    },
+    {
+        "question": "What are the top 3 author handlers with the most tweets?",
+        "dataset": "062_Trump",
+        "answer": "['realDonaldTrump']",
+        "columns_used": [
+            "author_handler"
+        ],
+        "sql": " SELECT author_handler, COUNT(*) AS num_tweets FROM \"062_Trump\" GROUP BY author_handler ORDER BY num_tweets DESC LIMIT 3;"
+    },
+    {
+        "question": "What are the bottom 2 languages in terms of tweet count?",
+        "dataset": "062_Trump",
+        "answer": "['pt', 'fi']",
+        "columns_used": [
+            "lang"
+        ],
+        "sql": " SELECT lang, COUNT(*) AS tweet_count FROM \"062_Trump\" GROUP BY lang ORDER BY tweet_count ASC LIMIT 2;"
+    },
+    {
+        "question": "What are the top 4 mentioned names in the tweets?",
+        "dataset": "062_Trump",
+        "answer": "['realDonaldTrump', 'FoxNews', 'CNN', 'foxandfriends']",
+        "columns_used": [
+            "mention_names"
+        ],
+        "sql": " SELECT mention_names FROM \"062_Trump\" GROUP BY mention_names ORDER BY COUNT(mention_names) DESC LIMIT 4;"
+    },
+    {
+        "question": "What are the bottom 3 author names in terms of tweet count?",
+        "dataset": "062_Trump",
+        "answer": "['Donald J. Trump']",
+        "columns_used": [
+            "author_name"
+        ],
+        "sql": " SELECT author_name, COUNT(*) AS tweet_count FROM 062_Trump GROUP BY author_name ORDER BY tweet_count ASC LIMIT 3;"
+    },
+    {
+        "question": "What are the top 5 tweet IDs in terms of retweet count?",
+        "dataset": "062_Trump",
+        "answer": "[881503147168071680, 795954831718498305, 929511061954297857, 796315640307060738, 948355557022420992]",
+        "columns_used": [
+            "id",
+            "retweets"
+        ],
+        "sql": " SELECT id, retweets FROM 062_Trump ORDER BY retweets DESC LIMIT 5;"
+    },
+    {
+        "question": "What are the bottom 4 tweet IDs in terms of favorite count?",
+        "dataset": "062_Trump",
+        "answer": "[591222909626114050, 591412084895838208, 586751374286721024, 575589231160127489]",
+        "columns_used": [
+            "id",
+            "favorites"
+        ],
+        "sql": " SELECT id, favorites FROM \"062_Trump\" ORDER BY favorites ASC LIMIT 4;"
+    },
+    {
+        "question": "What are the top 6 favorite counts of the tweets?",
+        "dataset": "062_Trump",
+        "answer": "[589793, 589750, 557779, 539249, 476457, 376626]",
+        "columns_used": [
+            "favorites"
+        ],
+        "sql": " SELECT favorites FROM \"062_Trump\" ORDER BY favorites DESC NULLS LAST LIMIT 6;"
+    },
+    {
+        "question": "What are the bottom 3 retweet counts of the tweets?",
+        "dataset": "062_Trump",
+        "answer": "[1, 1, 2]",
+        "columns_used": [
+            "retweets"
+        ],
+        "sql": " SELECT tweet, COUNT(*) AS retweet_count FROM \"062_Trump\" GROUP BY tweet ORDER BY retweet_count ASC LIMIT 3;"
+    },
+    {
+        "question": "Are there any organizations in the dataset?",
+        "dataset": "063_Influencers",
+        "answer": "False",
+        "columns_used": [
+            "is_organization"
+        ],
+        "sql": " SELECT COUNT(*) FROM \"063_Influencers\" WHERE \"is_organization\" = 'Yes';"
+    },
+    {
+        "question": "Are there any individuals (non-organizations) in the dataset?",
+        "dataset": "063_Influencers",
+        "answer": "True",
+        "columns_used": [
+            "is_organization"
+        ],
+        "sql": " SELECT COUNT(*) FROM \"063_Influencers\" WHERE is_organization = 'No';"
+    },
+    {
+        "question": "Do all entities have a picture?",
+        "dataset": "063_Influencers",
+        "answer": "True",
+        "columns_used": [
+            "pic"
+        ],
+        "sql": " SELECT \"pic\" FROM \"063_Influencers\";"
+    },
+    {
+        "question": "Are there any entities with a weight greater than 500?",
+        "dataset": "063_Influencers",
+        "answer": "True",
+        "columns_used": [
+            "weight"
+        ],
+        "sql": " SELECT * FROM \"063_Influencers\" WHERE weight > 500;"
+    },
+    {
+        "question": "How many unique communities are there?",
+        "dataset": "063_Influencers",
+        "answer": "9",
+        "columns_used": [
+            "community"
+        ],
+        "sql": " SELECT COUNT(DISTINCT community) FROM \"063_Influencers\";"
+    },
+    {
+        "question": "What is the average page rank norm?",
+        "dataset": "063_Influencers",
+        "answer": "0.08848033260794509",
+        "columns_used": [
+            "page_rank_norm"
+        ],
+        "sql": " SELECT AVG(page_rank_norm) AS average_page_rank_norm FROM \"063_Influencers\";"
+    },
+    {
+        "question": "What is the maximum weight of an entity?",
+        "dataset": "063_Influencers",
+        "answer": "770.5",
+        "columns_used": [
+            "weight"
+        ],
+        "sql": " SELECT MAX(weight) FROM \"063_Influencers\";"
+    },
+    {
+        "question": "How many entities have a community identifier of 16744206?",
+        "dataset": "063_Influencers",
+        "answer": "651",
+        "columns_used": [
+            "community"
+        ],
+        "sql": " SELECT COUNT(*) FROM \"063_Influencers\" WHERE community = 16744206;"
+    },
+    {
+        "question": "What is the most common name?",
+        "dataset": "063_Influencers",
+        "answer": "Christophe Viau",
+        "columns_used": [
+            "name"
+        ],
+        "sql": " SELECT name FROM \"063_Influencers\" GROUP BY name ORDER BY COUNT(*) DESC LIMIT 1;"
+    },
+    {
+        "question": "Which entity has the highest page rank norm?",
+        "dataset": "063_Influencers",
+        "answer": "Mike Bostock",
+        "columns_used": [
+            "name",
+            "page_rank_norm"
+        ],
+        "sql": " SELECT name, page_rank_norm FROM \"063_Influencers\" ORDER BY page_rank_norm DESC NULLS LAST LIMIT 1;"
+    },
+    {
+        "question": "What is the picture URL of the entity with the maximum weight?",
+        "dataset": "063_Influencers",
+        "answer": "https://storage.googleapis.com/pics.contexto.io/photos/paperclips/000/016/457/thumb/Saw-whet_Owl_10_normal.jpg?1517502050",
+        "columns_used": [
+            "pic",
+            "weight"
+        ],
+        "sql": " SELECT pic FROM \"063_Influencers\" WHERE weight = (SELECT MAX(weight) FROM \"063_Influencers\");"
+    },
+    {
+        "question": "Which entity has the highest y-coordinate?",
+        "dataset": "063_Influencers",
+        "answer": "The Gibson Project",
+        "columns_used": [
+            "name",
+            "y"
+        ],
+        "sql": " SELECT name, y FROM \"063_Influencers\" ORDER BY y DESC NULLS LAST LIMIT 1;"
+    },
+    {
+        "question": "What are the top 3 entity names with the highest weights?",
+        "dataset": "063_Influencers",
+        "answer": "['Lynn Cherny', 'Alberto Cairo', 'Sinan Aral']",
+        "columns_used": [
+            "name",
+            "weight"
+        ],
+        "sql": " SELECT name, weight FROM \"063_Influencers\" ORDER BY weight DESC NULLS LAST LIMIT 3;"
+    },
+    {
+        "question": "What are the bottom 2 entities in terms of page rank norm?",
+        "dataset": "063_Influencers",
+        "answer": "['LIFE', 'New Options Project']",
+        "columns_used": [
+            "name",
+            "page_rank_norm"
+        ],
+        "sql": " SELECT name, page_rank_norm FROM \"063_Influencers\" ORDER BY page_rank_norm ASC LIMIT 2;"
+    },
+    {
+        "question": "What are the top 4 entities with the highest x-coordinates?",
+        "dataset": "063_Influencers",
+        "answer": "['Detective.io', 'The Thrust', 'Open Budgets', 'NewsFuturist']",
+        "columns_used": [
+            "name",
+            "x"
+        ],
+        "sql": " SELECT name, x FROM \"063_Influencers\" ORDER BY x DESC NULLS LAST LIMIT 4;"
+    },
+    {
+        "question": "What are the bottom 3 entities in terms of y-coordinates?",
+        "dataset": "063_Influencers",
+        "answer": "['digital PR cat', 'Ismail Onur Filiz', 'Dave Golland']",
+        "columns_used": [
+            "name",
+            "y"
+        ],
+        "sql": " SELECT name, y\n     FROM \"063_Influencers\"\n     ORDER BY y ASC\n     LIMIT 3;"
+    },
+    {
+        "question": "What are the top 5 entity IDs in terms of weight?",
+        "dataset": "063_Influencers",
+        "answer": "[568, 423, 6392, 4548, 579]",
+        "columns_used": [
+            "id",
+            "weight"
+        ],
+        "sql": " SELECT id, weight FROM \"063_Influencers\" ORDER BY weight DESC NULLS LAST LIMIT 5;"
+    },
+    {
+        "question": "What are the bottom 4 entity IDs in terms of page rank norm?",
+        "dataset": "063_Influencers",
+        "answer": "[177, 240, 294, 369]",
+        "columns_used": [
+            "id",
+            "page_rank_norm"
+        ],
+        "sql": " SELECT id, page_rank_norm FROM \"063_Influencers\" ORDER BY page_rank_norm ASC LIMIT 4;"
+    },
+    {
+        "question": "What are the top 6 page rank norms of the entities?",
+        "dataset": "063_Influencers",
+        "answer": "[1.0, 0.6029751067034804, 0.5666707687637932, 0.5202348027491394, 0.5110606617858531, 0.5081183103684572]",
+        "columns_used": [
+            "page_rank_norm"
+        ],
+        "sql": " SELECT page_rank_norm FROM \"063_Influencers\" ORDER BY page_rank_norm DESC NULLS LAST LIMIT 6;"
+    },
+    {
+        "question": "What are the bottom 3 weights of the entities?",
+        "dataset": "063_Influencers",
+        "answer": "[1.0, 1.0, 1.0]",
+        "columns_used": [
+            "weight"
+        ],
+        "sql": " SELECT weight FROM \"063_Influencers\" ORDER BY weight ASC LIMIT 3;"
+    },
+    {
+        "question": "Are there any animals with feathers in the dataset?",
+        "dataset": "064_Clustering",
+        "answer": "True",
+        "columns_used": [
+            "feathers"
+        ],
+        "sql": " SELECT 'feathers' FROM \"064_Clustering\" WHERE 'feathers' IS NOT NULL;"
+    },
+    {
+        "question": "Are there any venomous animals in the dataset?",
+        "dataset": "064_Clustering",
+        "answer": "True",
+        "columns_used": [
+            "venomous"
+        ],
+        "sql": " SELECT venomous FROM \"064_Clustering\" WHERE venomous = 'Yes';"
+    },
+    {
+        "question": "Do all animals breathe?",
+        "dataset": "064_Clustering",
+        "answer": "False",
+        "columns_used": [
+            "breathes"
+        ],
+        "sql": " SELECT breathes FROM \"064_Clustering\" WHERE breathes = 'Yes';"
+    },
+    {
+        "question": "Are there any domesticated animals in the dataset?",
+        "dataset": "064_Clustering",
+        "answer": "True",
+        "columns_used": [
+            "domestic"
+        ],
+        "sql": " SELECT domestic FROM \"064_Clustering\" WHERE domestic = 'Yes';"
+    },
+    {
+        "question": "How many unique types of animals are there?",
+        "dataset": "064_Clustering",
+        "answer": "7",
+        "columns_used": [
+            "class_type"
+        ],
+        "sql": " SELECT COUNT(DISTINCT class_type) FROM \"064_Clustering\";"
+    },
+    {
+        "question": "What is the average number of legs?",
+        "dataset": "064_Clustering",
+        "answer": "2.8415841584158414",
+        "columns_used": [
+            "legs"
+        ],
+        "sql": " SELECT AVG(legs) AS average_legs FROM \"064_Clustering\";"
+    },
+    {
+        "question": "What is the maximum number of legs an animal has?",
+        "dataset": "064_Clustering",
+        "answer": "8",
+        "columns_used": [
+            "legs"
+        ],
+        "sql": " SELECT MAX(legs) FROM \"064_Clustering\";"
+    },
+    {
+        "question": "How many animals are there with 2 legs?",
+        "dataset": "064_Clustering",
+        "answer": "27",
+        "columns_used": [
+            "legs"
+        ],
+        "sql": " SELECT COUNT(*) FROM \"064_Clustering\" WHERE legs = 2;"
+    },
+    {
+        "question": "What is the most common class type?",
+        "dataset": "064_Clustering",
+        "answer": "1",
+        "columns_used": [
+            "class_type"
+        ],
+        "sql": " SELECT class_type, COUNT(*) AS frequency FROM \"064_Clustering\" GROUP BY class_type ORDER BY frequency DESC LIMIT 1;"
+    },
+    {
+        "question": "What is the name of the animal with 8 legs?",
+        "dataset": "064_Clustering",
+        "answer": "octopus",
+        "columns_used": [
+            "animal_name",
+            "legs"
+        ],
+        "sql": " SELECT animal_name FROM \"064_Clustering\" WHERE legs = 8;"
+    },
+    {
+        "question": "What is the class type of the animal with the most legs?",
+        "dataset": "064_Clustering",
+        "answer": "7",
+        "columns_used": [
+            "class_type",
+            "legs"
+        ],
+        "sql": " SELECT c.class_type, MAX(c.legs) AS max_legs FROM \"064_Clustering\" c GROUP BY c.class_type ORDER BY max_legs DESC LIMIT 1;"
+    },
+    {
+        "question": "What is the name of the animal that is venomous?",
+        "dataset": "064_Clustering",
+        "answer": "frog",
+        "columns_used": [
+            "animal_name",
+            "venomous"
+        ],
+        "sql": " SELECT animal_name FROM \"064_Clustering\" WHERE venomous = 'Yes';"
+    },
+    {
+        "question": "What are the top 3 animal names with the most legs?",
+        "dataset": "064_Clustering",
+        "answer": "['octopus', 'scorpion', 'crayfish']",
+        "columns_used": [
+            "animal_name",
+            "legs"
+        ],
+        "sql": " SELECT animal_name, legs FROM \"064_Clustering\" ORDER BY legs DESC NULLS LAST LIMIT 3;"
+    },
+    {
+        "question": "What are the bottom 2 animal names in terms of the number of legs?",
+        "dataset": "064_Clustering",
+        "answer": "['bass', 'carp']",
+        "columns_used": [
+            "animal_name",
+            "legs"
+        ],
+        "sql": " SELECT animal_name, legs FROM \"064_Clustering\" ORDER BY legs ASC LIMIT 2;"
+    },
+    {
+        "question": "What are the most common 4 class types with the most animals?",
+        "dataset": "064_Clustering",
+        "answer": "[1, 2, 4, 7]",
+        "columns_used": [
+            "class_type"
+        ],
+        "sql": " SELECT class_type, COUNT(*) AS num_animals FROM \"064_Clustering\" GROUP BY class_type ORDER BY num_animals DESC LIMIT 4;"
+    },
+    {
+        "question": "What are the least common 3 class types with the least animals?",
+        "dataset": "064_Clustering",
+        "answer": "[5, 3, 6]",
+        "columns_used": [
+            "class_type"
+        ],
+        "sql": " SELECT class_type, COUNT(*) AS num_animals FROM \"064_Clustering\" GROUP BY class_type ORDER BY num_animals ASC LIMIT 3;"
+    },
+    {
+        "question": "What are the most common 5 class types with the most combined total legs?",
+        "dataset": "064_Clustering",
+        "answer": "[1, 6, 2, 7, 5]",
+        "columns_used": [
+            "class_type",
+            "legs"
+        ],
+        "sql": " SELECT c.class_type, SUM(c.legs) AS total_legs FROM \"064_Clustering\" c GROUP BY c.class_type ORDER BY total_legs DESC LIMIT 5;"
+    },
+    {
+        "question": "What are the bottom 4 class types with the least combined total legs?",
+        "dataset": "064_Clustering",
+        "answer": "[4, 3, 5, 7]",
+        "columns_used": [
+            "class_type",
+            "legs"
+        ],
+        "sql": " SELECT c.class_type, SUM(c.legs) AS total_legs FROM \"064_Clustering\" c GROUP BY c.class_type ORDER BY total_legs ASC LIMIT 4;"
+    },
+    {
+        "question": "What are the most common 6 numbers of legs that animals have?",
+        "dataset": "064_Clustering",
+        "answer": "[4, 2, 0, 6, 8, 5]",
+        "columns_used": [
+            "legs"
+        ],
+        "sql": " SELECT legs, COUNT(*) AS frequency FROM \"064_Clustering\" GROUP BY legs ORDER BY frequency DESC LIMIT 6;"
+    },
+    {
+        "question": "What are the least common 3 numbers of legs that animals have?",
+        "dataset": "064_Clustering",
+        "answer": "[5, 8, 6]",
+        "columns_used": [
+            "legs"
+        ],
+        "sql": " SELECT legs, COUNT(*) AS frequency FROM \"064_Clustering\" GROUP BY legs ORDER BY frequency ASC LIMIT 3;"
+    },
+    {
+        "question": "Are all the quantities greater than 0?",
+        "dataset": "065_RFM",
+        "answer": "False",
+        "columns_used": [
+            "Quantity"
+        ],
+        "sql": " SELECT Quantity > 0 AS all_quantities_greater_than_zero FROM \"065_RFM\";"
+    },
+    {
+        "question": "Are all the unit prices greater than 0?",
+        "dataset": "065_RFM",
+        "answer": "False",
+        "columns_used": [
+            "UnitPrice"
+        ],
+        "sql": " SELECT UnitPrice FROM \"065_RFM\" WHERE UnitPrice > 0;"
+    },
+    {
+        "question": "Are there any missing customer IDs?",
+        "dataset": "065_RFM",
+        "answer": "True",
+        "columns_used": [
+            "CustomerID"
+        ],
+        "sql": " SELECT \"CustomerID\" FROM \"065_RFM\" WHERE \"CustomerID\" IS NULL;"
+    },
+    {
+        "question": "Are there any transactions from the United Kingdom?",
+        "dataset": "065_RFM",
+        "answer": "True",
+        "columns_used": [
+            "Country"
+        ],
+        "sql": " SELECT COUNT(*) FROM \"065_RFM\" WHERE Country = 'United Kingdom';"
+    },
+    {
+        "question": "How many unique stock codes are there?",
+        "dataset": "065_RFM",
+        "answer": "4070",
+        "columns_used": [
+            "StockCode"
+        ],
+        "sql": " SELECT COUNT(DISTINCT StockCode) FROM \"065_RFM\";"
+    },
+    {
+        "question": "What is the average unit price?",
+        "dataset": "065_RFM",
+        "answer": "4.611113626088513",
+        "columns_used": [
+            "UnitPrice"
+        ],
+        "sql": " SELECT AVG(UnitPrice) AS average_unit_price FROM \"065_RFM\";"
+    },
+    {
+        "question": "What is the maximum quantity ordered in a single transaction?",
+        "dataset": "065_RFM",
+        "answer": "80995",
+        "columns_used": [
+            "Quantity"
+        ],
+        "sql": " SELECT MAX(Quantity) AS max_quantity FROM \"065_RFM\";"
+    },
+    {
+        "question": "How many transactions were made in the United Kingdom?",
+        "dataset": "065_RFM",
+        "answer": "495478",
+        "columns_used": [
+            "Country"
+        ],
+        "sql": " SELECT COUNT(*) FROM \"065_RFM\" WHERE Country = 'United Kingdom';"
+    },
+    {
+        "question": "Which country made the most transactions?",
+        "dataset": "065_RFM",
+        "answer": "United Kingdom",
+        "columns_used": [
+            "Country"
+        ],
+        "sql": " SELECT Country, COUNT(*) AS num_transactions FROM \"065_RFM\" GROUP BY Country ORDER BY num_transactions DESC LIMIT 1;"
+    },
+    {
+        "question": "What is the description of the item with the highest unit price?",
+        "dataset": "065_RFM",
+        "answer": "Manual",
+        "columns_used": [
+            "Description",
+            "UnitPrice"
+        ],
+        "sql": " SELECT Description, UnitPrice FROM \"065_RFM\" ORDER BY UnitPrice DESC NULLS LAST LIMIT 1;"
+    },
+    {
+        "question": "What is the description of the item with the highest quantity ordered?",
+        "dataset": "065_RFM",
+        "answer": "PAPER CRAFT , LITTLE BIRDIE",
+        "columns_used": [
+            "Description",
+            "Quantity"
+        ],
+        "sql": " SELECT Description, Quantity\n     FROM \"065_RFM\"\n     ORDER BY Quantity DESC\n     LIMIT 1;"
+    },
+    {
+        "question": "Which country does the customer with the lowest ID come from?",
+        "dataset": "065_RFM",
+        "answer": "United Kingdom",
+        "columns_used": [
+            "Country",
+            "CustomerID"
+        ],
+        "sql": " SELECT Country, MIN(CustomerID) AS min_customer_id FROM \"065_RFM\" GROUP BY Country ORDER BY min_customer_id NULLS LAST;"
+    },
+    {
+        "question": "What are the descriptions of the top 3 items with the highest quantities ordered?",
+        "dataset": "065_RFM",
+        "answer": "['PAPER CRAFT , LITTLE BIRDIE', 'MEDIUM CERAMIC TOP STORAGE JAR', 'ASSTD DESIGN 3D PAPER STICKERS']",
+        "columns_used": [
+            "Description",
+            "Quantity"
+        ],
+        "sql": " SELECT Description, Quantity FROM \"065_RFM\" ORDER BY Quantity DESC LIMIT 3;"
+    },
+    {
+        "question": "What are the descriptions of the bottom 2 items with the lowest quantities ordered?",
+        "dataset": "065_RFM",
+        "answer": "['PAPER CRAFT , LITTLE BIRDIE', 'MEDIUM CERAMIC TOP STORAGE JAR']",
+        "columns_used": [
+            "Description",
+            "Quantity"
+        ],
+        "sql": " SELECT Description, Quantity\n     FROM \"065_RFM\"\n     ORDER BY Quantity ASC\n     LIMIT 2;"
+    },
+    {
+        "question": "Which 4 countries made the most transactions?",
+        "dataset": "065_RFM",
+        "answer": "['United Kingdom', 'Germany', 'France', 'EIRE']",
+        "columns_used": [
+            "Country"
+        ],
+        "sql": " SELECT Country, COUNT(*) AS num_transactions FROM \"065_RFM\" GROUP BY Country ORDER BY num_transactions DESC LIMIT 4;"
+    },
+    {
+        "question": "Which 3 countries made the least transactions?",
+        "dataset": "065_RFM",
+        "answer": "['Saudi Arabia', 'Bahrain', 'Czech Republic']",
+        "columns_used": [
+            "Country"
+        ],
+        "sql": " SELECT Country, COUNT(*) AS num_transactions FROM \"065_RFM\" GROUP BY Country ORDER BY num_transactions ASC LIMIT 3;"
+    },
+    {
+        "question": "What are the invoice numbers of the top 5 transactions with the highest quantities ordered?",
+        "dataset": "065_RFM",
+        "answer": "['581483', '541431', '578841', '542504', '573008']",
+        "columns_used": [
+            "InvoiceNo",
+            "Quantity"
+        ],
+        "sql": " SELECT i.InvoiceNo, i.Quantity FROM 065_RFM i ORDER BY i.Quantity DESC NULLS LAST LIMIT 5;"
+    },
+    {
+        "question": "What are the stock codes of the bottom 4 transactions with the lowest quantities ordered?",
+        "dataset": "065_RFM",
+        "answer": "[23843, 21366, 23005, 23005, 84347]",
+        "columns_used": [
+            "InvoiceNo",
+            "Quantity"
+        ],
+        "sql": " SELECT i.InvoiceNo, i.Quantity\n     FROM \"065_RFM\" i\n     ORDER BY i.Quantity ASC\n     LIMIT 4;"
+    },
+    {
+        "question": "What are the six most commonly ordered quantities?",
+        "dataset": "065_RFM",
+        "answer": "[1, 2, 12, 6, 4, 3]",
+        "columns_used": [
+            "Quantity"
+        ],
+        "sql": " SELECT Quantity, COUNT(*) AS frequency FROM \"065_RFM\" GROUP BY Quantity ORDER BY frequency DESC LIMIT 6;"
+    },
+    {
+        "question": "What are the three least commonly ordered quantities?",
+        "dataset": "065_RFM",
+        "answer": "[-312, -79, 404]",
+        "columns_used": [
+            "Quantity"
+        ],
+        "sql": " SELECT Quantity FROM \"065_RFM\" GROUP BY Quantity ORDER BY COUNT(Quantity) ASC LIMIT 3;"
+    }
+]

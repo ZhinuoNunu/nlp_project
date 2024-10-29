@@ -1,0 +1,495 @@
+output,ground_truth,label
+Yes.,TRUE,1
+Yes.,TRUE,1
+Yes.,TRUE,1
+No.,TRUE,1
+3765,3765,0
+387,61,0
+1243,1243,1
+0,0,1
+ING España,ING España,1
+es,es,1
+INGdigno1999,juan prin,0
+reply,reply,1
+"ING España, Emilio Cubo Ruiz, and INGdigno1999.","['Lavincompae', '#NI UNA MENOS \xa0♐\xa0✊\xa0🚺', 'SFC The World']",0
+es,"['es', 'es', 'es', 'es', 'es']",1
+"Based on the query results, the authors of the 4 shortest posts are:
+
+1. . (1 post)
+2. Nach*","['Correctorada', 'El Joker', 'Xenia Viladas', 'DrJaus \xa0🇪🇸']",0
+"reply, original","['reply', 'original']",1
+"The retweet counts for the top 5 most favorited posts are 9, 9, 9, 9, 9.","[0, 0, 0, 0, 3]",0
+"387, 362, 357","[61, 60, 59]",0
+"0, 0, 1, 0","[0, 0, 1, 0]",1
+"The word counts for the 6 shortest posts are 4, 4, 5, 5, 6, 6.","[1, 1, 1, 1, 1, 1]",0
+Yes.,TRUE,1
+Yes.,TRUE,1
+No.,FALSE,1
+Yes.,TRUE,1
+20,20,1
+780,1125,0
+160,160,1
+80.94,80.94,1
+Ground,Poison,0
+Trapinch,Shuckle,0
+type2,Flying,0
+"Aromatisse has a special attack of 99, which is the highest among the Pokémon listed in the table, and its primary type is Fairy.",Mega Mewtwo Y (Psychic),0
+"Mega Mewtwo X, Mega Mewtwo Y, Mega Rayquaza.","['Eternamax Eternatus', 'Mega Mewtwo X', 'Mega Mewtwo Y']",0
+"Shedinja, Diglett, Alolan Diglett, and two Pokémon with 100 hp stats are not available","['Shedinja', 'Diglett', 'Alolan Diglett', 'Magikarp', 'Pichu']",1
+"Based on the table data, the top 4 primary categories are:
+
+1. Grass
+2. Fire
+3. (No third category appears in the data)
+4. (No fourth category appears in the data)","['Water', 'Normal', 'Grass', 'Bug']",0
+"The 6 Pokémon from the second generation with the highest attack stats are: 
+
+1. Mega Ampharos
+2. Qwilfish
+3. Sneasel
+4. Kingdra
+5. Stantler
+6. Hitmontop","['Mega Heracross', 'Mega Tyranitar', 'Mega Scizor', 'Tyranitar', 'Scizor', 'Ursaring']",0
+"['99', '98', '98', '98', '98']","[250, 230, 200, 160, 160]",0
+[],"[20, 31, 50]",0
+95,"[135, 127, 125, 125]",0
+[],"[175, 180, 180, 185, 190, 194]",0
+Yes.,TRUE,1
+No.,FALSE,1
+Yes.,FALSE,0
+Yes.,TRUE,1
+0.782633618,0.782633618,1
+1002,1002,1
+The average Extraversion level for the profession with the highest number of records (n) is 0.699791482279989.,0.37321404,0
+4.6,0.03536414,0
+Policy Officer,Policy Officer,1
+Governor,Governor,1
+Mortgage Banker,Mortgage Banker,1
+Principal,Program Manager,0
+"Book Publisher, Bureau Chief, Publisher.","['Book Publisher', 'Bureau Chief', 'Publisher']",1
+"['.Net Architect', '0.0177333679605937'], 
+['Android Developer', '0.0296663220162257'], 
+['Principal Engineer', '0.0325079295712726'], 
+['Game Engineer',","['.Net Architect', 'Android Developer', 'Principal Engineer', 'Game Engineer']",1
+"1. Director of Athletics
+2. Recruiting Coordinator
+3. Athletic Coordinator
+4. Director of Personnel
+5. Skills Trainer","['Director of Athletics', 'Recruiting Coordinator', 'Athletic Coordinator', 'Director of Personnel', 'Skills Trainer']",1
+"U.S. Senator, Congressman","['U.S. Senator', 'Congressman']",1
+"The top 3 values of Openness to Change across all professions are:
+
+1. Talent Buyer (0.755724998595985)
+2. Artist's Manager (0.741318918762879)
+3. Booking Manager (0.703","[0.7557249985959847, 0.7413189187628788, 0.7034528053640179]",1
+"[0.165238156966406, 0.200542806432412, 0.221554611685525, 0.250679167849994]","[0.1652381569664056, 0.2005428064324122, 0.2215546116855247, 0.2506791678499942]",1
+"The highest 5 levels of Extraversion are:
+0.979436592280923
+0.972366065603067
+0.954299437125917
+0.936298945398536
+0.930791706758329","[0.9794365922809228, 0.9723660656030668, 0.954299437125917, 0.9362989453985364, 0.9307917067583288]",1
+"0.0353641396193574, 0.0355792960526332, 0.0399752446723049, 0.0573280662585625, 0.0591099063085339, ","[0.0353641396193574, 0.0355792960526332, 0.0399752446723049, 0.0573280662585624, 0.0591099063085338, 0.0592781792571762]",1
+Yes.,FALSE,0
+0,FALSE,1
+Yes.,TRUE,1
+Yes.,TRUE,1
+3574,3574,1
+14.75,14.7459746,1
+96,100,0
+8848,8848,1
+Incase Designs Corp. with 96 claims.,Massachusetts Institute of Technology,0
+B2,B2,1
+en,en,1
+"member, portion, body, end","member, portion, body, end",1
+"International Business Machines Corporation, Samsung Electronics Co., Ltd., and None","['International Business Machines Corporation', 'Samsung Electronics Co., Ltd.', 'Google Inc.']",1
+"utility (8848), design (1088), plant (45), reissue (18)","['utility', 'design', 'plant', 'reissue']",1
+"The 5 kinds of patents are:
+1. B2: 8119
+2. S1: 1088
+3. B1: 729
+4. P2: 27
+5. P3: 18","['B2', 'S1', 'B1', 'P2', 'P3']",1
+"habit, plant, foliage, flowers (39 times)
+soybean, plant, cultivar, soybean cultivar (51 times)","['habit, plant, foliage, flowers', 'soybean, plant, cultivar, soybean cultivar']",1
+"96, 93, 9, 9","[20, 1, 18, 19]",0
+"['9325365.0', '9323284.0', '9479501.0']","[9479771.0, 9325365.0, 9323284.0]",1
+"The 5 patents with the most targets associated are:
+
+1. None
+2. 9320804.0
+3. 9321092.0
+4. 9320806.0
+5. 9480020.0","[29, 30, 46, 51, 70]",0
+"['9479481.0', '9479480.0', '9479479.0', '9479478.0', '9479477.0', '9479476.0']","[9479476.0, 9479477.0, 9479478.0, 9479479.0, 9479480.0, 9479481.0]",1
+No.,TRUE,0
+Yes.,FALSE,0
+Yes.,FALSE,0
+Yes.,TRUE,1
+"5,000.00",0.782633618,0
+491,1002,0
+9939,0.37321404,0
+491,0.03536414,0
+Joe Biden.,Policy Officer,0
+Joe Biden,Governor,0
+Joe Biden,Mortgage Banker,0
+Joe Biden.,Program Manager,0
+"Joe Biden with 14,837,394,832 followers.","['Book Publisher', 'Bureau Chief', 'Publisher']",0
+Joe Biden,"['.Net Architect', 'Android Developer', 'Principal Engineer', 'Game Engineer']",0
+Joe Biden,"['Director of Athletics', 'Recruiting Coordinator', 'Athletic Coordinator', 'Director of Personnel', 'Skills Trainer']",0
+Joe Biden,"['U.S. Senator', 'Congressman']",0
+"30308047, 30308047, 30308045","[0.7557249985959847, 0.7413189187628788, 0.7034528053640179]",0
+"2, 1, 0, 0","[0.1652381569664056, 0.2005428064324122, 0.2215546116855247, 0.2506791678499942]",0
+491,"[0.9794365922809228, 0.9723660656030668, 0.954299437125917, 0.9362989453985364, 0.9307917067583288]",0
+"13487, 13504","[0.0353641396193574, 0.0355792960526332]",0
+No.,FALSE,1
+Yes.,FALSE,0
+"Yes. The borrower with the longest loan duration has the maximum number of existing loans, with 3 loans existing for 9 months.",FALSE,0
+Yes,FALSE,0
+9055,18424,0
+367,367,1
+12,72,0
+113,113,1
+Radio/TV.,Radio/TV,1
+Skilled.,Skilled,1
+Existing Credits Paid Back Duly Till Now,Existing Credits Paid Back Duly Till Now,1
+Less than 100 DM,Less than 100 DM,1
+There is not enough information in the table to accurately determine the top 3 jobs of borrowers with the highest loan amount since the data is sorted by Loan Amount but does not include the specific amounts for each loan.,"['Highly Skilled', 'Skilled', 'Highly Skilled']",0
+"Based on the provided results, the top 4 jobs of borrowers with the longest loan duration are:
+
+1. Job (duration: 48 months)
+2. Job (duration: 42 months)
+3. Job (duration: 36 months)
+","['Skilled', 'Skilled', 'Skilled', 'Unskilled - Resident']",0
+"('2', ' Job') appears 2 times, ('1', ' Job') appears 6 times. So, 2 borrowers have 2 existing loans, and 6 borrowers have 1 existing loan. 
+
+The 5 jobs of borrowers","['Skilled', 'Skilled', 'Unskilled - Resident', 'Highly Skilled', 'Skilled']",0
+"Unskilled - Resident, Skilled","['Highly Skilled', 'Highly Skilled']",0
+"9055
+7882
+5951","[18424, 15945, 15857]",0
+"12, 24, 36, 48","[72, 60, 60, 60]",0
+The 5 maximum numbers of existing loans among borrowers are: 2.,"[4, 4, 4, 4, 4]",0
+"67, 61","[75, 75]",0
+No.,FALSE,1
+Yes.,FALSE,0
+No.,TRUE,0
+Yes.,TRUE,1
+1,0,0
+0.00228,0.08465,0
+18,18,1
+0.2748,0.2748,1
+Grapes,bacon,0
+"('0.1548', 'name')",honey,0
+0.001g,honey,0
+Grapes,beef,0
+"1. grapes
+2. melon
+3. watermelon
+4. tangerine
+5. lemon","['bacon', 'peanuts', 'chocolate bar', 'popcorn', 'cookie']",0
+"('0.025', ' name') 
+('0.0569', ' name') 
+('0.062', ' name')","['chestnut', 'pancakes', 'cheese']",0
+"1. '0.0033', ' name'
+2. '0.0033', ' name'
+3. '0.0031', ' name'
+4. '0.003', ' name'","['bacon', 'peanuts', 'cheese', 'popcorn']",0
+"banana, lemon, watermelon, melon, grapes, tangerine","['candy', 'black tea', 'bacon', 'champagne', 'red wine', 'red apple']",0
+"('0.89',) ('0.69',) ('0.63',) ('0.58',) ('0.57',)","[8.98, 5.67, 5.18, 5.0, 4.97]",0
+"0.025, 0.0569, 0.062","[0.0, 0.0, 0.0]",0
+"1. 0.0033
+2. 0.0031
+3. 0.003
+4. 0.003","[0.995, 0.4924, 0.3099, 0.281]",0
+"0.002
+0.0036
+0.0044
+0.0054
+0.0061
+0.0072","[0.0, 0.0, 0.0007, 0.0007, 0.0007, 0.002]",0
+No.,TRUE,0
+No,FALSE,1
+No.,TRUE,0
+0,TRUE,0
+0,372,0
+37.42,37.42012059,1
+0,10344,0
+86,105,0
+0,[Ciudadanos],0
+The most common reason for voting given by respondents is "The party ideas are close to my own" with a frequency of 6503.,The party ideas are close to my own,1
+4707,Ciudadanos,0
+Castellano.,Castellano,1
+"Based on the extracted data:
+
+1. 0%
+2. 6%
+3. 0%","['[Ciudadanos]', '[]', '[I am undeceided]', '[Podemos]', '[PP]']",0
+"The top 3 most common reasons for voting among respondents are:
+
+1. 'The party ideas are close to my own' (6503 times)
+2. None (3929 times)
+3. 'The party is the most competent' (241","['The party ideas are close to my own', 'The party is the most competent', 'I prefer not to say']",1
+"1. None (4707)
+2. Ciudadanos (4394)
+3. PP (2419)
+4. I prefer not to say (2388)","['Ciudadanos', 'PP', 'I prefer not to say', 'Podemos']",1
+"The top 6 most common first languages among respondents are:
+
+1. Castellano (19927)
+2. Catalan (38)
+3. Galician (28)
+4. Basque (7)
+ 
+Note: The results only list 4","['Castellano', 'Catal�', 'Galego', 'Euskara']",0
+"38.0, 23.0, 39.0, 25.0, None","[38.0, 23.0, 39.0, 25.0, 35.0]",1
+"The top 3 most common positions on the Left-Right economic values axis are: None (4253), 5.0 (3746), 3.0 (2144).","[5.0, 3.0, 6.0]",0
+"1. None
+2. 5.0
+3. 3.0
+4. 4.0","[5.0, 3.0, 4.0, 0.0]",1
+"2.0, 3.0, 4.0, None, 1.0, 5.0","[2.0, 3.0, 4.0, 1.0, 5.0]",1
+No.,TRUE,0
+No.,TRUE,0
+No.,TRUE,0
+915,TRUE,1
+1315,1315,1
+0,799,0
+0,0,0
+774,774,1
+"There is no information on the frequency of the age groups. The question was 'How old are you?' and the answer is based on the provided results which do not include frequency information.
+
+However, if we look at the provided results:
+
+[('55",65+,0
+Joe Biden (Democrat),Donald Trump (Republican),0
+"The highest degree or level of school completed by the respondents is not specified in the data. However, based on the results, the most commonly achieved educational level is the one that appears first in the ordered list, which is not explicitly stated in the data","Some college, no degree",0
+South Atlantic.,South Atlantic,1
+"CA, TX, NY, FL, GA","['CA', 'TX', 'NY', 'FL', 'GA']",1
+"1. None (2103)
+2. Other (269)
+3. Healthcare (262)
+4. Office worker or other professional (225)","['Other', 'Healthcare', 'Office worker or other professional', 'Industrial (e.g. construction, manufacturing, maintenance and repair)']",1
+"White (not Hispanic, Latino or Spanish origin) - 2580
+Black or African American (not Hispanic, Latino or Spanish origin) - 420
+Hispanic, Latino or Spanish origin - 222","['White (not Hispanic, Latino or Spanish origin)', 'Black or African American (not Hispanic, Latino or Spanish origin)', 'Hispanic, Latino or Spanish origin']",1
+"Based on the query results, here are the top 6 most represented age groups:
+
+1. 45-54 (3 occurrences)
+2. 65+ (4 occurrences)
+3. 55-64 (3 occurrences)
+4. 45","['65+', '55-64', '45-54', '35-44', '18-24', '25-34']",0
+"6037, 13121, 48201","[6037, 13121, 48201]",1
+"1. 9.46910161788502
+2. 9.19590726884874
+3. 8.95039485431436
+4. 7.01175708748136","[0.8085780015111617, 0.7742084493732905, 0.3063435812288158, 0.629527660735561]",0
+"1. NCHS Urban/rural: 1
+   Number of respondents: 994
+
+2. NCHS Urban/rural: 2
+   Number of respondents: 814
+
+3. NCHS Urban/rural: ","[1, 2, 3, 4, 5]",0
+"1. 10.0: 1531
+2. 11.0: 840
+3. Not Available (None): 443
+4. 0.0: 122
+5. 1.0: 111","[10.0, 11.0, 0.0, 1.0, 9.0, 5.0]",1
+No,FALSE,1
+2,TRUE,1
+No,TRUE,0
+No,TRUE,0
+940,940,1
+16.2,16.19912,1
+99999,549900,0
+0,4237,0
+,Supergarage,0
+VOLKSWAGEN.,VOLKSWAGEN,1
+Diésel,Diésel,1
+Madrid.,Madrid,1
+"The top 3 provinces with the most car listings are Madrid, Barcelona, and Valencia.","['Madrid', 'Barcelona', 'Valencia']",1
+"1. Blanco - 10811
+2. Gris / Plata - 10372
+3. Negro - 7963
+4. Azul - 5264","['Blanco', 'Gris / Plata', 'Negro', 'Azul']",1
+"VOLKSWAGEN, BMW, MERCEDES-BENZ, AUDI, PEUGEOT","['VOLKSWAGEN', 'BMW', 'MERCEDES-BENZ', 'AUDI', 'PEUGEOT']",1
+"Gas natural (CNG), None","['Gas natural (CNG)', 'Gas licuado (GLP)']",1
+"2016, 2017, 2019, 2020","[2016.0, 2017.0, 2019.0, 2020.0]",1
+"999999, 99999, 99999","[5000000, 4000006, 3500000]",0
+"1. 47
+2. 32
+3. 22
+4. 21
+5. 15","[54, 54, 54, 54, 54]",0
+"['18250', '16143', '16143', '15000.0', '14000', '13900']","[800.0, 800.0, 796.0, 772.0, 720.0, 720.0]",0
+No.,TRUE,0
+0,TRUE,0
+No,TRUE,0
+No.,TRUE,0
+94,95,0
+9182,159,0
+999,9684,0
+0,2478,0
+afternoon,morning,0
+There is no data available to answer this question.,Coffee,0
+No item was purchased on weekdays.,Adjustment,0
+afternoon,morning,0
+[],"['Coffee', 'Bread', 'Pastry']",0
+[],"['Chicken sand', 'Gift voucher', 'Bare Popcorn', 'Raw bars']",0
+"Based on the table data, here is the answer:
+
+1. Scandinavian
+2. Scandinavian
+3. Bread 
+There is not enough information to determine the top 5 items sold on weekends.","['Coffee', 'Bread', 'Tea', 'Cake', 'Pastry']",0
+[],"['Art Tray', 'Mighty Protein', 'Mortimer', 'Vegan Mincepie']",0
+"The top 4 transaction numbers with the most items bought are 6716, 6474, 6412, and 6279.","[6474, 6716, 6279, 6412]",1
+"('6',)","[9680, 9681, 9682, 9683, 9684]",0
+"9513, 8328, 7329, 6936, 6730, 6240","[6412, 6279, 6474, 6603, 6716, 6642]",0
+"3 
+3","[9683, 9684]",0
+No.,FALSE,1
+Yes.,FALSE,0
+Yes.,TRUE,1
+Yes,FALSE,0
+162,162,1
+4.204158004,4.204158004,1
+99885941,670801367,0
+786,786,1
+United States,United States,1
+Disneyland_Paris with an average rating of 3.96008804108584.,Disneyland_Paris,1
+Apr-19,missing,0
+Åland Islands,Armenia,0
+"The top 3 reviewer locations with the most reviews are United States, United Kingdom, and Australia.","['United States', 'United Kingdom', 'Australia']",1
+"Disneyland_Paris, 4.204158004158004","['Disneyland_Paris', 'Disneyland_HongKong']",0
+"The top 4 year-months with the most reviews are missing, 2015-8, 2015-7, and 2015-12.","['missing', '2015-8', '2015-7', '2015-12']",1
+"Turks and Caicos Islands, South Sudan, Suriname.","['Turks and Caicos Islands', 'South Sudan', 'Suriname']",1
+"['670585330', '670570869', '670443403', '670435886', '670324965']","[670585330, 670570869, 670443403, 670435886, 670324965]",1
+"['662641193', '658624005', '649615606', '647822351']","[662641193, 658624005, 649615606, 647822351]",1
+5,"[5, 5, 5, 5, 5, 5]",1
+"['Disneyland_HongKong', '1'], ['Disneyland_HongKong', '1'], ['Disneyland_HongKong', '1']","[1, 1, 1]",1
+Yes.,FALSE,0
+Yes.,TRUE,1
+14947,TRUE,1
+Yes.,TRUE,1
+1,1,1
+8774.52,8774.520447,1
+99994,589793,0
+2891,2891,1
+Donald J. Trump,Donald J. Trump,1
+Big decision will soon be made on our next Justice of the Supreme Court!,Such a beautiful and important evening! The forgotten man and woman will never be forgotten again. We will all come together as never before,0
+English.,und,0
+English (en),en,1
+realDonaldTrump.,['realDonaldTrump'],1
+es and fi.,"['pt', 'fi']",0
+"['', 'ðix\x8dz\x7f\x00\x00', 'pdx\x8dz\x7f\x00\x00', '°t~¨z\x7f\x00\x00']","['realDonaldTrump', 'FoxNews', 'CNN', 'foxandfriends']",0
+"Donald J. Trump, with 1 tweet.
+Donald J. Trump, with 2 tweets.
+Donald J. Trump, with 3 tweets.",['Donald J. Trump'],1
+"597889563831496704
+712729040352882690
+847867380562894848
+781111479974199296
+857726884045496325","[881503147168071680, 795954831718498305, 929511061954297857, 796315640307060738, 948355557022420992]",0
+"591966092152672256
+590545744915992577
+589616499905667073
+591222909626114050","[591222909626114050, 591412084895838208, 586751374286721024, 575589231160127489]",0
+"99994, 99968, 99940, 99910, 999, 9989","[589793, 589750, 557779, 539249, 476457, 376626]",0
+15039,"[1, 1, 2]",0
+0,FALSE,1
+0,TRUE,0
+,TRUE,0
+,TRUE,0
+9,9,1
+0.088480333,0.088480333,1
+99.5,770.5,0
+651,651,1
+David McCandless,Christophe Viau,0
+Mike Bostock,Mike Bostock,1
+https://storage.googleapis.com/pics.contexto.io/photos/paperclips/000/016/267/thumb/qb5m7mnzb26cavmpxjqi_normal.jpeg?1517501905,https://storage.googleapis.com/pics.contexto.io/photos/paperclips/000/016/457/thumb/Saw-whet_Owl_10_normal.jpg?1517502050,1
+Topi Tjukanov,The Gibson Project,0
+"Manuel Herranz, Alex Pentland, Jemima Kiss","['Lynn Cherny', 'Alberto Cairo', 'Sinan Aral']",0
+"LIFE, New Options Project","['LIFE', 'New Options Project']",1
+"The top 4 entities with the highest x-coordinates are:
+1. nytlabs
+2. DataSift
+3. Duke Lib Data Vis
+4. Cole Nussbaumer","['Detective.io', 'The Thrust', 'Open Budgets', 'NewsFuturist']",0
+"['CJR', '-10.564867626854'], ['Right Relevance', '-1000.01158171126'], ['Jessica Marie', '-1004.20077064847']","['digital PR cat', 'Ismail Onur Filiz', 'Dave Golland']",0
+"378, 6630, 19589, 35129, 306","[568, 423, 6392, 4548, 579]",0
+"['177', '240', '294', '369']","[177, 240, 294, 369]",1
+"1. 1.0
+2. 0.60297510670348
+3. 0.566670768763793
+4. 0.520234802749139
+5. 0.511060661785853","[1.0, 0.6029751067034804, 0.5666707687637932, 0.5202348027491394, 0.5110606617858531, 0.5081183103684572]",1
+"1.0
+1.0
+1.0","[1.0, 1.0, 1.0]",1
+Yes.,TRUE,1
+No.,TRUE,0
+No.,FALSE,1
+No.,TRUE,0
+7,7,1
+2.84,2.841584158,1
+8,8,1
+27,27,1
+1,1,1
+"octopus, scorpion",octopus,1
+The class type of the animal with the most legs is 7.,7,1
+[],frog,0
+"The top 3 animal names with the most legs are:
+
+1. Octopus
+2. Scorpion
+3. Crayfish","['octopus', 'scorpion', 'crayfish']",1
+"bass, carp","['bass', 'carp']",1
+"The top 4 most common class types with the most animals are:
+
+1. Class Type: 1 (41 animals)
+2. Class Type: 2 (20 animals)
+3. Class Type: 4 (13 animals)
+4. Class","[1, 2, 4, 7]",1
+"3. 5 
+2. 3
+1. 6","[5, 3, 6]",1
+"The top 5 class types with the most combined total legs are:
+1. 1 with 138 legs
+2. 6 with 48 legs
+3. 2 with 40 legs
+4. 7 with 37 legs
+","[1, 6, 2, 7, 5]",1
+"['4', 0], ['5', 8], ['7', 16], ['9', 25]","[4, 3, 5, 7]",0
+"4, 2, 0, 6, 8, 5","[4, 2, 0, 6, 8, 5]",1
+"5, 8, 6","[5, 8, 6]",1
+TRUE,FALSE,0
+FALSE,FALSE,1
+Yes.,TRUE,1
+495478,TRUE,1
+4070,4070,1
+4.611113626,4.611113626,1
+992,80995,0
+495478,495478,1
+United Kingdom,United Kingdom,1
+SWEETHEART CREAM STEEL TABLE RECT,Manual,0
+WHITE HANGING HEART T-LIGHT HOLDER,"PAPER CRAFT , LITTLE BIRDIE",0
+Hong Kong,United Kingdom,0
+"The descriptions of the top 3 items with the highest quantities ordered are:
+
+1. WHITE HANGING HEART T-LIGHT HOLDER
+2. WOODLAND CHARLOTTE BAG
+3. PLASTERS IN TIN SPACEBOY","['PAPER CRAFT , LITTLE BIRDIE', 'MEDIUM CERAMIC TOP STORAGE JAR', 'ASSTD DESIGN 3D PAPER STICKERS']",0
+"Discount
+SET OF 3 COLOURED  FLYING DUCKS","['PAPER CRAFT , LITTLE BIRDIE', 'MEDIUM CERAMIC TOP STORAGE JAR']",0
+"United Kingdom, Germany, France, EIRE","['United Kingdom', 'Germany', 'France', 'EIRE']",1
+Saudi Arabia,"['Saudi Arabia', 'Bahrain', 'Czech Republic']",0
+"574293.0
+537640.0
+576365.0
+536982.0
+555257.0","['581483', '541431', '578841', '542504', '573008']",0
+None,"[23843, 21366, 23005, 23005, 84347]",0
+"1, 2, 12, 6, 4, 3","[1, 2, 12, 6, 4, 3]",1
+"[-1000], [-103], [-105]","[-312, -79, 404]",0

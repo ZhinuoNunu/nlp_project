@@ -1,0 +1,1 @@
+CUDA_VISIBLE_DEVICES=0 API_PORT=8002 llamafactory-cli  api /root/nlp_project/LLaMA-Factory/examples/inference/llama3_vllm.yaml
