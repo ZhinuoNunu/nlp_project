@@ -1,0 +1,320 @@
+{"output":"False","ground_truth":"True"}
+{"output":"False","ground_truth":"True"}
+{"output":"True","ground_truth":"True"}
+{"output":"False","ground_truth":"True"}
+{"output":"9","ground_truth":"3765"}
+{"output":"15","ground_truth":"61"}
+{"output":"12321","ground_truth":"1243"}
+{"output":"0","ground_truth":"0"}
+{"output":"The Daily Mail","ground_truth":"ING Espa\u00f1a"}
+{"output":"English","ground_truth":"es"}
+{"output":"Andrew Sullivan","ground_truth":"juan prin"}
+{"output":"reply","ground_truth":"reply"}
+{"output":"['Elon Musk', 'Elon Musk', 'Elon Musk']","ground_truth":"['Lavincompae', '#NI UNA MENOS \\xa0\u2650\\xa0\u270a\\xa0\ud83d\udeba', 'SFC The World']"}
+{"output":"['english', 'english', 'english', 'english', 'english']","ground_truth":"['es', 'es', 'es', 'es', 'es']"}
+{"output":"['author2', 'author1', 'author3', 'author4']","ground_truth":"['Correctorada', 'El Joker', 'Xenia Viladas', 'DrJaus \\xa0\ud83c\uddea\ud83c\uddf8']"}
+{"output":"['video', 'link', 'photo', 'link', 'video', 'video']","ground_truth":"['reply', 'original']"}
+{"output":"[14, 21, 12, 18, 9]","ground_truth":"[0, 0, 0, 0, 3]"}
+{"output":"[1029, 1029, 1029]","ground_truth":"[61, 60, 59]"}
+{"output":"[0, 0, 0, 0]","ground_truth":"[0, 0, 1, 0]"}
+{"output":"[0, 0, 0, 0, 0, 0]","ground_truth":"[1, 1, 1, 1, 1, 1]"}
+{"output":"True","ground_truth":"True"}
+{"output":"True","ground_truth":"True"}
+{"output":"False","ground_truth":"False"}
+{"output":"True","ground_truth":"True"}
+{"output":"18","ground_truth":"20"}
+{"output":"97","ground_truth":"1125"}
+{"output":"1052","ground_truth":"160"}
+{"output":"16.4547","ground_truth":"80.94"}
+{"output":"Bug","ground_truth":"Poison"}
+{"output":"Snorlax","ground_truth":"Shuckle"}
+{"output":"Dragon","ground_truth":"Flying"}
+{"output":"Alakazam, Psychic","ground_truth":"Mega Mewtwo Y (Psychic)"}
+{"output":"['Mewtwo', 'Arceus', 'Groudon']","ground_truth":"['Eternamax Eternatus', 'Mega Mewtwo X', 'Mega Mewtwo Y']"}
+{"output":"['Castform', 'Silcoon', 'Bayleef', 'Wobbuffet', 'Cleffa']","ground_truth":"['Shedinja', 'Diglett', 'Alolan Diglett', 'Magikarp', 'Pichu']"}
+{"output":"['Water', 'Fire', 'Grass', 'Electric']","ground_truth":"['Water', 'Normal', 'Grass', 'Bug']"}
+{"output":"['Typhlosion', 'Suicune', 'Lugia', 'Entei', 'Heracross', 'Houndoom']","ground_truth":"['Mega Heracross', 'Mega Tyranitar', 'Mega Scizor', 'Tyranitar', 'Scizor', 'Ursaring']"}
+{"output":"[10.0, 10.0, 10.0, 10.0, 10.0]","ground_truth":"[250, 230, 200, 160, 160]"}
+{"output":"['Magikarp', 'Girafarig', 'Sunkern']","ground_truth":"[20, 31, 50]"}
+{"output":"[0.0, 0.0, 0.0, 0.0]","ground_truth":"[135, 127, 125, 125]"}
+{"output":"[3.0, 3.0, 3.0, 3.0, 3.0, 3.0]","ground_truth":"[175, 180, 180, 185, 190, 194]"}
+{"output":"True","ground_truth":"True"}
+{"output":"False","ground_truth":"False"}
+{"output":"False","ground_truth":"False"}
+{"output":"True","ground_truth":"True"}
+{"output":"True","ground_truth":"0.7826336180787501"}
+{"output":"13","ground_truth":"1002"}
+{"output":"5.0","ground_truth":"0.373214039767641"}
+{"output":"0","ground_truth":"0.0353641396193574"}
+{"output":"Entrepreneur","ground_truth":"Policy Officer"}
+{"output":"Teacher","ground_truth":"Governor"}
+{"output":"Actor","ground_truth":"Mortgage Banker"}
+{"output":"Entrepreneur","ground_truth":"Program Manager"}
+{"output":"['Writer', 'Artist', 'Designer']","ground_truth":"['Book Publisher', 'Bureau Chief', 'Publisher']"}
+{"output":"['Sales', 'Service', 'Transportation', 'Education']","ground_truth":"['.Net Architect', 'Android Developer', 'Principal Engineer', 'Game Engineer']"}
+{"output":"['Actor', 'Actor', 'Actor', 'Actor', 'Actor']","ground_truth":"['Director of Athletics', 'Recruiting Coordinator', 'Athletic Coordinator', 'Director of Personnel', 'Skills Trainer']"}
+{"output":"['Artists', 'Politicians']","ground_truth":"['U.S. Senator', 'Congressman']"}
+{"output":"[0.0, 0.0, 0.0]","ground_truth":"[0.7557249985959847, 0.7413189187628788, 0.7034528053640179]"}
+{"output":"[0.0, 0.0, 0.0, 0.0]","ground_truth":"[0.1652381569664056, 0.2005428064324122, 0.2215546116855247, 0.2506791678499942]"}
+{"output":"[3.0, 3.0, 3.0, 3.0, 3.0]","ground_truth":"[0.9794365922809228, 0.9723660656030668, 0.954299437125917, 0.9362989453985364, 0.9307917067583288]"}
+{"output":"['Self-transcendence - Self-transcendence - Self-transcendence - Self-transcendence - Self-transcendence - Self-transcendence']","ground_truth":"[0.0353641396193574, 0.0355792960526332, 0.0399752446723049, 0.0573280662585624, 0.0591099063085338, 0.0592781792571762]"}
+{"output":"True","ground_truth":"False"}
+{"output":"True","ground_truth":"False"}
+{"output":"True","ground_truth":"True"}
+{"output":"True","ground_truth":"True"}
+{"output":"8","ground_truth":"3574"}
+{"output":"3.0","ground_truth":"14.745974597459746"}
+{"output":"3","ground_truth":"100"}
+{"output":"1314","ground_truth":"8848"}
+{"output":"Microsoft","ground_truth":"Massachusetts Institute of Technology"}
+{"output":"Chemical","ground_truth":"B2"}
+{"output":"English","ground_truth":"en"}
+{"output":"3","ground_truth":"member, portion, body, end"}
+{"output":"['Google', 'Microsoft', 'IBM']","ground_truth":"['International Business Machines Corporation', 'Samsung Electronics Co., Ltd.', 'Google Inc.']"}
+{"output":"['Utility Patent', 'Design Patent', 'Plant Patent', 'Reissue Patent']","ground_truth":"['utility', 'design', 'plant', 'reissue']"}
+{"output":"['Chemistry', 'Electrical', 'Mechanical', 'Aeronautics', 'Metallurgy']","ground_truth":"['B2', 'S1', 'B1', 'P2', 'P3']"}
+{"output":"['5.2', '4.0']","ground_truth":"['habit, plant, foliage, flowers', 'soybean, plant, cultivar, soybean cultivar']"}
+{"output":"[0, 1, 2, 3]","ground_truth":"[20, 1, 18, 19]"}
+{"output":"[1, 2, 3]","ground_truth":"[9479771.0, 9325365.0, 9323284.0]"}
+{"output":"['US20140099351A1', 'US20110211826A1', 'US20160173719A1', 'US20120104785A1', 'US20110211827A1']","ground_truth":"[29, 30, 46, 51, 70]"}
+{"output":"['US10484462B2', 'US10484459B2', 'US10484458B2', 'US10484457B2', 'US10484456B2', 'US10484455B2']","ground_truth":"[9479476.0, 9479477.0, 9479478.0, 9479479.0, 9479480.0, 9479481.0]"}
+{"output":"True","ground_truth":"True"}
+{"output":"False","ground_truth":"False"}
+{"output":"False","ground_truth":"False"}
+{"output":"False","ground_truth":"True"}
+{"output":"1110","ground_truth":"0.7826336180787501"}
+{"output":"1014","ground_truth":"1002"}
+{"output":"1588","ground_truth":"0.373214039767641"}
+{"output":"0","ground_truth":"0.0353641396193574"}
+{"output":"Mark Zuckerberg","ground_truth":"Policy Officer"}
+{"output":"Michael Lewis","ground_truth":"Governor"}
+{"output":"Jeffrey Preston Bezos","ground_truth":"Mortgage Banker"}
+{"output":"Brianna Wu","ground_truth":"Program Manager"}
+{"output":"['John Grisham', 'David Baldacci', 'James Patterson']","ground_truth":"['Book Publisher', 'Bureau Chief', 'Publisher']"}
+{"output":"['HarperCollins', 'Macmillan', 'Penguin Random House', 'Hachette']","ground_truth":"['.Net Architect', 'Android Developer', 'Principal Engineer', 'Game Engineer']"}
+{"output":"['Trump, Donald', 'Jobs, Steve', 'Gates, Bill', 'Zuckerberg, Mark', 'Page, Larry']","ground_truth":"['Director of Athletics', 'Recruiting Coordinator', 'Athletic Coordinator', 'Director of Personnel', 'Skills Trainer']"}
+{"output":"['elonmusk', 'cnnbrk']","ground_truth":"['U.S. Senator', 'Congressman']"}
+{"output":"[1643, 1046, 1010]","ground_truth":"[0.7557249985959847, 0.7413189187628788, 0.7034528053640179]"}
+{"output":"[1, 1, 2, 2]","ground_truth":"[0.1652381569664056, 0.2005428064324122, 0.2215546116855247, 0.2506791678499942]"}
+{"output":"[5, 4, 4, 4, 4]","ground_truth":"[0.9794365922809228, 0.9723660656030668, 0.954299437125917, 0.9362989453985364, 0.9307917067583288]"}
+{"output":"[1839, 1839]","ground_truth":"[0.0353641396193574, 0.0355792960526332]"}
+{"output":"False","ground_truth":"False"}
+{"output":"False","ground_truth":"False"}
+{"output":"False","ground_truth":"False"}
+{"output":"False","ground_truth":"False"}
+{"output":"1000000.0","ground_truth":"18424"}
+{"output":"2","ground_truth":"367"}
+{"output":"30.0","ground_truth":"72"}
+{"output":"1094","ground_truth":"113"}
+{"output":"Business","ground_truth":"Radio\/TV"}
+{"output":"Sales","ground_truth":"Skilled"}
+{"output":"Fair","ground_truth":"Existing Credits Paid Back Duly Till Now"}
+{"output":"current","ground_truth":"Less than 100 DM"}
+{"output":"['Doctor', 'Lawyer', 'Lawyer']","ground_truth":"['Highly Skilled', 'Skilled', 'Highly Skilled']"}
+{"output":"['Lawyer', 'Doctor', 'Accountant', 'Engineer']","ground_truth":"['Skilled', 'Skilled', 'Skilled', 'Unskilled - Resident']"}
+{"output":"['Student', 'Teacher', 'Sales Manager', 'Manager', 'Accountant']","ground_truth":"['Skilled', 'Skilled', 'Unskilled - Resident', 'Highly Skilled', 'Skilled']"}
+{"output":"['Self Employed', 'Self Employed']","ground_truth":"['Highly Skilled', 'Highly Skilled']"}
+{"output":"[25000000.0, 15000000.0, 15000000.0]","ground_truth":"[18424, 15945, 15857]"}
+{"output":"[1, 2, 3, 5]","ground_truth":"[72, 60, 60, 60]"}
+{"output":"[7, 7, 7, 7, 7]","ground_truth":"[4, 4, 4, 4, 4]"}
+{"output":"[77.0, 77.0]","ground_truth":"[75, 75]"}
+{"output":"True","ground_truth":"False"}
+{"output":"False","ground_truth":"False"}
+{"output":"False","ground_truth":"True"}
+{"output":"True","ground_truth":"True"}
+{"output":"2443","ground_truth":"0"}
+{"output":"22.0","ground_truth":"0.08465"}
+{"output":"2145","ground_truth":"18"}
+{"output":"118.2","ground_truth":"0.2748"}
+{"output":"Bacon","ground_truth":"bacon"}
+{"output":"Cheeseburger","ground_truth":"honey"}
+{"output":"Ritz","ground_truth":"honey"}
+{"output":"Tuna","ground_truth":"beef"}
+{"output":"['Hot Dog', 'Double Decker', 'Chili Cheese Fries', 'Buffalo Chicken Pizza', 'Chicken Bacon Ranch Pizza']","ground_truth":"['bacon', 'peanuts', 'chocolate bar', 'popcorn', 'cookie']"}
+{"output":"['Pork', 'Beef', 'Lamb']","ground_truth":"['chestnut', 'pancakes', 'cheese']"}
+{"output":"['Sausage', 'Hot Dog', 'Bacon', 'Ham']","ground_truth":"['bacon', 'peanuts', 'cheese', 'popcorn']"}
+{"output":"['Honey', 'Cottonseed oil', 'Garlic', 'Peanut oil', 'Peanut butter', 'Tomato']","ground_truth":"['candy', 'black tea', 'bacon', 'champagne', 'red wine', 'red apple']"}
+{"output":"[1895.0, 1894.0, 1893.0, 1893.0, 1892.0]","ground_truth":"[8.98, 5.67, 5.18, 5.0, 4.97]"}
+{"output":"[0.0, 0.0, 0.0]","ground_truth":"[0.0, 0.0, 0.0]"}
+{"output":"[36.0, 35.0, 34.0, 33.0]","ground_truth":"[0.995, 0.4924, 0.3099, 0.281]"}
+{"output":"[0.3, 0.3, 0.3, 0.3, 0.3, 0.3]","ground_truth":"[0.0, 0.0, 0.0007, 0.0007, 0.0007, 0.002]"}
+{"output":"True","ground_truth":"True"}
+{"output":"False","ground_truth":"False"}
+{"output":"False","ground_truth":"True"}
+{"output":"True","ground_truth":"True"}
+{"output":"7","ground_truth":"372"}
+{"output":"66.5","ground_truth":"37.420120593188116"}
+{"output":"[True, True, True]","ground_truth":"10344"}
+{"output":"80.0","ground_truth":"105.0"}
+{"output":"LibDem","ground_truth":"[Ciudadanos]"}
+{"output":"Healthcare","ground_truth":"The party ideas are close to my own"}
+{"output":"Democratic","ground_truth":"Ciudadanos"}
+{"output":"English","ground_truth":"Castellano"}
+{"output":"['Labour', 'Liberal Democrats', 'Green', 'Conservative', 'UKIP']","ground_truth":"['[Ciudadanos]', '[]', '[I am undeceided]', '[Podemos]', '[PP]']"}
+{"output":"['Healthcare', 'Environment', 'Education']","ground_truth":"['The party ideas are close to my own', 'The party is the most competent', 'I prefer not to say']"}
+{"output":"['Republican', 'Democrat', 'Independent', 'Libertarian']","ground_truth":"['Ciudadanos', 'PP', 'I prefer not to say', 'Podemos']"}
+{"output":"['English', 'Spanish', 'French', 'Arabic', 'German', 'Chinese']","ground_truth":"['Castellano', 'Catal\ufffd', 'Galego', 'Euskara']"}
+{"output":"[26.0, 25.0, 24.0, 27.0, 28.0]","ground_truth":"[38.0, 23.0, 39.0, 25.0, 35.0]"}
+{"output":"['Center', 'Center', 'Left']","ground_truth":"[5.0, 3.0, 6.0]"}
+{"output":"['Progressive', 'Liberal', 'Moderate', 'Conservative']","ground_truth":"[5.0, 3.0, 4.0, 0.0]"}
+{"output":"['Presidential', 'Parliamentary', 'Semi Presidential', 'Semi Presidential', 'Semi Parliamentary', 'Parliamentary']","ground_truth":"[2.0, 3.0, 4.0, 1.0, 5.0]"}
+{"output":"True","ground_truth":"True"}
+{"output":"True","ground_truth":"True"}
+{"output":"True","ground_truth":"True"}
+{"output":"True","ground_truth":"True"}
+{"output":"True","ground_truth":"1315"}
+{"output":"1095","ground_truth":"799"}
+{"output":"1154","ground_truth":"0"}
+{"output":"14","ground_truth":"774"}
+{"output":"25-34","ground_truth":"65+"}
+{"output":"True","ground_truth":"Donald Trump (Republican)"}
+{"output":"Master's degree","ground_truth":"Some college, no degree"}
+{"output":"North Central","ground_truth":"South Atlantic"}
+{"output":"['New York', 'California', 'Florida', 'Texas', 'Pennsylvania']","ground_truth":"['CA', 'TX', 'NY', 'FL', 'GA']"}
+{"output":"['Teacher', 'Student', 'Doctor', 'Engineer']","ground_truth":"['Other', 'Healthcare', 'Office worker or other professional', 'Industrial (e.g. construction, manufacturing, maintenance and repair)']"}
+{"output":"['White', 'Hispanic', 'Black']","ground_truth":"['White (not Hispanic, Latino or Spanish origin)', 'Black or African American (not Hispanic, Latino or Spanish origin)', 'Hispanic, Latino or Spanish origin']"}
+{"output":"[30.0, 40.0, 50.0, 60.0, 70.0, 80.0]","ground_truth":"['65+', '55-64', '45-54', '35-44', '18-24', '25-34']"}
+{"output":"['06037', '06079', '06007']","ground_truth":"[6037, 13121, 48201]"}
+{"output":"[10.0, 10.0, 10.0, 10.0]","ground_truth":"[0.8085780015111617, 0.7742084493732905, 0.3063435812288158, 0.629527660735561]"}
+{"output":"['UR', 'RU', 'PC', 'MU', 'CU']","ground_truth":"[1, 2, 3, 4, 5]"}
+{"output":"['Likely', 'Very Likely', 'Likely', 'Very Likely', 'Likely', 'Very Likely']","ground_truth":"[10.0, 11.0, 0.0, 1.0, 9.0, 5.0]"}
+{"output":"True","ground_truth":"False"}
+{"output":"True","ground_truth":"True"}
+{"output":"True","ground_truth":"True"}
+{"output":"True","ground_truth":"True"}
+{"output":"120","ground_truth":"940"}
+{"output":"0.0","ground_truth":"16.19912"}
+{"output":"1344000.0","ground_truth":"549900"}
+{"output":"1025","ground_truth":"4237"}
+{"output":"True","ground_truth":"Supergarage"}
+{"output":"Honda","ground_truth":"VOLKSWAGEN"}
+{"output":"Gasoline","ground_truth":"Di\u00e9sel"}
+{"output":"Ontario","ground_truth":"Madrid"}
+{"output":"['British Columbia', 'Alberta', 'Ontario']","ground_truth":"['Madrid', 'Barcelona', 'Valencia']"}
+{"output":"['white', 'black', 'red', 'silver']","ground_truth":"['Blanco', 'Gris \/ Plata', 'Negro', 'Azul']"}
+{"output":"['Toyota', 'Honda', 'Ford', 'Chevrolet', 'Nissan']","ground_truth":"['VOLKSWAGEN', 'BMW', 'MERCEDES-BENZ', 'AUDI', 'PEUGEOT']"}
+{"output":"['Electric', 'Hybrid']","ground_truth":"['Gas natural (CNG)', 'Gas licuado (GLP)']"}
+{"output":"['2000', '2001', '2002', '2003']","ground_truth":"[2016.0, 2017.0, 2019.0, 2020.0]"}
+{"output":"[1086.0, 1078.0, 1078.0]","ground_truth":"[5000000, 4000006, 3500000]"}
+{"output":"['Mercedes-Benz CLS', 'Toyota Supra', 'Ford Mustang', 'Lexus LC', 'Audi R8']","ground_truth":"[54, 54, 54, 54, 54]"}
+{"output":"['Zenvo TSR-S', 'Bugatti Chiron Super Sport 300+', 'Rimac C_Two', 'SSC Tuatara', 'Hennessey Venom F5', 'Koenigsegg Agera RS']","ground_truth":"[800.0, 800.0, 796.0, 772.0, 720.0, 720.0]"}
+{"output":"False","ground_truth":"True"}
+{"output":"True","ground_truth":"True"}
+{"output":"False","ground_truth":"True"}
+{"output":"True","ground_truth":"True"}
+{"output":"2143","ground_truth":"95"}
+{"output":"1","ground_truth":"159"}
+{"output":"1181","ground_truth":"9684"}
+{"output":"0","ground_truth":"2478"}
+{"output":"2008-01-29","ground_truth":"morning"}
+{"output":"Cereal","ground_truth":"Coffee"}
+{"output":"Burger","ground_truth":"Adjustment"}
+{"output":"Morning","ground_truth":"morning"}
+{"output":"['Croissant', 'Bread', 'Bread']","ground_truth":"['Coffee', 'Bread', 'Pastry']"}
+{"output":"['Shrimp', 'Hamburger', 'Steak', 'Hot Dog']","ground_truth":"['Chicken sand', 'Gift voucher', 'Bare Popcorn', 'Raw bars']"}
+{"output":"['Cereal', 'Yogurt', 'Eggs', 'Orange Juice', 'Bread']","ground_truth":"['Coffee', 'Bread', 'Tea', 'Cake', 'Pastry']"}
+{"output":"['Hamburger', 'Pizza', 'Sushi', 'Sandwich']","ground_truth":"['Art Tray', 'Mighty Protein', 'Mortimer', 'Vegan Mincepie']"}
+{"output":"['CASH', 'DEBIT', 'CREDIT', 'CHECK']","ground_truth":"[6474, 6716, 6279, 6412]"}
+{"output":"['4000000000000', '4000000000000', '4000000000000', '4000000000000', '4000000000000']","ground_truth":"[9680, 9681, 9682, 9683, 9684]"}
+{"output":"[1, 2, 3, 4, 5, 6]","ground_truth":"[6412, 6279, 6474, 6603, 6716, 6642]"}
+{"output":"[1, 2]","ground_truth":"[9683, 9684]"}
+{"output":"False","ground_truth":"False"}
+{"output":"True","ground_truth":"False"}
+{"output":"True","ground_truth":"True"}
+{"output":"False","ground_truth":"False"}
+{"output":"10","ground_truth":"162"}
+{"output":"4.5","ground_truth":"4.204158004158004"}
+{"output":"99999","ground_truth":"670801367"}
+{"output":"2146","ground_truth":"786"}
+{"output":"London","ground_truth":"United States"}
+{"output":"Electrical Engineering","ground_truth":"Disneyland_Paris"}
+{"output":"2021-10","ground_truth":"missing"}
+{"output":"New York, NY","ground_truth":"Armenia"}
+{"output":"['US', 'UK', 'IN']","ground_truth":"['United States', 'United Kingdom', 'Australia']"}
+{"output":"['Banks', 'Credit Unions']","ground_truth":"['Disneyland_Paris', 'Disneyland_HongKong']"}
+{"output":"['2014-09', '2015-08', '2014-10', '2015-09']","ground_truth":"['missing', '2015-8', '2015-7', '2015-12']"}
+{"output":"['Nashville, TN', 'Raleigh-Durham, NC', 'Portland, OR']","ground_truth":"['Turks and Caicos Islands', 'South Sudan', 'Suriname']"}
+{"output":"['0W8', '8JL', 'Z2J', '0J9', '8L0']","ground_truth":"[670585330, 670570869, 670443403, 670435886, 670324965]"}
+{"output":"['1.0', '2.0', '3.0', '4.0']","ground_truth":"[662641193, 658624005, 649615606, 647822351]"}
+{"output":"[1.0, 1.0, 1.0, 1.0, 1.0, 1.0]","ground_truth":"[5, 5, 5, 5, 5, 5]"}
+{"output":"[0.0, 0.0, 0.0]","ground_truth":"[1, 1, 1]"}
+{"output":"False","ground_truth":"False"}
+{"output":"True","ground_truth":"True"}
+{"output":"True","ground_truth":"True"}
+{"output":"True","ground_truth":"True"}
+{"output":"5","ground_truth":"1"}
+{"output":"1.0","ground_truth":"8774.52044683822"}
+{"output":"5","ground_truth":"589793"}
+{"output":"1492","ground_truth":"2891"}
+{"output":"Hobbes","ground_truth":"Donald J. Trump"}
+{"output":"Twitter","ground_truth":"Such a beautiful and important evening! The forgotten man and woman will never be forgotten again. We will all come together as never before"}
+{"output":"English","ground_truth":"und"}
+{"output":"English","ground_truth":"en"}
+{"output":"['@RealDonaldTrump', '@BarackObama', '@JoeBiden']","ground_truth":"['realDonaldTrump']"}
+{"output":"['English', 'Spanish']","ground_truth":"['pt', 'fi']"}
+{"output":"['Biden', 'Trump', 'News', 'Tucker']","ground_truth":"['realDonaldTrump', 'FoxNews', 'CNN', 'foxandfriends']"}
+{"output":"['@Newsweek', '@TheEconomist', '@BBCNews']","ground_truth":"['Donald J. Trump']"}
+{"output":"['1234567890', '9876543210', '5432109876', '8765432109', '3210987654']","ground_truth":"[881503147168071680, 795954831718498305, 929511061954297857, 796315640307060738, 948355557022420992]"}
+{"output":"['134230370', '134230369', '134230368', '134230367']","ground_truth":"[591222909626114050, 591412084895838208, 586751374286721024, 575589231160127489]"}
+{"output":"[1, 2, 3, 4, 5, 6]","ground_truth":"[589793, 589750, 557779, 539249, 476457, 376626]"}
+{"output":"[0, 0, 0]","ground_truth":"[1, 1, 2]"}
+{"output":"True","ground_truth":"False"}
+{"output":"True","ground_truth":"True"}
+{"output":"False","ground_truth":"True"}
+{"output":"True","ground_truth":"True"}
+{"output":"5","ground_truth":"9"}
+{"output":"2.0","ground_truth":"0.08848033260794509"}
+{"output":"1000.0","ground_truth":"770.5"}
+{"output":"1","ground_truth":"651"}
+{"output":"John","ground_truth":"Christophe Viau"}
+{"output":"New York Times","ground_truth":"Mike Bostock"}
+{"output":"https:\/\/i.imgur.com\/K8V9c7S.jpg","ground_truth":"https:\/\/storage.googleapis.com\/pics.contexto.io\/photos\/paperclips\/000\/016\/457\/thumb\/Saw-whet_Owl_10_normal.jpg?1517502050"}
+{"output":"Google","ground_truth":"The Gibson Project"}
+{"output":"['Apple', 'Microsoft', 'Amazon']","ground_truth":"['Lynn Cherny', 'Alberto Cairo', 'Sinan Aral']"}
+{"output":"['Bulgaria', 'Cyprus']","ground_truth":"['LIFE', 'New Options Project']"}
+{"output":"['United States', 'United Kingdom', 'Germany', 'France']","ground_truth":"['Detective.io', 'The Thrust', 'Open Budgets', 'NewsFuturist']"}
+{"output":"[0.0, 0.0, 0.0]","ground_truth":"['digital PR cat', 'Ismail Onur Filiz', 'Dave Golland']"}
+{"output":"[7, 8, 9, 10, 6]","ground_truth":"[568, 423, 6392, 4548, 579]"}
+{"output":"[1349, 1350, 1351, 1352]","ground_truth":"[177, 240, 294, 369]"}
+{"output":"[0.9436, 0.9289, 0.9247, 0.9214, 0.9165, 0.9137]","ground_truth":"[1.0, 0.6029751067034804, 0.5666707687637932, 0.5202348027491394, 0.5110606617858531, 0.5081183103684572]"}
+{"output":"[71.0, 71.0, 71.0]","ground_truth":"[1.0, 1.0, 1.0]"}
+{"output":"True","ground_truth":"True"}
+{"output":"True","ground_truth":"True"}
+{"output":"False","ground_truth":"False"}
+{"output":"True","ground_truth":"True"}
+{"output":"7","ground_truth":"7"}
+{"output":"2.0","ground_truth":"2.8415841584158414"}
+{"output":"8","ground_truth":"8"}
+{"output":"0","ground_truth":"27"}
+{"output":"Private","ground_truth":"1"}
+{"output":"Spider","ground_truth":"octopus"}
+{"output":"Arthropod","ground_truth":"7"}
+{"output":"Piranha","ground_truth":"frog"}
+{"output":"['cat', 'dog', 'cow']","ground_truth":"['octopus', 'scorpion', 'crayfish']"}
+{"output":"['Lion', 'Horse']","ground_truth":"['bass', 'carp']"}
+{"output":"['Mammalia', 'Aves', 'Reptilia', 'Amphibia']","ground_truth":"[1, 2, 4, 7]"}
+{"output":"['Mammalia', 'Actinopterygii', 'Reptilia']","ground_truth":"[5, 3, 6]"}
+{"output":"['Emperor', 'Yankee', 'Schooner', 'Schooner', 'Yawl']","ground_truth":"[1, 6, 2, 7, 5]"}
+{"output":"['Business', 'Engineering', 'Unknown', 'Unknown']","ground_truth":"[4, 3, 5, 7]"}
+{"output":"[2, 4, 6, 8, 0, 10]","ground_truth":"[4, 2, 0, 6, 8, 5]"}
+{"output":"[0, 1, 2]","ground_truth":"[5, 8, 6]"}
+{"output":"False","ground_truth":"False"}
+{"output":"False","ground_truth":"False"}
+{"output":"True","ground_truth":"True"}
+{"output":"True","ground_truth":"True"}
+{"output":"1062","ground_truth":"4070"}
+{"output":"0.0","ground_truth":"4.611113626088513"}
+{"output":"10","ground_truth":"80995"}
+{"output":"15496","ground_truth":"495478"}
+{"output":"United States","ground_truth":"United Kingdom"}
+{"output":"Diamond","ground_truth":"Manual"}
+{"output":"Lipton","ground_truth":"PAPER CRAFT , LITTLE BIRDIE"}
+{"output":"United States","ground_truth":"United Kingdom"}
+{"output":"['Tissues', 'Bread', 'Milk']","ground_truth":"['PAPER CRAFT , LITTLE BIRDIE', 'MEDIUM CERAMIC TOP STORAGE JAR', 'ASSTD DESIGN 3D PAPER STICKERS']"}
+{"output":"['Sponge', 'Cup']","ground_truth":"['PAPER CRAFT , LITTLE BIRDIE', 'MEDIUM CERAMIC TOP STORAGE JAR']"}
+{"output":"['United States', 'United Kingdom', 'Germany', 'France']","ground_truth":"['United Kingdom', 'Germany', 'France', 'EIRE']"}
+{"output":"['Albania', 'Bhutan', 'Somalia']","ground_truth":"['Saudi Arabia', 'Bahrain', 'Czech Republic']"}
+{"output":"['0000000000000000000', '0000000000000000000', '0000000000000000000', '0000000000000000000', '0000000000000000000']","ground_truth":"['581483', '541431', '578841', '542504', '573008']"}
+{"output":"['A', 'B', 'B', 'A']","ground_truth":"[23843, 21366, 23005, 23005, 84347]"}
+{"output":"[1, 2, 1, 2, 1]","ground_truth":"[1, 2, 12, 6, 4, 3]"}
+{"output":"['4', '4', '4']","ground_truth":"[-312, -79, 404]"}

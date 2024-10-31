@@ -1,0 +1,16 @@
+Extract the answer from each of the following sentences:
+
+Sentence: Therefore, the person with the highest net worth self-made is true.
+Answer: True
+
+Sentence: Therefore, the bottom 3 ages of billionaires who have a philanthropy score of 5 are 48.0, 83.0, 83.0.
+Answer: [48.0, 83.0, 83.0]
+
+Sentence: Therefore, 14811 complaints were raised at midnight.
+Answer: 14811
+
+Sentence: Therefore, the most common nationality in the dataset is England.
+Answer: England
+
+Sentence: Therefore, the top 3 clubs in terms of the total value (in €) of their players are Liverpool, Manchester City, Real Madrid.
+Answer: ['Liverpool', 'Manchester City', 'Real Madrid']

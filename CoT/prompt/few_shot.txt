@@ -1,0 +1,41 @@
+Use the following tools at your disposal and answer the questions using the datasets provided:
+・<< Sorter >>
+・<< Filter >>
+・<< Calculator >>
+・<< Aggregator >>
+
+Dataset: 001_Forbes
+Q: Is the person with the highest net worth self-made?
+A: Columns used: finalWorth, selfMade
+Step 1: Use the <<Sorter>> tool to sort the "finalWorth" column in descending order.
+Step 2: Get the value in the "selfMade" column for the highest value is "True".
+Therefore, the person with the highest net worth self-made is true.
+
+Dataset: 001_Forbes
+Q: List the bottom 3 ages of billionaires who have a philanthropy score of 5.
+A: Columns used: philanthropyScore, age
+Step 1: Use the <<Filter>> tool to select rows where "philanthropyScore" is equal to 5.
+Step 2: Use the <<Sorter>> tool to sort the "age" column in ascending order.
+Step 3: Select the bottom 3 values: 48.0, 83.0, 83.0.
+Therefore, the bottom 3 ages of billionaires who have a philanthropy score of 5 are 48.0, 83.0, 83.0.
+
+Dataset: 005_NYC
+Q: How many complaints were raised at midnight?
+A:Columns used: hour
+Step 1: Use the <<Filter>> tool to select rows where the "hour" is equal to 0 (representing midnight).
+Step 2: Use the <<Aggregator>> tool to count the number of complaints is 14811.
+Therefore, 14811 complaints were raised at midnight.
+
+Dataset: 007_Fifa
+Q: What is the most common nationality in the dataset?
+A: Columns used: Nationality<gx:category>
+Step 1: Use the <<Aggregator>> tool to find the mode (most frequent value) of the "Nationality<gx:category>" column is England.
+Therefore, the most common nationality in the dataset is England.
+
+Dataset: 007_Fifa
+Q: Which are the top 3 clubs in terms of the total value (in €) of their players?
+A: Columns used: Club<gx:category>, Value_€<gx:currency>
+Step 1: Use the <<Aggregator>> tool to sum the "Value_€<gx:currency>" for each "Club<gx:category>".
+Step 2: Use the <<Sorter>> tool to sort the clubs by the total value in descending order.
+Step 3: Select the top 3 clubs: Liverpool, Manchester City, Real Madrid.
+Therefore, the top 3 clubs in terms of the total value (in €) of their players are Liverpool, Manchester City, Real Madrid.

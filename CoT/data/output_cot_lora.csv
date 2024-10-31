@@ -1,0 +1,321 @@
+output,ground_truth,label
+FALSE,TRUE,0
+FALSE,TRUE,0
+TRUE,TRUE,1
+FALSE,TRUE,0
+9,3765,0
+15,61,0
+12321,1243,0
+0,0,1
+The Daily Mail,ING España,0
+English,es,1
+Andrew Sullivan,juan prin,0
+reply,reply,1
+"['Elon Musk', 'Elon Musk', 'Elon Musk']","['Lavincompae', '#NI UNA MENOS \xa0__xa0__xa0__', 'SFC The World']",0
+"['english', 'english', 'english', 'english', 'english']","['es', 'es', 'es', 'es', 'es']",1
+"['author2', 'author1', 'author3', 'author4']","['Correctorada', 'El Joker', 'Xenia Viladas', 'DrJaus \xa0____']",0
+"['video', 'link', 'photo', 'link', 'video', 'video']","['reply', 'original']",0
+"[14, 21, 12, 18, 9]","[0, 0, 0, 0, 3]",0
+"[1029, 1029, 1029]","[61, 60, 59]",0
+"[0, 0, 0, 0]","[0, 0, 1, 0]",0
+"[0, 0, 0, 0, 0, 0]","[1, 1, 1, 1, 1, 1]",0
+TRUE,TRUE,1
+TRUE,TRUE,1
+FALSE,FALSE,1
+TRUE,TRUE,1
+18,20,0
+97,1125,0
+1052,160,0
+16.4547,80.94,0
+Bug,Poison,0
+Snorlax,Shuckle,0
+Dragon,Flying,0
+"Alakazam, Psychic",Mega Mewtwo Y (Psychic),1
+"['Mewtwo', 'Arceus', 'Groudon']","['Eternamax Eternatus', 'Mega Mewtwo X', 'Mega Mewtwo Y']",0
+"['Castform', 'Silcoon', 'Bayleef', 'Wobbuffet', 'Cleffa']","['Shedinja', 'Diglett', 'Alolan Diglett', 'Magikarp', 'Pichu']",0
+"['Water', 'Fire', 'Grass', 'Electric']","['Water', 'Normal', 'Grass', 'Bug']",0
+"['Typhlosion', 'Suicune', 'Lugia', 'Entei', 'Heracross', 'Houndoom']","['Mega Heracross', 'Mega Tyranitar', 'Mega Scizor', 'Tyranitar', 'Scizor', 'Ursaring']",0
+"[10.0, 10.0, 10.0, 10.0, 10.0]","[250, 230, 200, 160, 160]",0
+"['Magikarp', 'Girafarig', 'Sunkern']","[20, 31, 50]",0
+"[0.0, 0.0, 0.0, 0.0]","[135, 127, 125, 125]",0
+"[3.0, 3.0, 3.0, 3.0, 3.0, 3.0]","[175, 180, 180, 185, 190, 194]",0
+TRUE,TRUE,1
+FALSE,FALSE,1
+FALSE,FALSE,1
+TRUE,TRUE,1
+TRUE,0.782633618,0
+13,1002,0
+5,0.37321404,0
+0,0.03536414,0
+Entrepreneur,Policy Officer,0
+Teacher,Governor,0
+Actor,Mortgage Banker,0
+Entrepreneur,Program Manager,0
+"['Writer', 'Artist', 'Designer']","['Book Publisher', 'Bureau Chief', 'Publisher']",0
+"['Sales', 'Service', 'Transportation', 'Education']","['.Net Architect', 'Android Developer', 'Principal Engineer', 'Game Engineer']",0
+"['Actor', 'Actor', 'Actor', 'Actor', 'Actor']","['Director of Athletics', 'Recruiting Coordinator', 'Athletic Coordinator', 'Director of Personnel', 'Skills Trainer']",0
+"['Artists', 'Politicians']","['U.S. Senator', 'Congressman']",0
+"[0.0, 0.0, 0.0]","[0.7557249985959847, 0.7413189187628788, 0.7034528053640179]",0
+"[0.0, 0.0, 0.0, 0.0]","[0.1652381569664056, 0.2005428064324122, 0.2215546116855247, 0.2506791678499942]",0
+"[3.0, 3.0, 3.0, 3.0, 3.0]","[0.9794365922809228, 0.9723660656030668, 0.954299437125917, 0.9362989453985364, 0.9307917067583288]",0
+['Self-transcendence - Self-transcendence - Self-transcendence - Self-transcendence - Self-transcendence - Self-transcendence'],"[0.0353641396193574, 0.0355792960526332, 0.0399752446723049, 0.0573280662585624, 0.0591099063085338, 0.0592781792571762]",0
+TRUE,FALSE,0
+TRUE,FALSE,0
+TRUE,TRUE,1
+TRUE,TRUE,1
+8,3574,0
+3,14.7459746,0
+3,100,0
+1314,8848,0
+Microsoft,Massachusetts Institute of Technology,0
+Chemical,B2,0
+English,en,1
+3,"member, portion, body, end",0
+"['Google', 'Microsoft', 'IBM']","['International Business Machines Corporation', 'Samsung Electronics Co., Ltd.', 'Google Inc.']",1
+"['Utility Patent', 'Design Patent', 'Plant Patent', 'Reissue Patent']","['utility', 'design', 'plant', 'reissue']",1
+"['Chemistry', 'Electrical', 'Mechanical', 'Aeronautics', 'Metallurgy']","['B2', 'S1', 'B1', 'P2', 'P3']",0
+"['5.2', '4.0']","['habit, plant, foliage, flowers', 'soybean, plant, cultivar, soybean cultivar']",0
+"[0, 1, 2, 3]","[20, 1, 18, 19]",0
+"[1, 2, 3]","[9479771.0, 9325365.0, 9323284.0]",0
+"['US20140099351A1', 'US20110211826A1', 'US20160173719A1', 'US20120104785A1', 'US20110211827A1']","[29, 30, 46, 51, 70]",0
+"['US10484462B2', 'US10484459B2', 'US10484458B2', 'US10484457B2', 'US10484456B2', 'US10484455B2']","[9479476.0, 9479477.0, 9479478.0, 9479479.0, 9479480.0, 9479481.0]",0
+TRUE,TRUE,1
+FALSE,FALSE,1
+FALSE,FALSE,1
+FALSE,TRUE,0
+1110,0.782633618,0
+1014,1002,0
+1588,0.37321404,0
+0,0.03536414,0
+Mark Zuckerberg,Policy Officer,0
+Michael Lewis,Governor,0
+Jeffrey Preston Bezos,Mortgage Banker,0
+Brianna Wu,Program Manager,0
+"['John Grisham', 'David Baldacci', 'James Patterson']","['Book Publisher', 'Bureau Chief', 'Publisher']",0
+"['HarperCollins', 'Macmillan', 'Penguin Random House', 'Hachette']","['.Net Architect', 'Android Developer', 'Principal Engineer', 'Game Engineer']",0
+"['Trump, Donald', 'Jobs, Steve', 'Gates, Bill', 'Zuckerberg, Mark', 'Page, Larry']","['Director of Athletics', 'Recruiting Coordinator', 'Athletic Coordinator', 'Director of Personnel', 'Skills Trainer']",0
+"['elonmusk', 'cnnbrk']","['U.S. Senator', 'Congressman']",0
+"[1643, 1046, 1010]","[0.7557249985959847, 0.7413189187628788, 0.7034528053640179]",0
+"[1, 1, 2, 2]","[0.1652381569664056, 0.2005428064324122, 0.2215546116855247, 0.2506791678499942]",0
+"[5, 4, 4, 4, 4]","[0.9794365922809228, 0.9723660656030668, 0.954299437125917, 0.9362989453985364, 0.9307917067583288]",0
+"[1839, 1839]","[0.0353641396193574, 0.0355792960526332]",0
+FALSE,FALSE,1
+FALSE,FALSE,1
+FALSE,FALSE,1
+FALSE,FALSE,1
+1000000,18424,0
+2,367,0
+30,72,0
+1094,113,0
+Business,Radio/TV,0
+Sales,Skilled,0
+Fair,Existing Credits Paid Back Duly Till Now,0
+current,Less than 100 DM,0
+"['Doctor', 'Lawyer', 'Lawyer']","['Highly Skilled', 'Skilled', 'Highly Skilled']",0
+"['Lawyer', 'Doctor', 'Accountant', 'Engineer']","['Skilled', 'Skilled', 'Skilled', 'Unskilled - Resident']",0
+"['Student', 'Teacher', 'Sales Manager', 'Manager', 'Accountant']","['Skilled', 'Skilled', 'Unskilled - Resident', 'Highly Skilled', 'Skilled']",0
+"['Self Employed', 'Self Employed']","['Highly Skilled', 'Highly Skilled']",0
+"[25000000.0, 15000000.0, 15000000.0]","[18424, 15945, 15857]",0
+"[1, 2, 3, 5]","[72, 60, 60, 60]",0
+"[7, 7, 7, 7, 7]","[4, 4, 4, 4, 4]",0
+"[77.0, 77.0]","[75, 75]",0
+TRUE,FALSE,0
+FALSE,FALSE,1
+FALSE,TRUE,0
+TRUE,TRUE,1
+2443,0,0
+22,0.08465,0
+2145,18,0
+118.2,0.2748,0
+Bacon,bacon,1
+Cheeseburger,honey,0
+Ritz,honey,0
+Tuna,beef,0
+"['Hot Dog', 'Double Decker', 'Chili Cheese Fries', 'Buffalo Chicken Pizza', 'Chicken Bacon Ranch Pizza']","['bacon', 'peanuts', 'chocolate bar', 'popcorn', 'cookie']",0
+"['Pork', 'Beef', 'Lamb']","['chestnut', 'pancakes', 'cheese']",0
+"['Sausage', 'Hot Dog', 'Bacon', 'Ham']","['bacon', 'peanuts', 'cheese', 'popcorn']",0
+"['Honey', 'Cottonseed oil', 'Garlic', 'Peanut oil', 'Peanut butter', 'Tomato']","['candy', 'black tea', 'bacon', 'champagne', 'red wine', 'red apple']",0
+"[1895.0, 1894.0, 1893.0, 1893.0, 1892.0]","[8.98, 5.67, 5.18, 5.0, 4.97]",0
+"[0.0, 0.0, 0.0]","[0.0, 0.0, 0.0]",1
+"[36.0, 35.0, 34.0, 33.0]","[0.995, 0.4924, 0.3099, 0.281]",0
+"[0.3, 0.3, 0.3, 0.3, 0.3, 0.3]","[0.0, 0.0, 0.0007, 0.0007, 0.0007, 0.002]",0
+TRUE,TRUE,1
+FALSE,FALSE,1
+FALSE,TRUE,0
+TRUE,TRUE,1
+7,372,0
+66.5,37.42012059,0
+"[True, True, True]",10344,0
+80,105,0
+LibDem,[Ciudadanos],0
+Healthcare,The party ideas are close to my own,0
+Democratic,Ciudadanos,0
+English,Castellano,0
+"['Labour', 'Liberal Democrats', 'Green', 'Conservative', 'UKIP']","['[Ciudadanos]', '[]', '[I am undeceided]', '[Podemos]', '[PP]']",0
+"['Healthcare', 'Environment', 'Education']","['The party ideas are close to my own', 'The party is the most competent', 'I prefer not to say']",0
+"['Republican', 'Democrat', 'Independent', 'Libertarian']","['Ciudadanos', 'PP', 'I prefer not to say', 'Podemos']",0
+"['English', 'Spanish', 'French', 'Arabic', 'German', 'Chinese']","['Castellano', 'Catal�', 'Galego', 'Euskara']",0
+"[26.0, 25.0, 24.0, 27.0, 28.0]","[38.0, 23.0, 39.0, 25.0, 35.0]",0
+"['Center', 'Center', 'Left']","[5.0, 3.0, 6.0]",0
+"['Progressive', 'Liberal', 'Moderate', 'Conservative']","[5.0, 3.0, 4.0, 0.0]",0
+"['Presidential', 'Parliamentary', 'Semi Presidential', 'Semi Presidential', 'Semi Parliamentary', 'Parliamentary']","[2.0, 3.0, 4.0, 1.0, 5.0]",0
+TRUE,TRUE,1
+TRUE,TRUE,1
+TRUE,TRUE,1
+TRUE,TRUE,1
+TRUE,1315,0
+1095,799,0
+1154,0,0
+14,774,0
+25-34,65+,0
+TRUE,Donald Trump (Republican),0
+Master's degree,"Some college, no degree",0
+North Central,South Atlantic,0
+"['New York', 'California', 'Florida', 'Texas', 'Pennsylvania']","['CA', 'TX', 'NY', 'FL', 'GA']",1
+"['Teacher', 'Student', 'Doctor', 'Engineer']","['Other', 'Healthcare', 'Office worker or other professional', 'Industrial (e.g. construction, manufacturing, maintenance and repair)']",0
+"['White', 'Hispanic', 'Black']","['White (not Hispanic, Latino or Spanish origin)', 'Black or African American (not Hispanic, Latino or Spanish origin)', 'Hispanic, Latino or Spanish origin']",1
+"[30.0, 40.0, 50.0, 60.0, 70.0, 80.0]","['65+', '55-64', '45-54', '35-44', '18-24', '25-34']",0
+"['06037', '06079', '06007']","[6037, 13121, 48201]",0
+"[10.0, 10.0, 10.0, 10.0]","[0.8085780015111617, 0.7742084493732905, 0.3063435812288158, 0.629527660735561]",0
+"['UR', 'RU', 'PC', 'MU', 'CU']","[1, 2, 3, 4, 5]",0
+"['Likely', 'Very Likely', 'Likely', 'Very Likely', 'Likely', 'Very Likely']","[10.0, 11.0, 0.0, 1.0, 9.0, 5.0]",0
+TRUE,FALSE,0
+TRUE,TRUE,1
+TRUE,TRUE,1
+TRUE,TRUE,1
+120,940,0
+0,16.19912,0
+1344000,549900,0
+1025,4237,0
+TRUE,Supergarage,0
+Honda,VOLKSWAGEN,0
+Gasoline,Diésel,0
+Ontario,Madrid,0
+"['British Columbia', 'Alberta', 'Ontario']","['Madrid', 'Barcelona', 'Valencia']",0
+"['white', 'black', 'red', 'silver']","['Blanco', 'Gris / Plata', 'Negro', 'Azul']",0
+"['Toyota', 'Honda', 'Ford', 'Chevrolet', 'Nissan']","['VOLKSWAGEN', 'BMW', 'MERCEDES-BENZ', 'AUDI', 'PEUGEOT']",0
+"['Electric', 'Hybrid']","['Gas natural (CNG)', 'Gas licuado (GLP)']",0
+"['2000', '2001', '2002', '2003']","[2016.0, 2017.0, 2019.0, 2020.0]",0
+"[1086.0, 1078.0, 1078.0]","[5000000, 4000006, 3500000]",0
+"['Mercedes-Benz CLS', 'Toyota Supra', 'Ford Mustang', 'Lexus LC', 'Audi R8']","[54, 54, 54, 54, 54]",0
+"['Zenvo TSR-S', 'Bugatti Chiron Super Sport 300+', 'Rimac C_Two', 'SSC Tuatara', 'Hennessey Venom F5', 'Koenigsegg Agera RS']","[800.0, 800.0, 796.0, 772.0, 720.0, 720.0]",0
+FALSE,TRUE,0
+TRUE,TRUE,1
+FALSE,TRUE,0
+TRUE,TRUE,1
+2143,95,0
+1,159,0
+1181,9684,0
+0,2478,0
+2008/1/29,morning,0
+Cereal,Coffee,0
+Burger,Adjustment,0
+Morning,morning,1
+"['Croissant', 'Bread', 'Bread']","['Coffee', 'Bread', 'Pastry']",0
+"['Shrimp', 'Hamburger', 'Steak', 'Hot Dog']","['Chicken sand', 'Gift voucher', 'Bare Popcorn', 'Raw bars']",0
+"['Cereal', 'Yogurt', 'Eggs', 'Orange Juice', 'Bread']","['Coffee', 'Bread', 'Tea', 'Cake', 'Pastry']",0
+"['Hamburger', 'Pizza', 'Sushi', 'Sandwich']","['Art Tray', 'Mighty Protein', 'Mortimer', 'Vegan Mincepie']",0
+"['CASH', 'DEBIT', 'CREDIT', 'CHECK']","[6474, 6716, 6279, 6412]",0
+"['4000000000000', '4000000000000', '4000000000000', '4000000000000', '4000000000000']","[9680, 9681, 9682, 9683, 9684]",0
+"[1, 2, 3, 4, 5, 6]","[6412, 6279, 6474, 6603, 6716, 6642]",0
+"[1, 2]","[9683, 9684]",0
+FALSE,FALSE,1
+TRUE,FALSE,0
+TRUE,TRUE,1
+FALSE,FALSE,1
+10,162,0
+4.5,4.204158004,0
+99999,670801367,0
+2146,786,0
+London,United States,0
+Electrical Engineering,Disneyland_Paris,0
+Oct-21,missing,0
+"New York, NY",Armenia,1
+"['US', 'UK', 'IN']","['United States', 'United Kingdom', 'Australia']",0
+"['Banks', 'Credit Unions']","['Disneyland_Paris', 'Disneyland_HongKong']",0
+"['2014-09', '2015-08', '2014-10', '2015-09']","['missing', '2015-8', '2015-7', '2015-12']",0
+"['Nashville, TN', 'Raleigh-Durham, NC', 'Portland, OR']","['Turks and Caicos Islands', 'South Sudan', 'Suriname']",0
+"['0W8', '8JL', 'Z2J', '0J9', '8L0']","[670585330, 670570869, 670443403, 670435886, 670324965]",0
+"['1.0', '2.0', '3.0', '4.0']","[662641193, 658624005, 649615606, 647822351]",0
+"[1.0, 1.0, 1.0, 1.0, 1.0, 1.0]","[5, 5, 5, 5, 5, 5]",0
+"[0.0, 0.0, 0.0]","[1, 1, 1]",0
+FALSE,FALSE,1
+TRUE,TRUE,1
+TRUE,TRUE,1
+TRUE,TRUE,1
+5,1,0
+1,8774.520447,0
+5,589793,0
+1492,2891,0
+Hobbes,Donald J. Trump,0
+Twitter,Such a beautiful and important evening! The forgotten man and woman will never be forgotten again. We will all come together as never before,0
+English,und,0
+English,en,1
+"['@RealDonaldTrump', '@BarackObama', '@JoeBiden']",['realDonaldTrump'],1
+"['English', 'Spanish']","['pt', 'fi']",0
+"['Biden', 'Trump', 'News', 'Tucker']","['realDonaldTrump', 'FoxNews', 'CNN', 'foxandfriends']",0
+"['@Newsweek', '@TheEconomist', '@BBCNews']",['Donald J. Trump'],0
+"['1234567890', '9876543210', '5432109876', '8765432109', '3210987654']","[881503147168071680, 795954831718498305, 929511061954297857, 796315640307060738, 948355557022420992]",0
+"['134230370', '134230369', '134230368', '134230367']","[591222909626114050, 591412084895838208, 586751374286721024, 575589231160127489]",0
+"[1, 2, 3, 4, 5, 6]","[589793, 589750, 557779, 539249, 476457, 376626]",0
+"[0, 0, 0]","[1, 1, 2]",0
+TRUE,FALSE,0
+TRUE,TRUE,1
+FALSE,TRUE,0
+TRUE,TRUE,1
+5,9,0
+2,0.088480333,0
+1000,770.5,0
+1,651,0
+John,Christophe Viau,0
+New York Times,Mike Bostock,0
+https://i.imgur.com/K8V9c7S.jpg,https://storage.googleapis.com/pics.contexto.io/photos/paperclips/000/016/457/thumb/Saw-whet_Owl_10_normal.jpg?1517502050,0
+Google,The Gibson Project,0
+"['Apple', 'Microsoft', 'Amazon']","['Lynn Cherny', 'Alberto Cairo', 'Sinan Aral']",0
+"['Bulgaria', 'Cyprus']","['LIFE', 'New Options Project']",0
+"['United States', 'United Kingdom', 'Germany', 'France']","['Detective.io', 'The Thrust', 'Open Budgets', 'NewsFuturist']",0
+"[0.0, 0.0, 0.0]","['digital PR cat', 'Ismail Onur Filiz', 'Dave Golland']",0
+"[7, 8, 9, 10, 6]","[568, 423, 6392, 4548, 579]",0
+"[1349, 1350, 1351, 1352]","[177, 240, 294, 369]",0
+"[0.9436, 0.9289, 0.9247, 0.9214, 0.9165, 0.9137]","[1.0, 0.6029751067034804, 0.5666707687637932, 0.5202348027491394, 0.5110606617858531, 0.5081183103684572]",0
+"[71.0, 71.0, 71.0]","[1.0, 1.0, 1.0]",0
+TRUE,TRUE,1
+TRUE,TRUE,1
+FALSE,FALSE,1
+TRUE,TRUE,1
+7,7,1
+2,2.841584158,0
+8,8,1
+0,27,0
+Private,1,0
+Spider,octopus,0
+Arthropod,7,0
+Piranha,frog,0
+"['cat', 'dog', 'cow']","['octopus', 'scorpion', 'crayfish']",0
+"['Lion', 'Horse']","['bass', 'carp']",0
+"['Mammalia', 'Aves', 'Reptilia', 'Amphibia']","[1, 2, 4, 7]",0
+"['Mammalia', 'Actinopterygii', 'Reptilia']","[5, 3, 6]",0
+"['Emperor', 'Yankee', 'Schooner', 'Schooner', 'Yawl']","[1, 6, 2, 7, 5]",0
+"['Business', 'Engineering', 'Unknown', 'Unknown']","[4, 3, 5, 7]",0
+"[2, 4, 6, 8, 0, 10]","[4, 2, 0, 6, 8, 5]",0
+"[0, 1, 2]","[5, 8, 6]",0
+FALSE,FALSE,1
+FALSE,FALSE,1
+TRUE,TRUE,1
+TRUE,TRUE,1
+1062,4070,0
+0,4.611113626,0
+10,80995,0
+15496,495478,0
+United States,United Kingdom,0
+Diamond,Manual,0
+Lipton,"PAPER CRAFT , LITTLE BIRDIE",0
+United States,United Kingdom,0
+"['Tissues', 'Bread', 'Milk']","['PAPER CRAFT , LITTLE BIRDIE', 'MEDIUM CERAMIC TOP STORAGE JAR', 'ASSTD DESIGN 3D PAPER STICKERS']",0
+"['Sponge', 'Cup']","['PAPER CRAFT , LITTLE BIRDIE', 'MEDIUM CERAMIC TOP STORAGE JAR']",0
+"['United States', 'United Kingdom', 'Germany', 'France']","['United Kingdom', 'Germany', 'France', 'EIRE']",0
+"['Albania', 'Bhutan', 'Somalia']","['Saudi Arabia', 'Bahrain', 'Czech Republic']",0
+"['0000000000000000000', '0000000000000000000', '0000000000000000000', '0000000000000000000', '0000000000000000000']","['581483', '541431', '578841', '542504', '573008']",0
+"['A', 'B', 'B', 'A']","[23843, 21366, 23005, 23005, 84347]",0
+"[1, 2, 1, 2, 1]","[1, 2, 12, 6, 4, 3]",0
+"['4', '4', '4']","[-312, -79, 404]",0
